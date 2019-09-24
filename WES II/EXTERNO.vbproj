@@ -1,0 +1,417 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3E9F83F3-E735-412F-97B2-A0D5B7C4024A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>WES_II.My.MyApplication</StartupObject>
+    <RootNamespace>WES_II</RootNamespace>
+    <AssemblyName>WES II</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+    <PublishUrl>D:\net\InstaladorGDA\</PublishUrl>
+    <Install>false</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>true</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <UpdateUrl>http://52.22.129.97/DO/</UpdateUrl>
+    <SupportUrl>http://localhost:8080/</SupportUrl>
+    <ProductName>GDA</ProductName>
+    <PublisherName>GS</PublisherName>
+    <SuiteName>Librerias</SuiteName>
+    <MinimumRequiredVersion>1.0.0.1</MinimumRequiredVersion>
+    <WebPage>wespublish.html</WebPage>
+    <ApplicationRevision>11</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <CreateDesktopShortcut>true</CreateDesktopShortcut>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>WES II.xml</DocumentationFile>
+    <NoWarn>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+    <CodeAnalysisIgnoreGeneratedCode>false</CodeAnalysisIgnoreGeneratedCode>
+    <WarningsAsErrors>
+    </WarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>WES II.xml</DocumentationFile>
+    <NoWarn>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+    <WarningsAsErrors>
+    </WarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>Off</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Text</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>Off</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>40753D7022C26DBDD87A49A3D23F4DFF723C615E</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>
+    </ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'GDA|x86'">
+    <OutputPath>bin\x86\GDA\</OutputPath>
+    <Prefer32Bit>false</Prefer32Bit>
+    <WarningsAsErrors>
+    </WarningsAsErrors>
+    <NoWarn>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.140.1000.523\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.140.1000.523\lib\net40\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.140.1000.523\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.140.1000.523\lib\net40\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportViewer.WinForms.10.0.40219.1\lib\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App.vb" />
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="Controlador\Conexion.vb" />
+    <Compile Include="Controlador\Hashing.vb" />
+    <Compile Include="DS_Wes_II_TestB.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_Wes_II_TestB.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="General.vb" />
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="My Project\licenses.licx" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DS_Wes_II_TestB.xsc">
+      <DependentUpon>DS_Wes_II_TestB.xsd</DependentUpon>
+    </None>
+    <None Include="DS_Wes_II_TestB.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_Wes_II_TestB.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="DS_Wes_II_TestB.xss">
+      <DependentUpon>DS_Wes_II_TestB.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\app.manifest">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="packages.config" />
+    <None Include="WES II_ClaveTemporal.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\actions\Cancel_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgs\splash_screen.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgs\bg_light.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgs\blue-flat-design.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgs\flat_light.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgs\flat_black.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgs\flat_black_opt.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\Numbers.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\Contacts.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\BootCamp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\AppStore.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\DashBoard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\Calculator.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\SystemPreferences.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\Messages2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\LaunchPad.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\Chess.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\actions\Save_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\actions\Tick_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\actions\Edit_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\actions\Edit_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\actions\Delete_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\Clientes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\Marcas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\Perfiles.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\Configuración.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\Cotizaciones.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\Reportes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\Ordenes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\IngresosMat.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\SalidasMat.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\Requerimiento.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\Aprobacion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\ModifiStock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\Contenedor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\Usuarios.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\Buscar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\actions\Buscar_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\Proyectos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\KeyChain.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\actions\Buscar_24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\Ubicaciones.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\Ofertas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\Sugerencias.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\Informes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 y x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="SAP.CrystalReports14.NET.2.0">
+      <Visible>False</Visible>
+      <ProductName>SAP Crystal Reports Runtime Engine for .NET Framework</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="SqlServerTypes\Loader.cs" />
+    <Content Include="SqlServerTypes\readme.htm" />
+    <Content Include="SqlServerTypes\x64\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <PublishFile Include="de\Microsoft.ReportViewer.WinForms.resources">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Satellite</FileType>
+    </PublishFile>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

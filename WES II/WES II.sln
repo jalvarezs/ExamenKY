@@ -1,0 +1,45 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27019.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "WES II", "WES II\WES II.vbproj", "{3E9F83F3-E735-412F-97B2-A0D5B7C4024A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x86 = Debug|x86
+		GDA|Any CPU = GDA|Any CPU
+		GDA|x86 = GDA|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3E9F83F3-E735-412F-97B2-A0D5B7C4024A}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{3E9F83F3-E735-412F-97B2-A0D5B7C4024A}.Debug|Any CPU.Build.0 = Debug|x86
+		{3E9F83F3-E735-412F-97B2-A0D5B7C4024A}.Debug|x86.ActiveCfg = Debug|x86
+		{3E9F83F3-E735-412F-97B2-A0D5B7C4024A}.Debug|x86.Build.0 = Debug|x86
+		{3E9F83F3-E735-412F-97B2-A0D5B7C4024A}.GDA|Any CPU.ActiveCfg = GDA|x86
+		{3E9F83F3-E735-412F-97B2-A0D5B7C4024A}.GDA|x86.ActiveCfg = GDA|x86
+		{3E9F83F3-E735-412F-97B2-A0D5B7C4024A}.GDA|x86.Build.0 = GDA|x86
+		{3E9F83F3-E735-412F-97B2-A0D5B7C4024A}.Release|Any CPU.ActiveCfg = GDA|x86
+		{3E9F83F3-E735-412F-97B2-A0D5B7C4024A}.Release|Any CPU.Build.0 = GDA|x86
+		{3E9F83F3-E735-412F-97B2-A0D5B7C4024A}.Release|x86.ActiveCfg = Release|x86
+		{3E9F83F3-E735-412F-97B2-A0D5B7C4024A}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E2E5839C-879B-494C-8B4A-180F0F6AA233}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 2
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://appdesk.visualstudio.com/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = WES\u0020II\\WES\u0020II.vbproj
+		SccProjectName1 = WES\u0020II
+		SccLocalPath1 = WES\u0020II
+	EndGlobalSection
+EndGlobal

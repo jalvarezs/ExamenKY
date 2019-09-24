@@ -1,0 +1,411 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+WES II
+</name>
+</assembly>
+<members>
+<member name="T:WES_II.My.Resources.Resources">
+<summary>
+  Clase de recurso fuertemente tipado, para buscar cadenas traducidas, etc.
+</summary>
+</member>
+<member name="P:WES_II.My.Resources.Resources.ResourceManager">
+<summary>
+  Devuelve la instancia de ResourceManager almacenada en caché utilizada por esta clase.
+</summary>
+</member>
+<member name="P:WES_II.My.Resources.Resources.Culture">
+<summary>
+  Reemplaza la propiedad CurrentUICulture del subproceso actual para todas las
+  búsquedas de recursos mediante esta clase de recurso fuertemente tipado.
+</summary>
+</member>
+<member name="P:WES_II.My.Resources.Resources.AppStore">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WES_II.My.Resources.Resources.Aprobacion">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WES_II.My.Resources.Resources.bg_light">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WES_II.My.Resources.Resources.blue_flat_design">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WES_II.My.Resources.Resources.BootCamp">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WES_II.My.Resources.Resources.Buscar_24x24">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WES_II.My.Resources.Resources.Buscar_32x32">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WES_II.My.Resources.Resources.Calculator">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WES_II.My.Resources.Resources.Cancel_32x32">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WES_II.My.Resources.Resources.Chess">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WES_II.My.Resources.Resources.Clientes">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WES_II.My.Resources.Resources.Configuración">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WES_II.My.Resources.Resources.Contacts">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WES_II.My.Resources.Resources.Contenedor">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WES_II.My.Resources.Resources.Cotizaciones">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WES_II.My.Resources.Resources.DashBoard">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WES_II.My.Resources.Resources.Delete_32x32">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WES_II.My.Resources.Resources.Edit_16x16">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WES_II.My.Resources.Resources.Edit_32x32">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WES_II.My.Resources.Resources.eraser">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WES_II.My.Resources.Resources.flat_black_opt">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WES_II.My.Resources.Resources.flat_light">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WES_II.My.Resources.Resources.Icon_">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Icon similar a (Icono).
+</summary>
+</member>
+<member name="P:WES_II.My.Resources.Resources.Informes">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WES_II.My.Resources.Resources.IngresosMat">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WES_II.My.Resources.Resources.KeyChain">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WES_II.My.Resources.Resources.LaunchPad">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WES_II.My.Resources.Resources.Marcas">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WES_II.My.Resources.Resources.Messages2">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WES_II.My.Resources.Resources.Messages21">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WES_II.My.Resources.Resources.ModifiStock">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WES_II.My.Resources.Resources.Numbers">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WES_II.My.Resources.Resources.Numbers1">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WES_II.My.Resources.Resources.Ofertas">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WES_II.My.Resources.Resources.Ordenes">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WES_II.My.Resources.Resources.Perfiles">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WES_II.My.Resources.Resources.plus">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WES_II.My.Resources.Resources.Proyectos">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WES_II.My.Resources.Resources.Reportes">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WES_II.My.Resources.Resources.Requerimiento">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WES_II.My.Resources.Resources.SalidasMat">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WES_II.My.Resources.Resources.Save_32x32">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WES_II.My.Resources.Resources.StockMateriales">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WES_II.My.Resources.Resources.Sugerencias">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WES_II.My.Resources.Resources.SystemPreferences">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WES_II.My.Resources.Resources.Tick_32x32">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WES_II.My.Resources.Resources.Ubicaciones">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:WES_II.My.Resources.Resources.Usuarios">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="T:WES_II.DS_Wes_II_TestB">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:WES_II.DS_Wes_II_TestB.SP_ReporteIngresosDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:WES_II.DS_Wes_II_TestB.SP_ReporteSalidasDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:WES_II.DS_Wes_II_TestB.SP_MovimientosStockDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:WES_II.DS_Wes_II_TestB.SP_Stock_Sumarizado_ArticuloDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:WES_II.DS_Wes_II_TestB.SP_Stock_Articulo_x_ContenedorDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:WES_II.DS_Wes_II_TestB.SP_ReporteIngresosRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:WES_II.DS_Wes_II_TestB.SP_ReporteSalidasRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:WES_II.DS_Wes_II_TestB.SP_MovimientosStockRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:WES_II.DS_Wes_II_TestB.SP_Stock_Sumarizado_ArticuloRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:WES_II.DS_Wes_II_TestB.SP_Stock_Articulo_x_ContenedorRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:WES_II.DS_Wes_II_TestB.SP_ReporteIngresosRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:WES_II.DS_Wes_II_TestB.SP_ReporteSalidasRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:WES_II.DS_Wes_II_TestB.SP_MovimientosStockRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:WES_II.DS_Wes_II_TestB.SP_Stock_Sumarizado_ArticuloRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:WES_II.DS_Wes_II_TestB.SP_Stock_Articulo_x_ContenedorRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:WES_II.DS_Wes_II_TestBTableAdapters.SP_ReporteIngresosTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:WES_II.DS_Wes_II_TestBTableAdapters.SP_ReporteSalidasTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:WES_II.DS_Wes_II_TestBTableAdapters.SP_MovimientosStockTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:WES_II.DS_Wes_II_TestBTableAdapters.SP_Stock_Sumarizado_ArticuloTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:WES_II.DS_Wes_II_TestBTableAdapters.SP_Stock_Articulo_x_ContenedorTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:WES_II.DS_Wes_II_TestBTableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:WES_II.DS_Wes_II_TestBTableAdapters.TableAdapterManager.UpdateUpdatedRows(WES_II.DS_Wes_II_TestB,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:WES_II.DS_Wes_II_TestBTableAdapters.TableAdapterManager.UpdateInsertedRows(WES_II.DS_Wes_II_TestB,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:WES_II.DS_Wes_II_TestBTableAdapters.TableAdapterManager.UpdateDeletedRows(WES_II.DS_Wes_II_TestB,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:WES_II.DS_Wes_II_TestBTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:WES_II.DS_Wes_II_TestBTableAdapters.TableAdapterManager.UpdateAll(WES_II.DS_Wes_II_TestB)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:WES_II.DS_Wes_II_TestBTableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:WES_II.DS_Wes_II_TestBTableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+</members>
+</doc>

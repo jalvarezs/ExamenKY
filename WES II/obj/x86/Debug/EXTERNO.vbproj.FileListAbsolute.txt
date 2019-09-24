@@ -1,0 +1,147 @@
+D:\net\Fusion\GDA_GIT\WES II\bin\Debug\SqlServerTypes\x64\msvcr120.dll
+D:\net\Fusion\GDA_GIT\WES II\bin\Debug\SqlServerTypes\x64\SqlServerSpatial140.dll
+D:\net\Fusion\GDA_GIT\WES II\bin\Debug\SqlServerTypes\x86\msvcr120.dll
+D:\net\Fusion\GDA_GIT\WES II\bin\Debug\SqlServerTypes\x86\SqlServerSpatial140.dll
+D:\net\Fusion\GDA_GIT\WES II\bin\Debug\WES II.exe.config
+D:\net\Fusion\GDA_GIT\WES II\bin\Debug\WES II.exe.manifest
+D:\net\Fusion\GDA_GIT\WES II\bin\Debug\WES II.application
+D:\net\Fusion\GDA_GIT\WES II\bin\Debug\WES II.exe
+D:\net\Fusion\GDA_GIT\WES II\bin\Debug\WES II.pdb
+D:\net\Fusion\GDA_GIT\WES II\bin\Debug\WES II.xml
+D:\net\Fusion\GDA_GIT\WES II\bin\Debug\Microsoft.ReportViewer.Common.dll
+D:\net\Fusion\GDA_GIT\WES II\bin\Debug\Microsoft.ReportViewer.DataVisualization.dll
+D:\net\Fusion\GDA_GIT\WES II\bin\Debug\Microsoft.ReportViewer.Design.dll
+D:\net\Fusion\GDA_GIT\WES II\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.dll
+D:\net\Fusion\GDA_GIT\WES II\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+D:\net\Fusion\GDA_GIT\WES II\bin\Debug\EnvDTE.dll
+D:\net\Fusion\GDA_GIT\WES II\bin\Debug\Microsoft.VisualStudio.Shell.Interop.dll
+D:\net\Fusion\GDA_GIT\WES II\bin\Debug\Microsoft.VisualStudio.Shell.Interop.8.0.dll
+D:\net\Fusion\GDA_GIT\WES II\bin\Debug\stdole.dll
+D:\net\Fusion\GDA_GIT\WES II\bin\Debug\Microsoft.VisualStudio.OLE.Interop.dll
+D:\net\Fusion\GDA_GIT\WES II\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.dll
+D:\net\Fusion\GDA_GIT\WES II\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.8.0.dll
+D:\net\Fusion\GDA_GIT\WES II\bin\Debug\Microsoft.MSXML.dll
+D:\net\Fusion\GDA_GIT\WES II\bin\Debug\de\Microsoft.ReportViewer.Common.resources.dll
+D:\net\Fusion\GDA_GIT\WES II\bin\Debug\es\Microsoft.ReportViewer.Common.resources.dll
+D:\net\Fusion\GDA_GIT\WES II\bin\Debug\fr\Microsoft.ReportViewer.Common.resources.dll
+D:\net\Fusion\GDA_GIT\WES II\bin\Debug\it\Microsoft.ReportViewer.Common.resources.dll
+D:\net\Fusion\GDA_GIT\WES II\bin\Debug\ja\Microsoft.ReportViewer.Common.resources.dll
+D:\net\Fusion\GDA_GIT\WES II\bin\Debug\ko\Microsoft.ReportViewer.Common.resources.dll
+D:\net\Fusion\GDA_GIT\WES II\bin\Debug\pt\Microsoft.ReportViewer.Common.resources.dll
+D:\net\Fusion\GDA_GIT\WES II\bin\Debug\ru\Microsoft.ReportViewer.Common.resources.dll
+D:\net\Fusion\GDA_GIT\WES II\bin\Debug\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
+D:\net\Fusion\GDA_GIT\WES II\bin\Debug\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
+D:\net\Fusion\GDA_GIT\WES II\bin\Debug\de\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\net\Fusion\GDA_GIT\WES II\bin\Debug\es\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\net\Fusion\GDA_GIT\WES II\bin\Debug\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\net\Fusion\GDA_GIT\WES II\bin\Debug\it\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\net\Fusion\GDA_GIT\WES II\bin\Debug\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\net\Fusion\GDA_GIT\WES II\bin\Debug\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\net\Fusion\GDA_GIT\WES II\bin\Debug\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\net\Fusion\GDA_GIT\WES II\bin\Debug\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\net\Fusion\GDA_GIT\WES II\bin\Debug\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\net\Fusion\GDA_GIT\WES II\bin\Debug\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\net\Fusion\GDA_GIT\WES II\bin\Debug\de\Microsoft.ReportViewer.Design.resources.dll
+D:\net\Fusion\GDA_GIT\WES II\bin\Debug\es\Microsoft.ReportViewer.Design.resources.dll
+D:\net\Fusion\GDA_GIT\WES II\bin\Debug\fr\Microsoft.ReportViewer.Design.resources.dll
+D:\net\Fusion\GDA_GIT\WES II\bin\Debug\it\Microsoft.ReportViewer.Design.resources.dll
+D:\net\Fusion\GDA_GIT\WES II\bin\Debug\ja\Microsoft.ReportViewer.Design.resources.dll
+D:\net\Fusion\GDA_GIT\WES II\bin\Debug\ko\Microsoft.ReportViewer.Design.resources.dll
+D:\net\Fusion\GDA_GIT\WES II\bin\Debug\pt\Microsoft.ReportViewer.Design.resources.dll
+D:\net\Fusion\GDA_GIT\WES II\bin\Debug\ru\Microsoft.ReportViewer.Design.resources.dll
+D:\net\Fusion\GDA_GIT\WES II\bin\Debug\zh-CHS\Microsoft.ReportViewer.Design.resources.dll
+D:\net\Fusion\GDA_GIT\WES II\bin\Debug\zh-CHT\Microsoft.ReportViewer.Design.resources.dll
+D:\net\Fusion\GDA_GIT\WES II\obj\x86\Debug\EXTERNO.vbprojAssemblyReference.cache
+D:\net\Fusion\GDA_GIT\WES II\obj\x86\Debug\WES_II.FormAlmacenes.resources
+D:\net\Fusion\GDA_GIT\WES II\obj\x86\Debug\WES_II.FormSectoresAlmacen.resources
+D:\net\Fusion\GDA_GIT\WES II\obj\x86\Debug\WES_II.FormNuevoSector.resources
+D:\net\Fusion\GDA_GIT\WES II\obj\x86\Debug\WES_II.ModifAlmacen.resources
+D:\net\Fusion\GDA_GIT\WES II\obj\x86\Debug\WES_II.ModifSectoresAlmacen.resources
+D:\net\Fusion\GDA_GIT\WES II\obj\x86\Debug\WES_II.frmCargaCompra.resources
+D:\net\Fusion\GDA_GIT\WES II\obj\x86\Debug\WES_II.frmListaCompraLista.resources
+D:\net\Fusion\GDA_GIT\WES II\obj\x86\Debug\WES_II.frmModificaCompra.resources
+D:\net\Fusion\GDA_GIT\WES II\obj\x86\Debug\WES_II.frmCargaFactura.resources
+D:\net\Fusion\GDA_GIT\WES II\obj\x86\Debug\WES_II.frmListarFactura.resources
+D:\net\Fusion\GDA_GIT\WES II\obj\x86\Debug\WES_II.frmModficarCargaFact.resources
+D:\net\Fusion\GDA_GIT\WES II\obj\x86\Debug\WES_II.FormClientes.resources
+D:\net\Fusion\GDA_GIT\WES II\obj\x86\Debug\WES_II.ModifCliente.resources
+D:\net\Fusion\GDA_GIT\WES II\obj\x86\Debug\WES_II.AgregarDetalleCont.resources
+D:\net\Fusion\GDA_GIT\WES II\obj\x86\Debug\WES_II.FormContenedor.resources
+D:\net\Fusion\GDA_GIT\WES II\obj\x86\Debug\WES_II.FormExamUbicacion.resources
+D:\net\Fusion\GDA_GIT\WES II\obj\x86\Debug\WES_II.ModifContenedor.resources
+D:\net\Fusion\GDA_GIT\WES II\obj\x86\Debug\WES_II.ModifStock.resources
+D:\net\Fusion\GDA_GIT\WES II\obj\x86\Debug\WES_II.DetallePersonal.resources
+D:\net\Fusion\GDA_GIT\WES II\obj\x86\Debug\WES_II.ExaminarCotizaciones.resources
+D:\net\Fusion\GDA_GIT\WES II\obj\x86\Debug\WES_II.FormControlServicios.resources
+D:\net\Fusion\GDA_GIT\WES II\obj\x86\Debug\WES_II.ExamCliente.resources
+D:\net\Fusion\GDA_GIT\WES II\obj\x86\Debug\WES_II.FormCotizaciones.resources
+D:\net\Fusion\GDA_GIT\WES II\obj\x86\Debug\WES_II.ModifCotizaciones.resources
+D:\net\Fusion\GDA_GIT\WES II\obj\x86\Debug\WES_II.FormFamilias.resources
+D:\net\Fusion\GDA_GIT\WES II\obj\x86\Debug\WES_II.ModifFamilia.resources
+D:\net\Fusion\GDA_GIT\WES II\obj\x86\Debug\WES_II.FormLogin.resources
+D:\net\Fusion\GDA_GIT\WES II\obj\x86\Debug\WES_II.ExmOrdenCompra.resources
+D:\net\Fusion\GDA_GIT\WES II\obj\x86\Debug\WES_II.FormIngresoMaterial.resources
+D:\net\Fusion\GDA_GIT\WES II\obj\x86\Debug\WES_II.ExamCotizacion.resources
+D:\net\Fusion\GDA_GIT\WES II\obj\x86\Debug\WES_II.FormIniciosTrabajo.resources
+D:\net\Fusion\GDA_GIT\WES II\obj\x86\Debug\WES_II.ModifInicioTrabajo.resources
+D:\net\Fusion\GDA_GIT\WES II\obj\x86\Debug\WES_II.FormInventarios.resources
+D:\net\Fusion\GDA_GIT\WES II\obj\x86\Debug\WES_II.FormMarcas.resources
+D:\net\Fusion\GDA_GIT\WES II\obj\x86\Debug\WES_II.FormConsultarStock.resources
+D:\net\Fusion\GDA_GIT\WES II\obj\x86\Debug\WES_II.ExamMaterial.resources
+D:\net\Fusion\GDA_GIT\WES II\obj\x86\Debug\WES_II.ExamProveedor.resources
+D:\net\Fusion\GDA_GIT\WES II\obj\x86\Debug\WES_II.FormOrdenCompra.resources
+D:\net\Fusion\GDA_GIT\WES II\obj\x86\Debug\WES_II.ModifOrdenCompra.resources
+D:\net\Fusion\GDA_GIT\WES II\obj\x86\Debug\WES_II.FormPerfiles.resources
+D:\net\Fusion\GDA_GIT\WES II\obj\x86\Debug\WES_II.ModifPerfil.resources
+D:\net\Fusion\GDA_GIT\WES II\obj\x86\Debug\WES_II.FormMateriales.resources
+D:\net\Fusion\GDA_GIT\WES II\obj\x86\Debug\WES_II.ModifMaterial.resources
+D:\net\Fusion\GDA_GIT\WES II\obj\x86\Debug\WES_II.FormMaterialesAsociados.resources
+D:\net\Fusion\GDA_GIT\WES II\obj\x86\Debug\WES_II.FormProveedores.resources
+D:\net\Fusion\GDA_GIT\WES II\obj\x86\Debug\WES_II.FormPrincipal.resources
+D:\net\Fusion\GDA_GIT\WES II\obj\x86\Debug\WES_II.ModifProveedor.resources
+D:\net\Fusion\GDA_GIT\WES II\obj\x86\Debug\WES_II.FormProyectos.resources
+D:\net\Fusion\GDA_GIT\WES II\obj\x86\Debug\WES_II.ModifProyecto.resources
+D:\net\Fusion\GDA_GIT\WES II\obj\x86\Debug\WES_II.Reporte_Ingresos.resources
+D:\net\Fusion\GDA_GIT\WES II\obj\x86\Debug\WES_II.Reporte_Salidas.resources
+D:\net\Fusion\GDA_GIT\WES II\obj\x86\Debug\WES_II.Reporte_Movimientos_Stock.resources
+D:\net\Fusion\GDA_GIT\WES II\obj\x86\Debug\WES_II.ExamAlmacen.resources
+D:\net\Fusion\GDA_GIT\WES II\obj\x86\Debug\WES_II.ExamOrdenCompra.resources
+D:\net\Fusion\GDA_GIT\WES II\obj\x86\Debug\WES_II.ExamProyecto.resources
+D:\net\Fusion\GDA_GIT\WES II\obj\x86\Debug\WES_II.FormAprobacionRequerimiento.resources
+D:\net\Fusion\GDA_GIT\WES II\obj\x86\Debug\WES_II.FormRequerimientos.resources
+D:\net\Fusion\GDA_GIT\WES II\obj\x86\Debug\WES_II.ModifRequerimiento.resources
+D:\net\Fusion\GDA_GIT\WES II\obj\x86\Debug\WES_II.FormExamRequerimiento.resources
+D:\net\Fusion\GDA_GIT\WES II\obj\x86\Debug\WES_II.FormSalidaMaterial.resources
+D:\net\Fusion\GDA_GIT\WES II\obj\x86\Debug\WES_II.SplashScreen.resources
+D:\net\Fusion\GDA_GIT\WES II\obj\x86\Debug\WES_II.FormExamContenedor.resources
+D:\net\Fusion\GDA_GIT\WES II\obj\x86\Debug\WES_II.FormTrasladarStock.resources
+D:\net\Fusion\GDA_GIT\WES II\obj\x86\Debug\WES_II.FormColumnaUbicacion.resources
+D:\net\Fusion\GDA_GIT\WES II\obj\x86\Debug\WES_II.FormEliminarColumna.resources
+D:\net\Fusion\GDA_GIT\WES II\obj\x86\Debug\WES_II.FormUbicaciones.resources
+D:\net\Fusion\GDA_GIT\WES II\obj\x86\Debug\WES_II.ModifUbicacion.resources
+D:\net\Fusion\GDA_GIT\WES II\obj\x86\Debug\WES_II.CargarUsuario.resources
+D:\net\Fusion\GDA_GIT\WES II\obj\x86\Debug\WES_II.ListarUs.resources
+D:\net\Fusion\GDA_GIT\WES II\obj\x86\Debug\WES_II.FormUsuario.resources
+D:\net\Fusion\GDA_GIT\WES II\obj\x86\Debug\WES_II.ModifUsuario.resources
+D:\net\Fusion\GDA_GIT\WES II\obj\x86\Debug\WES_II.Resources.resources
+D:\net\Fusion\GDA_GIT\WES II\obj\x86\Debug\EXTERNO.vbproj.GenerateResource.cache
+D:\net\Fusion\GDA_GIT\WES II\obj\x86\Debug\WES II.exe.licenses
+D:\net\Fusion\GDA_GIT\WES II\obj\x86\Debug\EXTERNO.vbproj.CoreCompileInputs.cache
+D:\net\Fusion\GDA_GIT\WES II\obj\x86\Debug\WES II.exe.manifest
+D:\net\Fusion\GDA_GIT\WES II\obj\x86\Debug\WES II.application
+D:\net\Fusion\GDA_GIT\WES II\obj\x86\Debug\EXTERNO.vbproj.CopyComplete
+D:\net\Fusion\GDA_GIT\WES II\obj\x86\Debug\WES II.exe
+D:\net\Fusion\GDA_GIT\WES II\obj\x86\Debug\WES II.xml
+D:\net\Fusion\GDA_GIT\WES II\obj\x86\Debug\WES II.pdb
+D:\net\GDA_FINAL\FUSION\WES II\obj\x86\Debug\EXTERNO.vbprojAssemblyReference.cache
+D:\net\GDA_FINAL\FUSION\WES II\obj\x86\Debug\WES_II.Resources.resources
+D:\net\GDA_FINAL\FUSION\WES II\obj\x86\Debug\EXTERNO.vbproj.GenerateResource.cache
+D:\net\GDA_FINAL\FUSION\WES II\obj\x86\Debug\WES II.exe.licenses
+D:\net\GDA_FINAL\FUSION\WES II\obj\x86\Debug\EXTERNO.vbproj.CoreCompileInputs.cache
+D:\net\GDA_FINAL\FUSION\WES II\obj\x86\Debug\WES II.exe
+D:\net\GDA_FINAL\FUSION\WES II\obj\x86\Debug\WES II.xml
+D:\net\GDA_FINAL\FUSION\WES II\obj\x86\Debug\WES II.pdb
+D:\Proyectos\WORKANA\Sistema GDA v2\Source\FUSION\WES II\bin\Debug\WES II.exe.config
+D:\Proyectos\WORKANA\Sistema GDA v2\Source\FUSION\WES II\obj\x86\Debug\WES II.exe
+D:\Proyectos\WORKANA\Sistema GDA v2\Source\FUSION\WES II\obj\x86\Debug\WES II.xml
+D:\Proyectos\WORKANA\Sistema GDA v2\Source\FUSION\WES II\obj\x86\Debug\WES II.pdb
