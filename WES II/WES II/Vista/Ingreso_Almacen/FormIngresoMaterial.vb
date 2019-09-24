@@ -110,9 +110,9 @@
         'txtOferta.Text = ""
         'txtProyecto.Text = ""
         txtContenedor.Text = ""
-        txtNumeroDocumento.Text = String.Empty
+        'txtNumeroDocumento.Text = String.Empty
 
-        cboTipoDocumento.SelectedValue = String.Empty
+        'cboTipoDocumento.SelectedValue = String.Empty
 
         dgvMateriales.DataSource = Nothing
         dgvMateriales.Rows.Clear()
