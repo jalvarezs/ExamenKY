@@ -142,7 +142,7 @@ Partial Class ModifContenedor
         '
         'dgvDetalleContenedor
         '
-        Me.dgvDetalleContenedor.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
+        Me.dgvDetalleContenedor.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells
         Me.dgvDetalleContenedor.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgvDetalleContenedor.Location = New System.Drawing.Point(27, 129)
         Me.dgvDetalleContenedor.Name = "dgvDetalleContenedor"
