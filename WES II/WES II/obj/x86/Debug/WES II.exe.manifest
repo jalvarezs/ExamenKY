@@ -1770,14 +1770,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="WES II.exe" size="5992448">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="WES II.exe" size="5989888">
       <assemblyIdentity name="WES II" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>aSdc9GT/AaEjeQ1y75BKRuA7h5D5rvtbN7VYL5EALPc=</dsig:DigestValue>
+        <dsig:DigestValue>IQHAYOJue4ut9gQnYAc5oaV82jOvCqdMp2FBu6K/+eA=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

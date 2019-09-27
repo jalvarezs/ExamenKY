@@ -2,89 +2,109 @@
 
     Private id, nombre, ruc, Distrito, direccion, telf, telf_sec, email, web, contacto1, EmailContacto1, TelefonoContacto1, contacto2, EmailContacto2, TelefonoContacto2, banco1, moneda1, cuentaCorriente1, CCI1, banco2, moneda2, cuentaCorriente2, CCI2 As String
 
-    Sub New(ByVal _id As String, ByVal _nombre As String, ByVal _ruc As String, ByVal _Distrito As String, ByVal _direccion As String, ByVal _telf As String, ByVal _telf_sec As String, ByVal _email As String, ByVal _web As String, ByVal _contacto1 As String, ByVal _EmailContacto1 As String, ByVal _TelefonoContacto1 As String, ByVal _contacto2 As String, ByVal _EmailContacto2 As String, ByVal _TelefonoContacto2 As String,
-            ByVal _banco1 As String, ByVal _moneda1 As String, ByVal _cuentaCorriente1 As String, ByVal _CCI1 As String, ByVal _banco2 As String, ByVal _moneda2 As String, ByVal _cuentaCorriente2 As String, ByVal _CCI2 As String)
+    Sub New(ByVal _id As String,
+            ByVal _nombre As String,
+            ByVal _ruc As String,
+            ByVal _Distrito As String,
+            ByVal _direccion As String,
+            ByVal _telf As String,
+            ByVal _telf_sec As String,
+            ByVal _email As String,
+            ByVal _web As String,
+            ByVal _contacto1 As String,
+            ByVal _EmailContacto1 As String,
+            ByVal _TelefonoContacto1 As String,
+            ByVal _contacto2 As String,
+            ByVal _EmailContacto2 As String,
+            ByVal _TelefonoContacto2 As String,
+            ByVal _banco1 As String,
+            ByVal _moneda1 As String,
+            ByVal _cuentaCorriente1 As String,
+            ByVal _CCI1 As String,
+            ByVal _banco2 As String,
+            ByVal _moneda2 As String,
+            ByVal _cuentaCorriente2 As String,
+            ByVal _CCI2 As String)
         InitializeComponent()
 
-        id = _id
-        nombre = _nombre
-        ruc = _ruc
-        Distrito = _Distrito
-        direccion = _direccion
-        telf = _telf
-        telf_sec = _telf_sec
-        email = _email
-        web = _web
-        contacto1 = _contacto1
-        EmailContacto1 = _EmailContacto1
-        TelefonoContacto1 = _TelefonoContacto1
-        contacto2 = _contacto2
-        EmailContacto2 = _EmailContacto2
-        TelefonoContacto2 = _TelefonoContacto2
-        banco1 = _banco1
-        moneda1 = _moneda1
-        cuentaCorriente1 = _cuentaCorriente1
-        CCI1 = _CCI1
-        banco2 = _banco2
-        moneda2 = _moneda2
-        cuentaCorriente2 = _cuentaCorriente2
-        CCI2 = _CCI2
+        id = _id.Trim
+        nombre = _nombre.Trim
+        ruc = _ruc.Trim
+        Distrito = _Distrito.Trim
+        direccion = _direccion.Trim
+        telf = _telf.Trim
+        telf_sec = _telf_sec.Trim
+        email = _email.Trim
+        web = _web.Trim
+        contacto1 = _contacto1.Trim
+        EmailContacto1 = _EmailContacto1.Trim
+        TelefonoContacto1 = _TelefonoContacto1.Trim
+        contacto2 = _contacto2.Trim
+        EmailContacto2 = _EmailContacto2.Trim
+        TelefonoContacto2 = _TelefonoContacto2.Trim
+        banco1 = _banco1.Trim
+        moneda1 = _moneda1.Trim
+        cuentaCorriente1 = _cuentaCorriente1.Trim
+        CCI1 = _CCI1.Trim
+        banco2 = _banco2.Trim
+        moneda2 = _moneda2.Trim
+        cuentaCorriente2 = _cuentaCorriente2.Trim
+        CCI2 = _CCI2.Trim
+
     End Sub
 
-    Private Sub MostrarDatos(opcion1 As Boolean, opcion2 As Boolean, opcion3 As Boolean)
-        'Muestra los datos segun el usuario haga click en las opciones
-        pnlBasico.Visible = opcion1
-        pnlContacto.Visible = opcion2
-        pnlinfobanco.Visible = opcion3
-    End Sub
 
     Private Sub btninfocomercial_Click(sender As Object, e As EventArgs) Handles btninfocomercial.Click
-        MostrarDatos(True, False, False)
-        txtNombre.Focus()
+        TabControl1.SelectedIndex = 0
+        txtnmbrecontacto1.Select()
     End Sub
 
     Private Sub btninfocontacto_Click(sender As Object, e As EventArgs) Handles btninfocontacto.Click
-        MostrarDatos(False, True, False)
-        txtnmbrecontacto1.Focus()
+        TabControl1.SelectedIndex = 1
+        txtNombre.Select()
     End Sub
 
     Private Sub btninfobancos_Click(sender As Object, e As EventArgs) Handles btninfobancos.Click
-        MostrarDatos(False, False, True)
-        txtbanco1.Focus()
+        TabControl1.SelectedIndex = 2
+        txtbanco1.Select()
     End Sub
 
     Private Sub ModifCliente_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Try
-            txtNombre.Text = nombre
-            txtRUC.Text = ruc
-            txtnmbrecontacto1.Text = contacto1
-            txtnmbrecontacto2.Text = contacto2
-            txtDireccion.Text = direccion
-            txtTelf.Text = telf
-            txtTelfSec.Text = telf_sec
-            txtEmail.Text = email
-            txtWeb.Text = web
-            txtDistrito.Text = Distrito
-            txtemailcontacto1.Text = EmailContacto1
-            txtemailcontacto2.Text = EmailContacto2
-            txttelfcontacto1.Text = TelefonoContacto1
-            txttelfcontacto2.Text = TelefonoContacto2
-            txtbanco1.Text = banco1
-            txtbanco2.Text = banco2
+            txtNombre.Text = nombre.Trim
+            txtRUC.Text = ruc.Trim
+            txtnmbrecontacto1.Text = contacto1.Trim
+            txtnmbrecontacto2.Text = contacto2.Trim
+            txtDireccion.Text = direccion.Trim
+            txtTelf.Text = telf.Trim
+            txtTelfSec.Text = telf_sec.Trim
+            txtEmail.Text = email.Trim
+            txtWeb.Text = web.Trim
+            txtDistrito.Text = Distrito.Trim
+            txtemailcontacto1.Text = EmailContacto1.Trim
+            txtemailcontacto2.Text = EmailContacto2.Trim
+            txttelfcontacto1.Text = TelefonoContacto1.Trim
+            txttelfcontacto2.Text = TelefonoContacto2.Trim
+            txtbanco1.Text = banco1.Trim
+            txtbanco2.Text = banco2.Trim
+
             If moneda1 = "USD" Then
                 rbDolar.Checked = True
             Else
                 rbSoles.Checked = True
             End If
+
             If moneda2 = "USD" Then
                 rbDolar1.Checked = True
             Else
                 rbSoles1.Checked = True
             End If
-            txtcuentabanco1.Text = cuentaCorriente1
-            txtcuentabanco2.Text = cuentaCorriente2
-            txtccibanco1.Text = CCI1
-            txtccibanco2.Text = CCI2
+
+            txtcuentabanco1.Text = cuentaCorriente1.Trim
+            txtcuentabanco2.Text = cuentaCorriente2.Trim
+            txtccibanco1.Text = CCI1.Trim
+            txtccibanco2.Text = CCI2.Trim
+
         Catch ex As Exception
             MsgBox("Detalle: " & ex.Message.ToString, MsgBoxStyle.Critical, "Error")
         End Try
@@ -97,8 +117,6 @@
             Dim ruc As String = txtRUC.Text
             Dim contacto1 As String = txtnmbrecontacto1.Text
             Dim contacto2 As String = txtnmbrecontacto2.Text
-            Dim banco As String = txtBanco.Text
-            Dim cuentaCorriente As String = txtCuenta.Text
             Dim direccion As String = txtDireccion.Text
             Dim telf As String = txtTelf.Text
             Dim telf_sec As String = txtTelfSec.Text
@@ -131,7 +149,7 @@
             If (hayErrores()) Then
                 MessageBox.Show("Hay campos obligatorios sin llenar.", "Respuesta", MessageBoxButtons.OK, MessageBoxIcon.Error)
             Else
-                Dim rpta As String = Cliente.modificar(id, nombre, ruc, contacto1, contacto2, banco, cuentaCorriente, direccion, telf, telf_sec, email, web, Distrito, emailcontacto1, emailcontacto2, telfcontacto1, telfcontacto2, Banco1, Banco2, moneda1, moneda2, CuentaCorriente1, CuentaCorriente2, CCI1, CCI2)
+                Dim rpta As String = Cliente.modificar(id, nombre, ruc, contacto1, contacto2, String.Empty, String.Empty, direccion, telf, telf_sec, email, web, Distrito, emailcontacto1, emailcontacto2, telfcontacto1, telfcontacto2, Banco1, Banco2, moneda1, moneda2, CuentaCorriente1, CuentaCorriente2, CCI1, CCI2)
                 MessageBox.Show(rpta, "Respuesta", MessageBoxButtons.OK, MessageBoxIcon.Information)
             End If
         Catch ex As Exception

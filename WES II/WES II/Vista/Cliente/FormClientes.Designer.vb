@@ -49,6 +49,27 @@ Partial Class FormClientes
         Me.btninfocomercial = New System.Windows.Forms.Button()
         Me.btnAceptar = New System.Windows.Forms.Button()
         Me.btnGuardar = New System.Windows.Forms.Button()
+        Me.pnlinfobanco = New System.Windows.Forms.Panel()
+        Me.GroupBox4 = New System.Windows.Forms.GroupBox()
+        Me.rbSoles1 = New System.Windows.Forms.RadioButton()
+        Me.rbDolar1 = New System.Windows.Forms.RadioButton()
+        Me.txtccibanco2 = New System.Windows.Forms.TextBox()
+        Me.Label23 = New System.Windows.Forms.Label()
+        Me.txtcuentabanco2 = New System.Windows.Forms.TextBox()
+        Me.txtbanco2 = New System.Windows.Forms.TextBox()
+        Me.Label24 = New System.Windows.Forms.Label()
+        Me.Label25 = New System.Windows.Forms.Label()
+        Me.Label30 = New System.Windows.Forms.Label()
+        Me.GroupBox5 = New System.Windows.Forms.GroupBox()
+        Me.rbSoles = New System.Windows.Forms.RadioButton()
+        Me.rbDolar = New System.Windows.Forms.RadioButton()
+        Me.txtccibanco1 = New System.Windows.Forms.TextBox()
+        Me.Label29 = New System.Windows.Forms.Label()
+        Me.txtcuentabanco1 = New System.Windows.Forms.TextBox()
+        Me.txtbanco1 = New System.Windows.Forms.TextBox()
+        Me.Label26 = New System.Windows.Forms.Label()
+        Me.Label27 = New System.Windows.Forms.Label()
+        Me.Label28 = New System.Windows.Forms.Label()
         Me.pnlContacto = New System.Windows.Forms.Panel()
         Me.GroupBox3 = New System.Windows.Forms.GroupBox()
         Me.txttelfcontacto2 = New System.Windows.Forms.TextBox()
@@ -79,23 +100,6 @@ Partial Class FormClientes
         Me.Label2 = New System.Windows.Forms.Label()
         Me.txtNombre = New System.Windows.Forms.TextBox()
         Me.Label5 = New System.Windows.Forms.Label()
-        Me.pnlinfobanco = New System.Windows.Forms.Panel()
-        Me.GroupBox4 = New System.Windows.Forms.GroupBox()
-        Me.txtccibanco2 = New System.Windows.Forms.TextBox()
-        Me.Label23 = New System.Windows.Forms.Label()
-        Me.txtcuentabanco2 = New System.Windows.Forms.TextBox()
-        Me.txtbanco2 = New System.Windows.Forms.TextBox()
-        Me.Label24 = New System.Windows.Forms.Label()
-        Me.Label25 = New System.Windows.Forms.Label()
-        Me.Label30 = New System.Windows.Forms.Label()
-        Me.GroupBox5 = New System.Windows.Forms.GroupBox()
-        Me.txtccibanco1 = New System.Windows.Forms.TextBox()
-        Me.Label29 = New System.Windows.Forms.Label()
-        Me.txtcuentabanco1 = New System.Windows.Forms.TextBox()
-        Me.txtbanco1 = New System.Windows.Forms.TextBox()
-        Me.Label26 = New System.Windows.Forms.Label()
-        Me.Label27 = New System.Windows.Forms.Label()
-        Me.Label28 = New System.Windows.Forms.Label()
         Me.TabPage2 = New System.Windows.Forms.TabPage()
         Me.btnEliminar = New System.Windows.Forms.Button()
         Me.btnModificar = New System.Windows.Forms.Button()
@@ -105,20 +109,16 @@ Partial Class FormClientes
         Me.ErrorCliente = New System.Windows.Forms.ErrorProvider(Me.components)
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.rbSoles = New System.Windows.Forms.RadioButton()
-        Me.rbDolar = New System.Windows.Forms.RadioButton()
-        Me.rbSoles1 = New System.Windows.Forms.RadioButton()
-        Me.rbDolar1 = New System.Windows.Forms.RadioButton()
         Me.TabControl1.SuspendLayout()
         Me.TabPage1.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
+        Me.pnlinfobanco.SuspendLayout()
+        Me.GroupBox4.SuspendLayout()
+        Me.GroupBox5.SuspendLayout()
         Me.pnlContacto.SuspendLayout()
         Me.GroupBox3.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.pnlBasico.SuspendLayout()
-        Me.pnlinfobanco.SuspendLayout()
-        Me.GroupBox4.SuspendLayout()
-        Me.GroupBox5.SuspendLayout()
         Me.TabPage2.SuspendLayout()
         CType(Me.dgvClientes, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ErrorCliente, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -388,6 +388,219 @@ Partial Class FormClientes
         Me.btnGuardar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
         Me.ToolTip1.SetToolTip(Me.btnGuardar, "Registrar nuevo cliente")
         Me.btnGuardar.UseVisualStyleBackColor = True
+        '
+        'pnlinfobanco
+        '
+        Me.pnlinfobanco.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.pnlinfobanco.Controls.Add(Me.GroupBox4)
+        Me.pnlinfobanco.Controls.Add(Me.GroupBox5)
+        Me.pnlinfobanco.Location = New System.Drawing.Point(16, 113)
+        Me.pnlinfobanco.Name = "pnlinfobanco"
+        Me.pnlinfobanco.Size = New System.Drawing.Size(587, 240)
+        Me.pnlinfobanco.TabIndex = 48
+        Me.pnlinfobanco.Visible = False
+        '
+        'GroupBox4
+        '
+        Me.GroupBox4.Controls.Add(Me.rbSoles1)
+        Me.GroupBox4.Controls.Add(Me.rbDolar1)
+        Me.GroupBox4.Controls.Add(Me.txtccibanco2)
+        Me.GroupBox4.Controls.Add(Me.Label23)
+        Me.GroupBox4.Controls.Add(Me.txtcuentabanco2)
+        Me.GroupBox4.Controls.Add(Me.txtbanco2)
+        Me.GroupBox4.Controls.Add(Me.Label24)
+        Me.GroupBox4.Controls.Add(Me.Label25)
+        Me.GroupBox4.Controls.Add(Me.Label30)
+        Me.GroupBox4.Location = New System.Drawing.Point(37, 120)
+        Me.GroupBox4.Name = "GroupBox4"
+        Me.GroupBox4.Size = New System.Drawing.Size(520, 100)
+        Me.GroupBox4.TabIndex = 1
+        Me.GroupBox4.TabStop = False
+        Me.GroupBox4.Text = "Banco 2"
+        '
+        'rbSoles1
+        '
+        Me.rbSoles1.AutoSize = True
+        Me.rbSoles1.Checked = True
+        Me.rbSoles1.Location = New System.Drawing.Point(390, 19)
+        Me.rbSoles1.Name = "rbSoles1"
+        Me.rbSoles1.Size = New System.Drawing.Size(40, 17)
+        Me.rbSoles1.TabIndex = 46
+        Me.rbSoles1.TabStop = True
+        Me.rbSoles1.Text = "S/."
+        Me.rbSoles1.UseVisualStyleBackColor = True
+        '
+        'rbDolar1
+        '
+        Me.rbDolar1.AutoSize = True
+        Me.rbDolar1.Location = New System.Drawing.Point(443, 19)
+        Me.rbDolar1.Name = "rbDolar1"
+        Me.rbDolar1.Size = New System.Drawing.Size(31, 17)
+        Me.rbDolar1.TabIndex = 47
+        Me.rbDolar1.Text = "$"
+        Me.rbDolar1.UseVisualStyleBackColor = True
+        '
+        'txtccibanco2
+        '
+        Me.txtccibanco2.Location = New System.Drawing.Point(128, 73)
+        Me.txtccibanco2.Name = "txtccibanco2"
+        Me.txtccibanco2.Size = New System.Drawing.Size(377, 20)
+        Me.txtccibanco2.TabIndex = 45
+        '
+        'Label23
+        '
+        Me.Label23.AutoSize = True
+        Me.Label23.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label23.Location = New System.Drawing.Point(76, 73)
+        Me.Label23.Name = "Label23"
+        Me.Label23.Size = New System.Drawing.Size(32, 15)
+        Me.Label23.TabIndex = 44
+        Me.Label23.Text = " CCI:"
+        '
+        'txtcuentabanco2
+        '
+        Me.txtcuentabanco2.Location = New System.Drawing.Point(127, 46)
+        Me.txtcuentabanco2.Name = "txtcuentabanco2"
+        Me.txtcuentabanco2.Size = New System.Drawing.Size(377, 20)
+        Me.txtcuentabanco2.TabIndex = 43
+        '
+        'txtbanco2
+        '
+        Me.txtbanco2.Location = New System.Drawing.Point(83, 16)
+        Me.txtbanco2.Name = "txtbanco2"
+        Me.txtbanco2.Size = New System.Drawing.Size(188, 20)
+        Me.txtbanco2.TabIndex = 41
+        '
+        'Label24
+        '
+        Me.Label24.AutoSize = True
+        Me.Label24.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label24.Location = New System.Drawing.Point(7, 46)
+        Me.Label24.Name = "Label24"
+        Me.Label24.Size = New System.Drawing.Size(102, 15)
+        Me.Label24.TabIndex = 40
+        Me.Label24.Text = "Cuenta Corriente:"
+        '
+        'Label25
+        '
+        Me.Label25.AutoSize = True
+        Me.Label25.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label25.Location = New System.Drawing.Point(304, 17)
+        Me.Label25.Name = "Label25"
+        Me.Label25.Size = New System.Drawing.Size(56, 15)
+        Me.Label25.TabIndex = 39
+        Me.Label25.Text = "Moneda:"
+        '
+        'Label30
+        '
+        Me.Label30.AutoSize = True
+        Me.Label30.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label30.Location = New System.Drawing.Point(6, 16)
+        Me.Label30.Name = "Label30"
+        Me.Label30.Size = New System.Drawing.Size(58, 15)
+        Me.Label30.TabIndex = 31
+        Me.Label30.Text = " Nombre:"
+        '
+        'GroupBox5
+        '
+        Me.GroupBox5.Controls.Add(Me.rbSoles)
+        Me.GroupBox5.Controls.Add(Me.rbDolar)
+        Me.GroupBox5.Controls.Add(Me.txtccibanco1)
+        Me.GroupBox5.Controls.Add(Me.Label29)
+        Me.GroupBox5.Controls.Add(Me.txtcuentabanco1)
+        Me.GroupBox5.Controls.Add(Me.txtbanco1)
+        Me.GroupBox5.Controls.Add(Me.Label26)
+        Me.GroupBox5.Controls.Add(Me.Label27)
+        Me.GroupBox5.Controls.Add(Me.Label28)
+        Me.GroupBox5.Location = New System.Drawing.Point(37, 14)
+        Me.GroupBox5.Name = "GroupBox5"
+        Me.GroupBox5.Size = New System.Drawing.Size(520, 100)
+        Me.GroupBox5.TabIndex = 0
+        Me.GroupBox5.TabStop = False
+        Me.GroupBox5.Text = "Banco 1"
+        '
+        'rbSoles
+        '
+        Me.rbSoles.AutoSize = True
+        Me.rbSoles.Checked = True
+        Me.rbSoles.Location = New System.Drawing.Point(390, 17)
+        Me.rbSoles.Name = "rbSoles"
+        Me.rbSoles.Size = New System.Drawing.Size(40, 17)
+        Me.rbSoles.TabIndex = 46
+        Me.rbSoles.TabStop = True
+        Me.rbSoles.Text = "S/."
+        Me.rbSoles.UseVisualStyleBackColor = True
+        '
+        'rbDolar
+        '
+        Me.rbDolar.AutoSize = True
+        Me.rbDolar.Location = New System.Drawing.Point(443, 17)
+        Me.rbDolar.Name = "rbDolar"
+        Me.rbDolar.Size = New System.Drawing.Size(31, 17)
+        Me.rbDolar.TabIndex = 47
+        Me.rbDolar.Text = "$"
+        Me.rbDolar.UseVisualStyleBackColor = True
+        '
+        'txtccibanco1
+        '
+        Me.txtccibanco1.Location = New System.Drawing.Point(128, 73)
+        Me.txtccibanco1.Name = "txtccibanco1"
+        Me.txtccibanco1.Size = New System.Drawing.Size(377, 20)
+        Me.txtccibanco1.TabIndex = 45
+        '
+        'Label29
+        '
+        Me.Label29.AutoSize = True
+        Me.Label29.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label29.Location = New System.Drawing.Point(76, 73)
+        Me.Label29.Name = "Label29"
+        Me.Label29.Size = New System.Drawing.Size(29, 15)
+        Me.Label29.TabIndex = 44
+        Me.Label29.Text = "CCI:"
+        '
+        'txtcuentabanco1
+        '
+        Me.txtcuentabanco1.Location = New System.Drawing.Point(127, 46)
+        Me.txtcuentabanco1.Name = "txtcuentabanco1"
+        Me.txtcuentabanco1.Size = New System.Drawing.Size(377, 20)
+        Me.txtcuentabanco1.TabIndex = 43
+        '
+        'txtbanco1
+        '
+        Me.txtbanco1.Location = New System.Drawing.Point(83, 16)
+        Me.txtbanco1.Name = "txtbanco1"
+        Me.txtbanco1.Size = New System.Drawing.Size(188, 20)
+        Me.txtbanco1.TabIndex = 41
+        '
+        'Label26
+        '
+        Me.Label26.AutoSize = True
+        Me.Label26.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label26.Location = New System.Drawing.Point(7, 46)
+        Me.Label26.Name = "Label26"
+        Me.Label26.Size = New System.Drawing.Size(102, 15)
+        Me.Label26.TabIndex = 40
+        Me.Label26.Text = "Cuenta Corriente:"
+        '
+        'Label27
+        '
+        Me.Label27.AutoSize = True
+        Me.Label27.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label27.Location = New System.Drawing.Point(304, 17)
+        Me.Label27.Name = "Label27"
+        Me.Label27.Size = New System.Drawing.Size(56, 15)
+        Me.Label27.TabIndex = 39
+        Me.Label27.Text = "Moneda:"
+        '
+        'Label28
+        '
+        Me.Label28.AutoSize = True
+        Me.Label28.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label28.Location = New System.Drawing.Point(6, 16)
+        Me.Label28.Name = "Label28"
+        Me.Label28.Size = New System.Drawing.Size(55, 15)
+        Me.Label28.TabIndex = 31
+        Me.Label28.Text = "Nombre:"
         '
         'pnlContacto
         '
@@ -676,175 +889,6 @@ Partial Class FormClientes
         Me.Label5.TabIndex = 30
         Me.Label5.Text = "(*) Nombre:"
         '
-        'pnlinfobanco
-        '
-        Me.pnlinfobanco.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.pnlinfobanco.Controls.Add(Me.GroupBox4)
-        Me.pnlinfobanco.Controls.Add(Me.GroupBox5)
-        Me.pnlinfobanco.Location = New System.Drawing.Point(16, 113)
-        Me.pnlinfobanco.Name = "pnlinfobanco"
-        Me.pnlinfobanco.Size = New System.Drawing.Size(587, 240)
-        Me.pnlinfobanco.TabIndex = 48
-        Me.pnlinfobanco.Visible = False
-        '
-        'GroupBox4
-        '
-        Me.GroupBox4.Controls.Add(Me.rbSoles1)
-        Me.GroupBox4.Controls.Add(Me.rbDolar1)
-        Me.GroupBox4.Controls.Add(Me.txtccibanco2)
-        Me.GroupBox4.Controls.Add(Me.Label23)
-        Me.GroupBox4.Controls.Add(Me.txtcuentabanco2)
-        Me.GroupBox4.Controls.Add(Me.txtbanco2)
-        Me.GroupBox4.Controls.Add(Me.Label24)
-        Me.GroupBox4.Controls.Add(Me.Label25)
-        Me.GroupBox4.Controls.Add(Me.Label30)
-        Me.GroupBox4.Location = New System.Drawing.Point(37, 120)
-        Me.GroupBox4.Name = "GroupBox4"
-        Me.GroupBox4.Size = New System.Drawing.Size(520, 100)
-        Me.GroupBox4.TabIndex = 1
-        Me.GroupBox4.TabStop = False
-        Me.GroupBox4.Text = "Banco 2"
-        '
-        'txtccibanco2
-        '
-        Me.txtccibanco2.Location = New System.Drawing.Point(128, 73)
-        Me.txtccibanco2.Name = "txtccibanco2"
-        Me.txtccibanco2.Size = New System.Drawing.Size(377, 20)
-        Me.txtccibanco2.TabIndex = 45
-        '
-        'Label23
-        '
-        Me.Label23.AutoSize = True
-        Me.Label23.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label23.Location = New System.Drawing.Point(76, 73)
-        Me.Label23.Name = "Label23"
-        Me.Label23.Size = New System.Drawing.Size(32, 15)
-        Me.Label23.TabIndex = 44
-        Me.Label23.Text = " CCI:"
-        '
-        'txtcuentabanco2
-        '
-        Me.txtcuentabanco2.Location = New System.Drawing.Point(127, 46)
-        Me.txtcuentabanco2.Name = "txtcuentabanco2"
-        Me.txtcuentabanco2.Size = New System.Drawing.Size(377, 20)
-        Me.txtcuentabanco2.TabIndex = 43
-        '
-        'txtbanco2
-        '
-        Me.txtbanco2.Location = New System.Drawing.Point(83, 16)
-        Me.txtbanco2.Name = "txtbanco2"
-        Me.txtbanco2.Size = New System.Drawing.Size(188, 20)
-        Me.txtbanco2.TabIndex = 41
-        '
-        'Label24
-        '
-        Me.Label24.AutoSize = True
-        Me.Label24.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label24.Location = New System.Drawing.Point(7, 46)
-        Me.Label24.Name = "Label24"
-        Me.Label24.Size = New System.Drawing.Size(102, 15)
-        Me.Label24.TabIndex = 40
-        Me.Label24.Text = "Cuenta Corriente:"
-        '
-        'Label25
-        '
-        Me.Label25.AutoSize = True
-        Me.Label25.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label25.Location = New System.Drawing.Point(304, 17)
-        Me.Label25.Name = "Label25"
-        Me.Label25.Size = New System.Drawing.Size(56, 15)
-        Me.Label25.TabIndex = 39
-        Me.Label25.Text = "Moneda:"
-        '
-        'Label30
-        '
-        Me.Label30.AutoSize = True
-        Me.Label30.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label30.Location = New System.Drawing.Point(6, 16)
-        Me.Label30.Name = "Label30"
-        Me.Label30.Size = New System.Drawing.Size(58, 15)
-        Me.Label30.TabIndex = 31
-        Me.Label30.Text = " Nombre:"
-        '
-        'GroupBox5
-        '
-        Me.GroupBox5.Controls.Add(Me.rbSoles)
-        Me.GroupBox5.Controls.Add(Me.rbDolar)
-        Me.GroupBox5.Controls.Add(Me.txtccibanco1)
-        Me.GroupBox5.Controls.Add(Me.Label29)
-        Me.GroupBox5.Controls.Add(Me.txtcuentabanco1)
-        Me.GroupBox5.Controls.Add(Me.txtbanco1)
-        Me.GroupBox5.Controls.Add(Me.Label26)
-        Me.GroupBox5.Controls.Add(Me.Label27)
-        Me.GroupBox5.Controls.Add(Me.Label28)
-        Me.GroupBox5.Location = New System.Drawing.Point(37, 14)
-        Me.GroupBox5.Name = "GroupBox5"
-        Me.GroupBox5.Size = New System.Drawing.Size(520, 100)
-        Me.GroupBox5.TabIndex = 0
-        Me.GroupBox5.TabStop = False
-        Me.GroupBox5.Text = "Banco 1"
-        '
-        'txtccibanco1
-        '
-        Me.txtccibanco1.Location = New System.Drawing.Point(128, 73)
-        Me.txtccibanco1.Name = "txtccibanco1"
-        Me.txtccibanco1.Size = New System.Drawing.Size(377, 20)
-        Me.txtccibanco1.TabIndex = 45
-        '
-        'Label29
-        '
-        Me.Label29.AutoSize = True
-        Me.Label29.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label29.Location = New System.Drawing.Point(76, 73)
-        Me.Label29.Name = "Label29"
-        Me.Label29.Size = New System.Drawing.Size(29, 15)
-        Me.Label29.TabIndex = 44
-        Me.Label29.Text = "CCI:"
-        '
-        'txtcuentabanco1
-        '
-        Me.txtcuentabanco1.Location = New System.Drawing.Point(127, 46)
-        Me.txtcuentabanco1.Name = "txtcuentabanco1"
-        Me.txtcuentabanco1.Size = New System.Drawing.Size(377, 20)
-        Me.txtcuentabanco1.TabIndex = 43
-        '
-        'txtbanco1
-        '
-        Me.txtbanco1.Location = New System.Drawing.Point(83, 16)
-        Me.txtbanco1.Name = "txtbanco1"
-        Me.txtbanco1.Size = New System.Drawing.Size(188, 20)
-        Me.txtbanco1.TabIndex = 41
-        '
-        'Label26
-        '
-        Me.Label26.AutoSize = True
-        Me.Label26.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label26.Location = New System.Drawing.Point(7, 46)
-        Me.Label26.Name = "Label26"
-        Me.Label26.Size = New System.Drawing.Size(102, 15)
-        Me.Label26.TabIndex = 40
-        Me.Label26.Text = "Cuenta Corriente:"
-        '
-        'Label27
-        '
-        Me.Label27.AutoSize = True
-        Me.Label27.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label27.Location = New System.Drawing.Point(304, 17)
-        Me.Label27.Name = "Label27"
-        Me.Label27.Size = New System.Drawing.Size(56, 15)
-        Me.Label27.TabIndex = 39
-        Me.Label27.Text = "Moneda:"
-        '
-        'Label28
-        '
-        Me.Label28.AutoSize = True
-        Me.Label28.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label28.Location = New System.Drawing.Point(6, 16)
-        Me.Label28.Name = "Label28"
-        Me.Label28.Size = New System.Drawing.Size(55, 15)
-        Me.Label28.TabIndex = 31
-        Me.Label28.Text = "Nombre:"
-        '
         'TabPage2
         '
         Me.TabPage2.Controls.Add(Me.btnEliminar)
@@ -888,8 +932,7 @@ Partial Class FormClientes
         'dgvClientes
         '
         Me.dgvClientes.AllowUserToAddRows = False
-        Me.dgvClientes.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells
-        Me.dgvClientes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgvClientes.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells
         Me.dgvClientes.Location = New System.Drawing.Point(22, 32)
         Me.dgvClientes.Name = "dgvClientes"
         Me.dgvClientes.ReadOnly = True
@@ -931,50 +974,6 @@ Partial Class FormClientes
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Registro de clientes"
         '
-        'rbSoles
-        '
-        Me.rbSoles.AutoSize = True
-        Me.rbSoles.Checked = True
-        Me.rbSoles.Location = New System.Drawing.Point(390, 17)
-        Me.rbSoles.Name = "rbSoles"
-        Me.rbSoles.Size = New System.Drawing.Size(40, 17)
-        Me.rbSoles.TabIndex = 46
-        Me.rbSoles.TabStop = True
-        Me.rbSoles.Text = "S/."
-        Me.rbSoles.UseVisualStyleBackColor = True
-        '
-        'rbDolar
-        '
-        Me.rbDolar.AutoSize = True
-        Me.rbDolar.Location = New System.Drawing.Point(443, 17)
-        Me.rbDolar.Name = "rbDolar"
-        Me.rbDolar.Size = New System.Drawing.Size(31, 17)
-        Me.rbDolar.TabIndex = 47
-        Me.rbDolar.Text = "$"
-        Me.rbDolar.UseVisualStyleBackColor = True
-        '
-        'rbSoles1
-        '
-        Me.rbSoles1.AutoSize = True
-        Me.rbSoles1.Checked = True
-        Me.rbSoles1.Location = New System.Drawing.Point(390, 19)
-        Me.rbSoles1.Name = "rbSoles1"
-        Me.rbSoles1.Size = New System.Drawing.Size(40, 17)
-        Me.rbSoles1.TabIndex = 46
-        Me.rbSoles1.TabStop = True
-        Me.rbSoles1.Text = "S/."
-        Me.rbSoles1.UseVisualStyleBackColor = True
-        '
-        'rbDolar1
-        '
-        Me.rbDolar1.AutoSize = True
-        Me.rbDolar1.Location = New System.Drawing.Point(443, 19)
-        Me.rbDolar1.Name = "rbDolar1"
-        Me.rbDolar1.Size = New System.Drawing.Size(31, 17)
-        Me.rbDolar1.TabIndex = 47
-        Me.rbDolar1.Text = "$"
-        Me.rbDolar1.UseVisualStyleBackColor = True
-        '
         'FormClientes
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -984,12 +983,18 @@ Partial Class FormClientes
         Me.Controls.Add(Me.Panel1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "FormClientes"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "GDA - Clientes"
         Me.TabControl1.ResumeLayout(False)
         Me.TabPage1.ResumeLayout(False)
         Me.TabPage1.PerformLayout()
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
+        Me.pnlinfobanco.ResumeLayout(False)
+        Me.GroupBox4.ResumeLayout(False)
+        Me.GroupBox4.PerformLayout()
+        Me.GroupBox5.ResumeLayout(False)
+        Me.GroupBox5.PerformLayout()
         Me.pnlContacto.ResumeLayout(False)
         Me.GroupBox3.ResumeLayout(False)
         Me.GroupBox3.PerformLayout()
@@ -997,11 +1002,6 @@ Partial Class FormClientes
         Me.GroupBox2.PerformLayout()
         Me.pnlBasico.ResumeLayout(False)
         Me.pnlBasico.PerformLayout()
-        Me.pnlinfobanco.ResumeLayout(False)
-        Me.GroupBox4.ResumeLayout(False)
-        Me.GroupBox4.PerformLayout()
-        Me.GroupBox5.ResumeLayout(False)
-        Me.GroupBox5.PerformLayout()
         Me.TabPage2.ResumeLayout(False)
         Me.TabPage2.PerformLayout()
         CType(Me.dgvClientes, System.ComponentModel.ISupportInitialize).EndInit()

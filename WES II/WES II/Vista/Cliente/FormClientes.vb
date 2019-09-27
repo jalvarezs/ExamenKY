@@ -118,29 +118,30 @@
                 row = dgvClientes.CurrentRow.Index
             End If
 
-            Dim id As String = dgvClientes.Item(0, row).Value.ToString
-            Dim nombre As String = dgvClientes.Item(1, row).Value.ToString
-            Dim ruc As String = dgvClientes.Item(2, row).Value.ToString
-            Dim Distrito As String = dgvClientes.Item(3, row).Value.ToString
-            Dim direccion As String = dgvClientes.Item(4, row).Value.ToString
-            Dim telf As String = dgvClientes.Item(5, row).Value.ToString
-            Dim telf_sec As String = dgvClientes.Item(6, row).Value.ToString
-            Dim email As String = dgvClientes.Item(7, row).Value.ToString
-            Dim web As String = dgvClientes.Item(8, row).Value.ToString
-            Dim contacto1 As String = dgvClientes.Item(9, row).Value.ToString
-            Dim EmailContacto1 As String = dgvClientes.Item(10, row).Value.ToString
-            Dim TelefonoContacto1 As String = dgvClientes.Item(11, row).Value.ToString
-            Dim contacto2 As String = dgvClientes.Item(12, row).Value.ToString
-            Dim EmailContacto2 As String = dgvClientes.Item(13, row).Value.ToString
-            Dim TelefonoContacto2 As String = dgvClientes.Item(14, row).Value.ToString
-            Dim banco1 As String = dgvClientes.Item(15, row).Value.ToString
-            Dim moneda1 As String = dgvClientes.Item(16, row).Value.ToString
-            Dim cuentaCorriente1 As String = dgvClientes.Item(17, row).Value.ToString
-            Dim CCI1 As String = dgvClientes.Item(18, row).Value.ToString
-            Dim banco2 As String = dgvClientes.Item(19, row).Value.ToString
-            Dim moneda2 As String = dgvClientes.Item(20, row).Value.ToString
-            Dim cuentaCorriente2 As String = dgvClientes.Item(21, row).Value.ToString
-            Dim CCI2 As String = dgvClientes.Item(22, row).Value.ToString
+
+            Dim id As String = UtilConvertidor.GetStringVal(dgvClientes.Item(0, row).Value)
+            Dim nombre As String = UtilConvertidor.GetStringVal(dgvClientes.Item(1, row).Value)
+            Dim ruc As String = UtilConvertidor.GetStringVal(dgvClientes.Item(2, row).Value)
+            Dim Distrito As String = UtilConvertidor.GetStringVal(dgvClientes.Item(3, row).Value)
+            Dim direccion As String = UtilConvertidor.GetStringVal(dgvClientes.Item(4, row).Value)
+            Dim telf As String = UtilConvertidor.GetStringVal(dgvClientes.Item(5, row).Value)
+            Dim telf_sec As String = UtilConvertidor.GetStringVal(dgvClientes.Item(6, row).Value)
+            Dim email As String = UtilConvertidor.GetStringVal(dgvClientes.Item(7, row).Value)
+            Dim web As String = UtilConvertidor.GetStringVal(dgvClientes.Item(8, row).Value)
+            Dim contacto1 As String = UtilConvertidor.GetStringVal(dgvClientes.Item(9, row).Value)
+            Dim EmailContacto1 As String = UtilConvertidor.GetStringVal(dgvClientes.Item(10, row).Value)
+            Dim TelefonoContacto1 As String = UtilConvertidor.GetStringVal(dgvClientes.Item(11, row).Value)
+            Dim contacto2 As String = UtilConvertidor.GetStringVal(dgvClientes.Item(12, row).Value)
+            Dim EmailContacto2 As String = UtilConvertidor.GetStringVal(dgvClientes.Item(13, row).Value)
+            Dim TelefonoContacto2 As String = UtilConvertidor.GetStringVal(dgvClientes.Item(14, row).Value)
+            Dim banco1 As String = UtilConvertidor.GetStringVal(dgvClientes.Item(15, row).Value)
+            Dim moneda1 As String = UtilConvertidor.GetStringVal(dgvClientes.Item(16, row).Value)
+            Dim cuentaCorriente1 As String = UtilConvertidor.GetStringVal(dgvClientes.Item(17, row).Value)
+            Dim CCI1 As String = UtilConvertidor.GetStringVal(dgvClientes.Item(18, row).Value)
+            Dim banco2 As String = UtilConvertidor.GetStringVal(dgvClientes.Item(19, row).Value)
+            Dim moneda2 As String = UtilConvertidor.GetStringVal(dgvClientes.Item(20, row).Value)
+            Dim cuentaCorriente2 As String = UtilConvertidor.GetStringVal(dgvClientes.Item(21, row).Value)
+            Dim CCI2 As String = UtilConvertidor.GetStringVal(dgvClientes.Item(22, row).Value)
 
             Dim formModificar As New ModifCliente(id, nombre, ruc, Distrito, direccion, telf, telf_sec, email, web, contacto1, EmailContacto1, TelefonoContacto1, contacto2, EmailContacto2, TelefonoContacto2, banco1, moneda1, cuentaCorriente1, CCI1, banco2, moneda2, cuentaCorriente2, CCI2)
             formModificar.ShowDialog()

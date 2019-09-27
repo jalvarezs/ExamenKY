@@ -45,10 +45,9 @@
 
             sinAceptar = False
 
-            idCliente = dgvClientes.Item(0, row).Value.ToString()
-            txtCliente.Text = dgvClientes.Item(1, row).Value.ToString()
-
-            ruc2.Text = dgvClientes.Item(2, row).Value.ToString()
+            idCliente = UtilConvertidor.GetStringVal(dgvClientes.Item(0, row).Value)
+            txtCliente.Text = UtilConvertidor.GetStringVal(dgvClientes.Item(1, row).Value)
+            ruc2.Text = UtilConvertidor.GetStringVal(dgvClientes.Item(2, row).Value)
 
 
             Me.Close()

@@ -94,7 +94,8 @@ Partial Class ExamCliente
         '
         'dgvClientes
         '
-        Me.dgvClientes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgvClientes.AllowUserToAddRows = False
+        Me.dgvClientes.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells
         Me.dgvClientes.Location = New System.Drawing.Point(51, 143)
         Me.dgvClientes.Name = "dgvClientes"
         Me.dgvClientes.Size = New System.Drawing.Size(496, 216)

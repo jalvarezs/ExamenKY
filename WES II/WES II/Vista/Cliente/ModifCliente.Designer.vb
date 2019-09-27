@@ -31,25 +31,12 @@ Partial Class ModifCliente
         Me.Label1 = New System.Windows.Forms.Label()
         Me.ErrorCliente = New System.Windows.Forms.ErrorProvider(Me.components)
         Me.ErrorModifCliente = New System.Windows.Forms.ErrorProvider(Me.components)
-        Me.txtCuenta = New System.Windows.Forms.TextBox()
-        Me.Label12 = New System.Windows.Forms.Label()
-        Me.txtBanco = New System.Windows.Forms.TextBox()
-        Me.Label11 = New System.Windows.Forms.Label()
-        Me.txtContacto2 = New System.Windows.Forms.TextBox()
-        Me.Label10 = New System.Windows.Forms.Label()
-        Me.txtContacto1 = New System.Windows.Forms.TextBox()
-        Me.Label9 = New System.Windows.Forms.Label()
-        Me.Label8 = New System.Windows.Forms.Label()
         Me.txtWeb = New System.Windows.Forms.TextBox()
         Me.txtEmail = New System.Windows.Forms.TextBox()
-        Me.Label7 = New System.Windows.Forms.Label()
-        Me.Label6 = New System.Windows.Forms.Label()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.Label5 = New System.Windows.Forms.Label()
         Me.pnlinfobanco = New System.Windows.Forms.Panel()
         Me.GroupBox4 = New System.Windows.Forms.GroupBox()
+        Me.rbSoles1 = New System.Windows.Forms.RadioButton()
+        Me.rbDolar1 = New System.Windows.Forms.RadioButton()
         Me.txtccibanco2 = New System.Windows.Forms.TextBox()
         Me.Label23 = New System.Windows.Forms.Label()
         Me.txtcuentabanco2 = New System.Windows.Forms.TextBox()
@@ -58,6 +45,8 @@ Partial Class ModifCliente
         Me.Label25 = New System.Windows.Forms.Label()
         Me.Label30 = New System.Windows.Forms.Label()
         Me.GroupBox5 = New System.Windows.Forms.GroupBox()
+        Me.rbSoles = New System.Windows.Forms.RadioButton()
+        Me.rbDolar = New System.Windows.Forms.RadioButton()
         Me.txtccibanco1 = New System.Windows.Forms.TextBox()
         Me.Label29 = New System.Windows.Forms.Label()
         Me.txtcuentabanco1 = New System.Windows.Forms.TextBox()
@@ -90,7 +79,6 @@ Partial Class ModifCliente
         Me.Label34 = New System.Windows.Forms.Label()
         Me.txtTelf = New System.Windows.Forms.TextBox()
         Me.Label35 = New System.Windows.Forms.Label()
-        Me.TextBox7 = New System.Windows.Forms.TextBox()
         Me.Label36 = New System.Windows.Forms.Label()
         Me.txtTelfSec = New System.Windows.Forms.TextBox()
         Me.Label37 = New System.Windows.Forms.Label()
@@ -98,10 +86,11 @@ Partial Class ModifCliente
         Me.Label38 = New System.Windows.Forms.Label()
         Me.txtNombre = New System.Windows.Forms.TextBox()
         Me.Label39 = New System.Windows.Forms.Label()
-        Me.rbSoles = New System.Windows.Forms.RadioButton()
-        Me.rbDolar = New System.Windows.Forms.RadioButton()
-        Me.rbSoles1 = New System.Windows.Forms.RadioButton()
-        Me.rbDolar1 = New System.Windows.Forms.RadioButton()
+        Me.TabControl1 = New System.Windows.Forms.TabControl()
+        Me.TabPage1 = New System.Windows.Forms.TabPage()
+        Me.TabPage2 = New System.Windows.Forms.TabPage()
+        Me.TabPage3 = New System.Windows.Forms.TabPage()
+        Me.Label2 = New System.Windows.Forms.Label()
         Me.Panel1.SuspendLayout()
         CType(Me.ErrorCliente, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ErrorModifCliente, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -112,13 +101,17 @@ Partial Class ModifCliente
         Me.GroupBox3.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.pnlBasico.SuspendLayout()
+        Me.TabControl1.SuspendLayout()
+        Me.TabPage1.SuspendLayout()
+        Me.TabPage2.SuspendLayout()
+        Me.TabPage3.SuspendLayout()
         Me.SuspendLayout()
         '
         'btnAceptar
         '
         Me.btnAceptar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.btnAceptar.Image = Global.WES_II.My.Resources.Resources.Tick_32x32
-        Me.btnAceptar.Location = New System.Drawing.Point(323, 341)
+        Me.btnAceptar.Location = New System.Drawing.Point(404, 382)
         Me.btnAceptar.Name = "btnAceptar"
         Me.btnAceptar.Size = New System.Drawing.Size(110, 47)
         Me.btnAceptar.TabIndex = 9
@@ -131,7 +124,7 @@ Partial Class ModifCliente
         '
         Me.btnGuardar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.btnGuardar.Image = Global.WES_II.My.Resources.Resources.Save_32x32
-        Me.btnGuardar.Location = New System.Drawing.Point(195, 341)
+        Me.btnGuardar.Location = New System.Drawing.Point(268, 382)
         Me.btnGuardar.Name = "btnGuardar"
         Me.btnGuardar.Size = New System.Drawing.Size(110, 47)
         Me.btnGuardar.TabIndex = 8
@@ -147,7 +140,7 @@ Partial Class ModifCliente
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(766, 75)
+        Me.Panel1.Size = New System.Drawing.Size(812, 75)
         Me.Panel1.TabIndex = 0
         '
         'Label1
@@ -157,9 +150,9 @@ Partial Class ModifCliente
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.Location = New System.Drawing.Point(22, 24)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(169, 25)
+        Me.Label1.Size = New System.Drawing.Size(173, 25)
         Me.Label1.TabIndex = 0
-        Me.Label1.Text = "Modificar cliente"
+        Me.Label1.Text = "Modificar Cliente"
         '
         'ErrorCliente
         '
@@ -169,185 +162,29 @@ Partial Class ModifCliente
         '
         Me.ErrorModifCliente.ContainerControl = Me
         '
-        'txtCuenta
-        '
-        Me.txtCuenta.Location = New System.Drawing.Point(96, 395)
-        Me.txtCuenta.Name = "txtCuenta"
-        Me.txtCuenta.Size = New System.Drawing.Size(116, 20)
-        Me.txtCuenta.TabIndex = 51
-        Me.txtCuenta.Visible = False
-        '
-        'Label12
-        '
-        Me.Label12.AutoSize = True
-        Me.Label12.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label12.Location = New System.Drawing.Point(19, 400)
-        Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(100, 15)
-        Me.Label12.TabIndex = 50
-        Me.Label12.Text = "Cuenta corriente:"
-        Me.Label12.Visible = False
-        '
-        'txtBanco
-        '
-        Me.txtBanco.Location = New System.Drawing.Point(105, 400)
-        Me.txtBanco.Name = "txtBanco"
-        Me.txtBanco.Size = New System.Drawing.Size(116, 20)
-        Me.txtBanco.TabIndex = 49
-        Me.txtBanco.Visible = False
-        '
-        'Label11
-        '
-        Me.Label11.AutoSize = True
-        Me.Label11.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label11.Location = New System.Drawing.Point(74, 405)
-        Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(45, 15)
-        Me.Label11.TabIndex = 48
-        Me.Label11.Text = "Banco:"
-        Me.Label11.Visible = False
-        '
-        'txtContacto2
-        '
-        Me.txtContacto2.Location = New System.Drawing.Point(96, 394)
-        Me.txtContacto2.Name = "txtContacto2"
-        Me.txtContacto2.Size = New System.Drawing.Size(116, 20)
-        Me.txtContacto2.TabIndex = 47
-        Me.txtContacto2.Visible = False
-        '
-        'Label10
-        '
-        Me.Label10.AutoSize = True
-        Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label10.Location = New System.Drawing.Point(26, 399)
-        Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(68, 15)
-        Me.Label10.TabIndex = 46
-        Me.Label10.Text = "Contacto 2:"
-        Me.Label10.Visible = False
-        '
-        'txtContacto1
-        '
-        Me.txtContacto1.Location = New System.Drawing.Point(148, 411)
-        Me.txtContacto1.Name = "txtContacto1"
-        Me.txtContacto1.Size = New System.Drawing.Size(116, 20)
-        Me.txtContacto1.TabIndex = 45
-        Me.txtContacto1.Visible = False
-        '
-        'Label9
-        '
-        Me.Label9.AutoSize = True
-        Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label9.Location = New System.Drawing.Point(61, 415)
-        Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(68, 15)
-        Me.Label9.TabIndex = 44
-        Me.Label9.Text = "Contacto 1:"
-        Me.Label9.Visible = False
-        '
-        'Label8
-        '
-        Me.Label8.AutoSize = True
-        Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.Location = New System.Drawing.Point(61, 400)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(36, 15)
-        Me.Label8.TabIndex = 42
-        Me.Label8.Text = "RUC:"
-        Me.Label8.Visible = False
-        '
         'txtWeb
         '
-        Me.txtWeb.Location = New System.Drawing.Point(100, 405)
+        Me.txtWeb.Location = New System.Drawing.Point(134, 189)
         Me.txtWeb.Name = "txtWeb"
-        Me.txtWeb.Size = New System.Drawing.Size(190, 20)
+        Me.txtWeb.Size = New System.Drawing.Size(212, 20)
         Me.txtWeb.TabIndex = 41
-        Me.txtWeb.Visible = False
         '
         'txtEmail
         '
-        Me.txtEmail.Location = New System.Drawing.Point(105, 414)
+        Me.txtEmail.Location = New System.Drawing.Point(134, 163)
         Me.txtEmail.Name = "txtEmail"
-        Me.txtEmail.Size = New System.Drawing.Size(116, 20)
+        Me.txtEmail.Size = New System.Drawing.Size(212, 20)
         Me.txtEmail.TabIndex = 40
-        Me.txtEmail.Visible = False
-        '
-        'Label7
-        '
-        Me.Label7.AutoSize = True
-        Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(84, 420)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(35, 15)
-        Me.Label7.TabIndex = 39
-        Me.Label7.Text = "Web:"
-        Me.Label7.Visible = False
-        '
-        'Label6
-        '
-        Me.Label6.AutoSize = True
-        Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(68, 423)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(46, 15)
-        Me.Label6.TabIndex = 38
-        Me.Label6.Text = "E-mail:"
-        Me.Label6.Visible = False
-        '
-        'Label4
-        '
-        Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(30, 420)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(122, 15)
-        Me.Label4.TabIndex = 36
-        Me.Label4.Text = "Teléfono secundario:"
-        Me.Label4.Visible = False
-        '
-        'Label3
-        '
-        Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(55, 405)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(74, 15)
-        Me.Label3.TabIndex = 34
-        Me.Label3.Text = "(*) Teléfono:"
-        Me.Label3.Visible = False
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(68, 415)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(78, 15)
-        Me.Label2.TabIndex = 32
-        Me.Label2.Text = "(*) Dirección:"
-        Me.Label2.Visible = False
-        '
-        'Label5
-        '
-        Me.Label5.AutoSize = True
-        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(68, 399)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(71, 15)
-        Me.Label5.TabIndex = 30
-        Me.Label5.Text = "(*) Nombre:"
-        Me.Label5.Visible = False
         '
         'pnlinfobanco
         '
-        Me.pnlinfobanco.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.pnlinfobanco.Controls.Add(Me.GroupBox4)
         Me.pnlinfobanco.Controls.Add(Me.GroupBox5)
-        Me.pnlinfobanco.Location = New System.Drawing.Point(9, 89)
+        Me.pnlinfobanco.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.pnlinfobanco.Location = New System.Drawing.Point(0, 0)
         Me.pnlinfobanco.Name = "pnlinfobanco"
-        Me.pnlinfobanco.Size = New System.Drawing.Size(587, 240)
+        Me.pnlinfobanco.Size = New System.Drawing.Size(606, 243)
         Me.pnlinfobanco.TabIndex = 53
-        Me.pnlinfobanco.Visible = False
         '
         'GroupBox4
         '
@@ -366,6 +203,28 @@ Partial Class ModifCliente
         Me.GroupBox4.TabIndex = 1
         Me.GroupBox4.TabStop = False
         Me.GroupBox4.Text = "Banco 2"
+        '
+        'rbSoles1
+        '
+        Me.rbSoles1.AutoSize = True
+        Me.rbSoles1.Checked = True
+        Me.rbSoles1.Location = New System.Drawing.Point(402, 18)
+        Me.rbSoles1.Name = "rbSoles1"
+        Me.rbSoles1.Size = New System.Drawing.Size(40, 17)
+        Me.rbSoles1.TabIndex = 48
+        Me.rbSoles1.TabStop = True
+        Me.rbSoles1.Text = "S/."
+        Me.rbSoles1.UseVisualStyleBackColor = True
+        '
+        'rbDolar1
+        '
+        Me.rbDolar1.AutoSize = True
+        Me.rbDolar1.Location = New System.Drawing.Point(455, 18)
+        Me.rbDolar1.Name = "rbDolar1"
+        Me.rbDolar1.Size = New System.Drawing.Size(31, 17)
+        Me.rbDolar1.TabIndex = 49
+        Me.rbDolar1.Text = "$"
+        Me.rbDolar1.UseVisualStyleBackColor = True
         '
         'txtccibanco2
         '
@@ -446,6 +305,28 @@ Partial Class ModifCliente
         Me.GroupBox5.TabStop = False
         Me.GroupBox5.Text = "Banco 1"
         '
+        'rbSoles
+        '
+        Me.rbSoles.AutoSize = True
+        Me.rbSoles.Checked = True
+        Me.rbSoles.Location = New System.Drawing.Point(402, 18)
+        Me.rbSoles.Name = "rbSoles"
+        Me.rbSoles.Size = New System.Drawing.Size(40, 17)
+        Me.rbSoles.TabIndex = 48
+        Me.rbSoles.TabStop = True
+        Me.rbSoles.Text = "S/."
+        Me.rbSoles.UseVisualStyleBackColor = True
+        '
+        'rbDolar
+        '
+        Me.rbDolar.AutoSize = True
+        Me.rbDolar.Location = New System.Drawing.Point(455, 18)
+        Me.rbDolar.Name = "rbDolar"
+        Me.rbDolar.Size = New System.Drawing.Size(31, 17)
+        Me.rbDolar.TabIndex = 49
+        Me.rbDolar.Text = "$"
+        Me.rbDolar.UseVisualStyleBackColor = True
+        '
         'txtccibanco1
         '
         Me.txtccibanco1.Location = New System.Drawing.Point(128, 73)
@@ -509,14 +390,13 @@ Partial Class ModifCliente
         '
         'pnlContacto
         '
-        Me.pnlContacto.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.pnlContacto.Controls.Add(Me.GroupBox3)
         Me.pnlContacto.Controls.Add(Me.GroupBox2)
-        Me.pnlContacto.Location = New System.Drawing.Point(8, 90)
+        Me.pnlContacto.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.pnlContacto.Location = New System.Drawing.Point(3, 3)
         Me.pnlContacto.Name = "pnlContacto"
-        Me.pnlContacto.Size = New System.Drawing.Size(587, 240)
+        Me.pnlContacto.Size = New System.Drawing.Size(600, 237)
         Me.pnlContacto.TabIndex = 52
-        Me.pnlContacto.Visible = False
         '
         'GroupBox3
         '
@@ -652,7 +532,7 @@ Partial Class ModifCliente
         '
         'btninfobancos
         '
-        Me.btninfobancos.Location = New System.Drawing.Point(601, 242)
+        Me.btninfobancos.Location = New System.Drawing.Point(658, 279)
         Me.btninfobancos.Name = "btninfobancos"
         Me.btninfobancos.Size = New System.Drawing.Size(125, 66)
         Me.btninfobancos.TabIndex = 56
@@ -661,7 +541,7 @@ Partial Class ModifCliente
         '
         'btninfocontacto
         '
-        Me.btninfocontacto.Location = New System.Drawing.Point(601, 171)
+        Me.btninfocontacto.Location = New System.Drawing.Point(658, 208)
         Me.btninfocontacto.Name = "btninfocontacto"
         Me.btninfocontacto.Size = New System.Drawing.Size(125, 65)
         Me.btninfocontacto.TabIndex = 55
@@ -670,7 +550,7 @@ Partial Class ModifCliente
         '
         'btninfocomercial
         '
-        Me.btninfocomercial.Location = New System.Drawing.Point(601, 100)
+        Me.btninfocomercial.Location = New System.Drawing.Point(658, 137)
         Me.btninfocomercial.Name = "btninfocomercial"
         Me.btninfocomercial.Size = New System.Drawing.Size(125, 66)
         Me.btninfocomercial.TabIndex = 54
@@ -679,31 +559,33 @@ Partial Class ModifCliente
         '
         'pnlBasico
         '
-        Me.pnlBasico.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.pnlBasico.Controls.Add(Me.Label2)
         Me.pnlBasico.Controls.Add(Me.Label31)
         Me.pnlBasico.Controls.Add(Me.txtDistrito)
         Me.pnlBasico.Controls.Add(Me.txtRUC)
         Me.pnlBasico.Controls.Add(Me.Label34)
         Me.pnlBasico.Controls.Add(Me.txtTelf)
         Me.pnlBasico.Controls.Add(Me.Label35)
-        Me.pnlBasico.Controls.Add(Me.TextBox7)
         Me.pnlBasico.Controls.Add(Me.Label36)
+        Me.pnlBasico.Controls.Add(Me.txtEmail)
+        Me.pnlBasico.Controls.Add(Me.txtWeb)
         Me.pnlBasico.Controls.Add(Me.txtTelfSec)
         Me.pnlBasico.Controls.Add(Me.Label37)
         Me.pnlBasico.Controls.Add(Me.txtDireccion)
         Me.pnlBasico.Controls.Add(Me.Label38)
         Me.pnlBasico.Controls.Add(Me.txtNombre)
         Me.pnlBasico.Controls.Add(Me.Label39)
-        Me.pnlBasico.Location = New System.Drawing.Point(9, 90)
+        Me.pnlBasico.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.pnlBasico.Location = New System.Drawing.Point(3, 3)
         Me.pnlBasico.Name = "pnlBasico"
-        Me.pnlBasico.Size = New System.Drawing.Size(587, 240)
+        Me.pnlBasico.Size = New System.Drawing.Size(600, 237)
         Me.pnlBasico.TabIndex = 57
         '
         'Label31
         '
         Me.Label31.AutoSize = True
         Me.Label31.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label31.Location = New System.Drawing.Point(377, 161)
+        Me.Label31.Location = New System.Drawing.Point(373, 163)
         Me.Label31.Name = "Label31"
         Me.Label31.Size = New System.Drawing.Size(48, 15)
         Me.Label31.TabIndex = 45
@@ -728,7 +610,7 @@ Partial Class ModifCliente
         '
         Me.Label34.AutoSize = True
         Me.Label34.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label34.Location = New System.Drawing.Point(389, 55)
+        Me.Label34.Location = New System.Drawing.Point(385, 55)
         Me.Label34.Name = "Label34"
         Me.Label34.Size = New System.Drawing.Size(36, 15)
         Me.Label34.TabIndex = 42
@@ -745,28 +627,21 @@ Partial Class ModifCliente
         '
         Me.Label35.AutoSize = True
         Me.Label35.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label35.Location = New System.Drawing.Point(58, 84)
+        Me.Label35.Location = New System.Drawing.Point(44, 85)
         Me.Label35.Name = "Label35"
         Me.Label35.Size = New System.Drawing.Size(74, 15)
         Me.Label35.TabIndex = 34
         Me.Label35.Text = "(*) Teléfono:"
         '
-        'TextBox7
-        '
-        Me.TextBox7.Location = New System.Drawing.Point(134, 162)
-        Me.TextBox7.Name = "TextBox7"
-        Me.TextBox7.Size = New System.Drawing.Size(190, 20)
-        Me.TextBox7.TabIndex = 36
-        '
         'Label36
         '
         Me.Label36.AutoSize = True
         Me.Label36.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label36.Location = New System.Drawing.Point(79, 162)
+        Me.Label36.Location = New System.Drawing.Point(76, 164)
         Me.Label36.Name = "Label36"
-        Me.Label36.Size = New System.Drawing.Size(35, 15)
+        Me.Label36.Size = New System.Drawing.Size(42, 15)
         Me.Label36.TabIndex = 39
-        Me.Label36.Text = "Web:"
+        Me.Label36.Text = "Email:"
         '
         'txtTelfSec
         '
@@ -787,18 +662,18 @@ Partial Class ModifCliente
         '
         'txtDireccion
         '
-        Me.txtDireccion.Location = New System.Drawing.Point(130, 107)
+        Me.txtDireccion.Location = New System.Drawing.Point(134, 107)
         Me.txtDireccion.Multiline = True
         Me.txtDireccion.Name = "txtDireccion"
         Me.txtDireccion.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
-        Me.txtDireccion.Size = New System.Drawing.Size(413, 48)
+        Me.txtDireccion.Size = New System.Drawing.Size(409, 48)
         Me.txtDireccion.TabIndex = 35
         '
         'Label38
         '
         Me.Label38.AutoSize = True
         Me.Label38.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label38.Location = New System.Drawing.Point(31, 122)
+        Me.Label38.Location = New System.Drawing.Point(40, 124)
         Me.Label38.Name = "Label38"
         Me.Label38.Size = New System.Drawing.Size(78, 15)
         Me.Label38.TabIndex = 32
@@ -806,7 +681,7 @@ Partial Class ModifCliente
         '
         'txtNombre
         '
-        Me.txtNombre.Location = New System.Drawing.Point(130, 49)
+        Me.txtNombre.Location = New System.Drawing.Point(134, 49)
         Me.txtNombre.Name = "txtNombre"
         Me.txtNombre.Size = New System.Drawing.Size(116, 20)
         Me.txtNombre.TabIndex = 31
@@ -815,89 +690,80 @@ Partial Class ModifCliente
         '
         Me.Label39.AutoSize = True
         Me.Label39.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label39.Location = New System.Drawing.Point(40, 49)
+        Me.Label39.Location = New System.Drawing.Point(47, 49)
         Me.Label39.Name = "Label39"
         Me.Label39.Size = New System.Drawing.Size(71, 15)
         Me.Label39.TabIndex = 30
         Me.Label39.Text = "(*) Nombre:"
         '
-        'rbSoles
+        'TabControl1
         '
-        Me.rbSoles.AutoSize = True
-        Me.rbSoles.Checked = True
-        Me.rbSoles.Location = New System.Drawing.Point(402, 18)
-        Me.rbSoles.Name = "rbSoles"
-        Me.rbSoles.Size = New System.Drawing.Size(40, 17)
-        Me.rbSoles.TabIndex = 48
-        Me.rbSoles.TabStop = True
-        Me.rbSoles.Text = "S/."
-        Me.rbSoles.UseVisualStyleBackColor = True
+        Me.TabControl1.Controls.Add(Me.TabPage1)
+        Me.TabControl1.Controls.Add(Me.TabPage2)
+        Me.TabControl1.Controls.Add(Me.TabPage3)
+        Me.TabControl1.Location = New System.Drawing.Point(27, 98)
+        Me.TabControl1.Name = "TabControl1"
+        Me.TabControl1.SelectedIndex = 0
+        Me.TabControl1.Size = New System.Drawing.Size(614, 269)
+        Me.TabControl1.TabIndex = 58
         '
-        'rbDolar
+        'TabPage1
         '
-        Me.rbDolar.AutoSize = True
-        Me.rbDolar.Location = New System.Drawing.Point(455, 18)
-        Me.rbDolar.Name = "rbDolar"
-        Me.rbDolar.Size = New System.Drawing.Size(31, 17)
-        Me.rbDolar.TabIndex = 49
-        Me.rbDolar.Text = "$"
-        Me.rbDolar.UseVisualStyleBackColor = True
+        Me.TabPage1.Controls.Add(Me.pnlContacto)
+        Me.TabPage1.Location = New System.Drawing.Point(4, 22)
+        Me.TabPage1.Name = "TabPage1"
+        Me.TabPage1.Padding = New System.Windows.Forms.Padding(3)
+        Me.TabPage1.Size = New System.Drawing.Size(606, 243)
+        Me.TabPage1.TabIndex = 0
+        Me.TabPage1.Text = "Info. Comercial"
+        Me.TabPage1.UseVisualStyleBackColor = True
         '
-        'rbSoles1
+        'TabPage2
         '
-        Me.rbSoles1.AutoSize = True
-        Me.rbSoles1.Checked = True
-        Me.rbSoles1.Location = New System.Drawing.Point(402, 18)
-        Me.rbSoles1.Name = "rbSoles1"
-        Me.rbSoles1.Size = New System.Drawing.Size(40, 17)
-        Me.rbSoles1.TabIndex = 48
-        Me.rbSoles1.TabStop = True
-        Me.rbSoles1.Text = "S/."
-        Me.rbSoles1.UseVisualStyleBackColor = True
+        Me.TabPage2.Controls.Add(Me.pnlBasico)
+        Me.TabPage2.Location = New System.Drawing.Point(4, 22)
+        Me.TabPage2.Name = "TabPage2"
+        Me.TabPage2.Padding = New System.Windows.Forms.Padding(3)
+        Me.TabPage2.Size = New System.Drawing.Size(606, 243)
+        Me.TabPage2.TabIndex = 1
+        Me.TabPage2.Text = "Info. Contacto"
+        Me.TabPage2.UseVisualStyleBackColor = True
         '
-        'rbDolar1
+        'TabPage3
         '
-        Me.rbDolar1.AutoSize = True
-        Me.rbDolar1.Location = New System.Drawing.Point(455, 18)
-        Me.rbDolar1.Name = "rbDolar1"
-        Me.rbDolar1.Size = New System.Drawing.Size(31, 17)
-        Me.rbDolar1.TabIndex = 49
-        Me.rbDolar1.Text = "$"
-        Me.rbDolar1.UseVisualStyleBackColor = True
+        Me.TabPage3.Controls.Add(Me.pnlinfobanco)
+        Me.TabPage3.Location = New System.Drawing.Point(4, 22)
+        Me.TabPage3.Name = "TabPage3"
+        Me.TabPage3.Size = New System.Drawing.Size(606, 243)
+        Me.TabPage3.TabIndex = 2
+        Me.TabPage3.Text = "Info. Financiera"
+        Me.TabPage3.UseVisualStyleBackColor = True
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(83, 190)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(35, 15)
+        Me.Label2.TabIndex = 46
+        Me.Label2.Text = "Web:"
         '
         'ModifCliente
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(766, 401)
+        Me.ClientSize = New System.Drawing.Size(812, 445)
+        Me.Controls.Add(Me.TabControl1)
         Me.Controls.Add(Me.btninfobancos)
         Me.Controls.Add(Me.btninfocontacto)
         Me.Controls.Add(Me.btninfocomercial)
-        Me.Controls.Add(Me.txtCuenta)
-        Me.Controls.Add(Me.Label12)
-        Me.Controls.Add(Me.txtBanco)
-        Me.Controls.Add(Me.Label11)
-        Me.Controls.Add(Me.txtContacto2)
-        Me.Controls.Add(Me.Label10)
-        Me.Controls.Add(Me.txtContacto1)
-        Me.Controls.Add(Me.Label9)
-        Me.Controls.Add(Me.Label8)
-        Me.Controls.Add(Me.txtWeb)
-        Me.Controls.Add(Me.txtEmail)
-        Me.Controls.Add(Me.Label7)
-        Me.Controls.Add(Me.Label6)
-        Me.Controls.Add(Me.Label4)
-        Me.Controls.Add(Me.Label3)
-        Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.btnAceptar)
         Me.Controls.Add(Me.btnGuardar)
         Me.Controls.Add(Me.Panel1)
-        Me.Controls.Add(Me.pnlinfobanco)
-        Me.Controls.Add(Me.pnlBasico)
-        Me.Controls.Add(Me.pnlContacto)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "ModifCliente"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "GDA - Clientes"
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
@@ -915,8 +781,11 @@ Partial Class ModifCliente
         Me.GroupBox2.PerformLayout()
         Me.pnlBasico.ResumeLayout(False)
         Me.pnlBasico.PerformLayout()
+        Me.TabControl1.ResumeLayout(False)
+        Me.TabPage1.ResumeLayout(False)
+        Me.TabPage2.ResumeLayout(False)
+        Me.TabPage3.ResumeLayout(False)
         Me.ResumeLayout(False)
-        Me.PerformLayout()
 
     End Sub
     Friend WithEvents Panel1 As System.Windows.Forms.Panel
@@ -926,23 +795,8 @@ Partial Class ModifCliente
     Friend WithEvents ToolTip1 As System.Windows.Forms.ToolTip
     Friend WithEvents ErrorCliente As System.Windows.Forms.ErrorProvider
     Friend WithEvents ErrorModifCliente As System.Windows.Forms.ErrorProvider
-    Friend WithEvents txtCuenta As System.Windows.Forms.TextBox
-    Friend WithEvents Label12 As System.Windows.Forms.Label
-    Friend WithEvents txtBanco As System.Windows.Forms.TextBox
-    Friend WithEvents Label11 As System.Windows.Forms.Label
-    Friend WithEvents txtContacto2 As System.Windows.Forms.TextBox
-    Friend WithEvents Label10 As System.Windows.Forms.Label
-    Friend WithEvents txtContacto1 As System.Windows.Forms.TextBox
-    Friend WithEvents Label9 As System.Windows.Forms.Label
-    Friend WithEvents Label8 As System.Windows.Forms.Label
     Friend WithEvents txtWeb As System.Windows.Forms.TextBox
     Friend WithEvents txtEmail As System.Windows.Forms.TextBox
-    Friend WithEvents Label7 As System.Windows.Forms.Label
-    Friend WithEvents Label6 As System.Windows.Forms.Label
-    Friend WithEvents Label4 As System.Windows.Forms.Label
-    Friend WithEvents Label3 As System.Windows.Forms.Label
-    Friend WithEvents Label2 As System.Windows.Forms.Label
-    Friend WithEvents Label5 As System.Windows.Forms.Label
     Friend WithEvents pnlinfobanco As Panel
     Friend WithEvents GroupBox4 As GroupBox
     Friend WithEvents txtccibanco2 As TextBox
@@ -985,7 +839,6 @@ Partial Class ModifCliente
     Friend WithEvents Label34 As Label
     Friend WithEvents txtTelf As TextBox
     Friend WithEvents Label35 As Label
-    Friend WithEvents TextBox7 As TextBox
     Friend WithEvents Label36 As Label
     Friend WithEvents txtTelfSec As TextBox
     Friend WithEvents Label37 As Label
@@ -997,4 +850,9 @@ Partial Class ModifCliente
     Friend WithEvents rbDolar As RadioButton
     Friend WithEvents rbSoles1 As RadioButton
     Friend WithEvents rbDolar1 As RadioButton
+    Friend WithEvents TabControl1 As TabControl
+    Friend WithEvents TabPage1 As TabPage
+    Friend WithEvents TabPage2 As TabPage
+    Friend WithEvents TabPage3 As TabPage
+    Friend WithEvents Label2 As Label
 End Class

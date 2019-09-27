@@ -5,6 +5,16 @@ Imports ExcelDataReader
 
 Public Class UtilConvertidor
 
+    Public Shared Function GetStringVal(value As Object) As String
+        Dim resultado = String.Empty
+        Try
+            resultado = If(value Is Nothing, String.Empty, Convert.ToString(value).Trim)
+
+        Catch generatedExceptionName As Exception
+        End Try
+        Return resultado
+    End Function
+
     Public Shared Function GetDecimal(value As Object) As Decimal
         Dim resultado = 0D
         Try
