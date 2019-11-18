@@ -31,6 +31,14 @@
         _conexion.agregarCadena("@nombre", nombre)
         Return _conexion.ejecutarSP_DataTable()
     End Function
+    Public Shared Function buscarXnombre(ByVal nombre As String) As DataTable
+        'Se agrega function de busqueda por nombre para obtener id del proveedor
+        'creado el 04/10/19
+        _conexion.prepararSP("SP_BuscarProvxNombre")
+        _conexion.agregarCadena("@nombre", nombre)
+        Return _conexion.ejecutarSP_DataTable()
+    End Function
+
 
     Public Shared Function listarSegunMaterial(ByVal idMaterial As String) As DataTable
         _conexion.prepararSP("SP_ProveedoresPorMaterial")

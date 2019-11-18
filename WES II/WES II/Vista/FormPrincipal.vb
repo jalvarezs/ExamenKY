@@ -41,7 +41,7 @@
     Private Sub btnClientes_Click(sender As Object, e As EventArgs) Handles btnClientes.Click
         ' Abrimos la interfaz para administrar clientes
         If Usuario.tieneAcceso("Clientes") Then
-            Dim form As New FormClientes
+            Dim form As New FormPedido
             form.ShowDialog()
         Else
             MessageBox.Show("Usted no tiene acceso a esta área.", "Acceso restringido", MessageBoxButtons.OK, MessageBoxIcon.Information)
@@ -219,7 +219,7 @@
     Private Sub btnSugerencias_Click(sender As Object, e As EventArgs) Handles btnSugerencias.Click
         ' Abrimos la interfaz con las sugerencias de compra
         If Usuario.tieneAcceso("Sugerencias de compra") Then
-            Dim form As New FormOrdenCompra(True)
+            Dim form As New FormSugCompra()
             form.ShowDialog()
         Else
             MessageBox.Show("Usted no tiene acceso a esta área.", "Acceso restringido", MessageBoxButtons.OK, MessageBoxIcon.Information)

@@ -73,6 +73,40 @@
             DatosSubFamilia.IdSubFamilia = idSubFamilia
             DatosSubFamilia.NombreSubFamilia = nombreSubFamilia
 
+            ' Se agrega codigo para bloquear el campo de precio de compra
+            '***************inicio****************************************************
+            Try
+                Dim dt As DataTable = Parametro.ObtenerParametrosPorGrupo("ESTADO_PRECO")
+                Dim rows As DataRow = dt.AsEnumerable.FirstOrDefault
+                valprec = rows("VALOR")
+                If valprec = "NO" Then
+                    txtPCompra.Enabled = False
+                    Dim dtpm As DataTable = OrdenCompra.ObtenerPreComProm(id)
+                    Dim rpc As DataRow = dtpm.AsEnumerable.FirstOrDefault
+                    Dim precioc As Decimal = rpc("precprom")
+                    txtPCompra.Text = precioc
+                Else
+                    txtPVenta.Enabled = True
+                End If
+            Catch ex As Exception
+            End Try
+
+            Try
+                Dim dt As DataTable = Parametro.ObtenerParametrosPorGrupo("ESTADO_PREVE")
+                Dim rows As DataRow = dt.AsEnumerable.FirstOrDefault
+                valprec = rows("VALOR")
+                If valprec = "NO" Then
+                    txtPVenta.Enabled = False
+                    'Dim dtpm As DataTable = OrdenCompra.ObtenerPreComProm(id)
+                    'Dim rpc As DataRow = dtpm.AsEnumerable.FirstOrDefault
+                    'Dim precioc As Decimal = rpc("precprom")
+                    'txtPCompra.Text = precioc
+                Else
+                    txtPVenta.Enabled = True
+                End If
+            Catch ex As Exception
+            End Try
+            '*****************Fin ***************************************
         End If
     End Sub
 

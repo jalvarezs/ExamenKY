@@ -73,6 +73,14 @@
         End Try
     End Sub
 
+    Private Sub txtNombreSectorAlmacen_TextChanged(sender As Object, e As EventArgs) Handles txtNombreSectorAlmacen.TextChanged
+
+    End Sub
+
+    Private Sub Label2_Click(sender As Object, e As EventArgs) Handles Label2.Click
+
+    End Sub
+
     Private Sub btnEliminar_Click(sender As Object, e As EventArgs) Handles btnEliminar.Click
         Dim row As Integer
 

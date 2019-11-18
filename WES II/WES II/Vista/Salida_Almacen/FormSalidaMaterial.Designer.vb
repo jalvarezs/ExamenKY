@@ -27,6 +27,10 @@ Partial Class FormSalidaMaterial
         Me.toolTip = New System.Windows.Forms.ToolTip(Me.components)
         Me.errorProvider = New System.Windows.Forms.ErrorProvider(Me.components)
         Me.TabPage2 = New System.Windows.Forms.TabPage()
+        Me.Label10 = New System.Windows.Forms.Label()
+        Me.cbTipoDocBuscar = New System.Windows.Forms.ComboBox()
+        Me.txtNumDocBuscar = New System.Windows.Forms.TextBox()
+        Me.Label11 = New System.Windows.Forms.Label()
         Me.dgvDetalles = New System.Windows.Forms.DataGridView()
         Me.btnListar = New System.Windows.Forms.Button()
         Me.Label13 = New System.Windows.Forms.Label()
@@ -36,6 +40,9 @@ Partial Class FormSalidaMaterial
         Me.Label15 = New System.Windows.Forms.Label()
         Me.dgvSalidas = New System.Windows.Forms.DataGridView()
         Me.TabPage1 = New System.Windows.Forms.TabPage()
+        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.Rb_OrdenTra = New System.Windows.Forms.RadioButton()
+        Me.rb_Requerimiento = New System.Windows.Forms.RadioButton()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.cboTipoDocumento = New System.Windows.Forms.ComboBox()
         Me.txtNumDocumento = New System.Windows.Forms.TextBox()
@@ -63,15 +70,12 @@ Partial Class FormSalidaMaterial
         Me.TabControl1 = New System.Windows.Forms.TabControl()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Label7 = New System.Windows.Forms.Label()
-        Me.Label10 = New System.Windows.Forms.Label()
-        Me.cbTipoDocBuscar = New System.Windows.Forms.ComboBox()
-        Me.txtNumDocBuscar = New System.Windows.Forms.TextBox()
-        Me.Label11 = New System.Windows.Forms.Label()
         CType(Me.errorProvider, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabPage2.SuspendLayout()
         CType(Me.dgvDetalles, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.dgvSalidas, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabPage1.SuspendLayout()
+        Me.GroupBox1.SuspendLayout()
         CType(Me.dgvMateriales, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabControl1.SuspendLayout()
         Me.Panel1.SuspendLayout()
@@ -97,10 +101,45 @@ Partial Class FormSalidaMaterial
         Me.TabPage2.Controls.Add(Me.dgvSalidas)
         Me.TabPage2.Location = New System.Drawing.Point(4, 22)
         Me.TabPage2.Name = "TabPage2"
-        Me.TabPage2.Size = New System.Drawing.Size(876, 492)
+        Me.TabPage2.Size = New System.Drawing.Size(876, 533)
         Me.TabPage2.TabIndex = 2
         Me.TabPage2.Text = "Consultar salidas"
         Me.TabPage2.UseVisualStyleBackColor = True
+        '
+        'Label10
+        '
+        Me.Label10.AutoSize = True
+        Me.Label10.Location = New System.Drawing.Point(284, 86)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(89, 13)
+        Me.Label10.TabIndex = 104
+        Me.Label10.Text = "Tipo Documento:"
+        '
+        'cbTipoDocBuscar
+        '
+        Me.cbTipoDocBuscar.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cbTipoDocBuscar.FormattingEnabled = True
+        Me.cbTipoDocBuscar.Location = New System.Drawing.Point(379, 83)
+        Me.cbTipoDocBuscar.Name = "cbTipoDocBuscar"
+        Me.cbTipoDocBuscar.Size = New System.Drawing.Size(145, 21)
+        Me.cbTipoDocBuscar.TabIndex = 103
+        '
+        'txtNumDocBuscar
+        '
+        Me.txtNumDocBuscar.Location = New System.Drawing.Point(115, 83)
+        Me.txtNumDocBuscar.MaxLength = 100
+        Me.txtNumDocBuscar.Name = "txtNumDocBuscar"
+        Me.txtNumDocBuscar.Size = New System.Drawing.Size(163, 20)
+        Me.txtNumDocBuscar.TabIndex = 102
+        '
+        'Label11
+        '
+        Me.Label11.AutoSize = True
+        Me.Label11.Location = New System.Drawing.Point(21, 88)
+        Me.Label11.Name = "Label11"
+        Me.Label11.Size = New System.Drawing.Size(80, 13)
+        Me.Label11.TabIndex = 101
+        Me.Label11.Text = "N° Documento:"
         '
         'dgvDetalles
         '
@@ -179,6 +218,7 @@ Partial Class FormSalidaMaterial
         '
         'TabPage1
         '
+        Me.TabPage1.Controls.Add(Me.GroupBox1)
         Me.TabPage1.Controls.Add(Me.Label8)
         Me.TabPage1.Controls.Add(Me.cboTipoDocumento)
         Me.TabPage1.Controls.Add(Me.txtNumDocumento)
@@ -206,10 +246,43 @@ Partial Class FormSalidaMaterial
         Me.TabPage1.Location = New System.Drawing.Point(4, 22)
         Me.TabPage1.Name = "TabPage1"
         Me.TabPage1.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage1.Size = New System.Drawing.Size(876, 492)
+        Me.TabPage1.Size = New System.Drawing.Size(876, 533)
         Me.TabPage1.TabIndex = 0
         Me.TabPage1.Text = "Registrar salidas"
         Me.TabPage1.UseVisualStyleBackColor = True
+        '
+        'GroupBox1
+        '
+        Me.GroupBox1.Controls.Add(Me.Rb_OrdenTra)
+        Me.GroupBox1.Controls.Add(Me.rb_Requerimiento)
+        Me.GroupBox1.Location = New System.Drawing.Point(636, 11)
+        Me.GroupBox1.Name = "GroupBox1"
+        Me.GroupBox1.Size = New System.Drawing.Size(224, 52)
+        Me.GroupBox1.TabIndex = 98
+        Me.GroupBox1.TabStop = False
+        Me.GroupBox1.Text = "Seleccione una opción"
+        '
+        'Rb_OrdenTra
+        '
+        Me.Rb_OrdenTra.AutoSize = True
+        Me.Rb_OrdenTra.Location = New System.Drawing.Point(114, 19)
+        Me.Rb_OrdenTra.Name = "Rb_OrdenTra"
+        Me.Rb_OrdenTra.Size = New System.Drawing.Size(108, 17)
+        Me.Rb_OrdenTra.TabIndex = 99
+        Me.Rb_OrdenTra.TabStop = True
+        Me.Rb_OrdenTra.Text = "Orden de Trabajo"
+        Me.Rb_OrdenTra.UseVisualStyleBackColor = True
+        '
+        'rb_Requerimiento
+        '
+        Me.rb_Requerimiento.AutoSize = True
+        Me.rb_Requerimiento.Location = New System.Drawing.Point(15, 19)
+        Me.rb_Requerimiento.Name = "rb_Requerimiento"
+        Me.rb_Requerimiento.Size = New System.Drawing.Size(93, 17)
+        Me.rb_Requerimiento.TabIndex = 98
+        Me.rb_Requerimiento.TabStop = True
+        Me.rb_Requerimiento.Text = "Requerimiento"
+        Me.rb_Requerimiento.UseVisualStyleBackColor = True
         '
         'Label8
         '
@@ -266,7 +339,7 @@ Partial Class FormSalidaMaterial
         Me.btnCantidadTotal.Name = "btnCantidadTotal"
         Me.btnCantidadTotal.Size = New System.Drawing.Size(145, 47)
         Me.btnCantidadTotal.TabIndex = 89
-        Me.btnCantidadTotal.Text = "Definir Salida Total"
+        Me.btnCantidadTotal.Text = "Definir Cantidad a Entregar"
         Me.btnCantidadTotal.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
         Me.btnCantidadTotal.UseVisualStyleBackColor = True
         '
@@ -445,7 +518,7 @@ Partial Class FormSalidaMaterial
         Me.TabControl1.Location = New System.Drawing.Point(0, 83)
         Me.TabControl1.Name = "TabControl1"
         Me.TabControl1.SelectedIndex = 0
-        Me.TabControl1.Size = New System.Drawing.Size(884, 518)
+        Me.TabControl1.Size = New System.Drawing.Size(884, 559)
         Me.TabControl1.TabIndex = 31
         '
         'Panel1
@@ -469,46 +542,11 @@ Partial Class FormSalidaMaterial
         Me.Label7.TabIndex = 0
         Me.Label7.Text = "Salida de Material"
         '
-        'Label10
-        '
-        Me.Label10.AutoSize = True
-        Me.Label10.Location = New System.Drawing.Point(284, 86)
-        Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(89, 13)
-        Me.Label10.TabIndex = 104
-        Me.Label10.Text = "Tipo Documento:"
-        '
-        'cbTipoDocBuscar
-        '
-        Me.cbTipoDocBuscar.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.cbTipoDocBuscar.FormattingEnabled = True
-        Me.cbTipoDocBuscar.Location = New System.Drawing.Point(379, 83)
-        Me.cbTipoDocBuscar.Name = "cbTipoDocBuscar"
-        Me.cbTipoDocBuscar.Size = New System.Drawing.Size(145, 21)
-        Me.cbTipoDocBuscar.TabIndex = 103
-        '
-        'txtNumDocBuscar
-        '
-        Me.txtNumDocBuscar.Location = New System.Drawing.Point(115, 83)
-        Me.txtNumDocBuscar.MaxLength = 100
-        Me.txtNumDocBuscar.Name = "txtNumDocBuscar"
-        Me.txtNumDocBuscar.Size = New System.Drawing.Size(163, 20)
-        Me.txtNumDocBuscar.TabIndex = 102
-        '
-        'Label11
-        '
-        Me.Label11.AutoSize = True
-        Me.Label11.Location = New System.Drawing.Point(21, 88)
-        Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(80, 13)
-        Me.Label11.TabIndex = 101
-        Me.Label11.Text = "N° Documento:"
-        '
         'FormSalidaMaterial
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(884, 601)
+        Me.ClientSize = New System.Drawing.Size(884, 642)
         Me.Controls.Add(Me.TabControl1)
         Me.Controls.Add(Me.Panel1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
@@ -522,6 +560,8 @@ Partial Class FormSalidaMaterial
         CType(Me.dgvSalidas, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TabPage1.ResumeLayout(False)
         Me.TabPage1.PerformLayout()
+        Me.GroupBox1.ResumeLayout(False)
+        Me.GroupBox1.PerformLayout()
         CType(Me.dgvMateriales, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TabControl1.ResumeLayout(False)
         Me.Panel1.ResumeLayout(False)
@@ -572,4 +612,7 @@ Partial Class FormSalidaMaterial
     Friend WithEvents cbTipoDocBuscar As ComboBox
     Friend WithEvents txtNumDocBuscar As TextBox
     Friend WithEvents Label11 As Label
+    Friend WithEvents GroupBox1 As GroupBox
+    Friend WithEvents Rb_OrdenTra As RadioButton
+    Friend WithEvents rb_Requerimiento As RadioButton
 End Class

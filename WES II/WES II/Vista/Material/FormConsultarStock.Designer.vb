@@ -28,11 +28,11 @@ Partial Class FormConsultarStock
         Me.btnAceptar = New System.Windows.Forms.Button()
         Me.ErrorContenedor = New System.Windows.Forms.ErrorProvider(Me.components)
         Me.dgvStockMateriales = New System.Windows.Forms.DataGridView()
-        Me.Label19 = New System.Windows.Forms.Label()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.dgvProveedores = New System.Windows.Forms.DataGridView()
         Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
         CType(Me.ErrorContenedor, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.dgvStockMateriales, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
@@ -69,16 +69,6 @@ Partial Class FormConsultarStock
         Me.dgvStockMateriales.ReadOnly = True
         Me.dgvStockMateriales.Size = New System.Drawing.Size(612, 209)
         Me.dgvStockMateriales.TabIndex = 21
-        '
-        'Label19
-        '
-        Me.Label19.AutoSize = True
-        Me.Label19.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label19.Location = New System.Drawing.Point(9, 90)
-        Me.Label19.Name = "Label19"
-        Me.Label19.Size = New System.Drawing.Size(221, 15)
-        Me.Label19.TabIndex = 20
-        Me.Label19.Text = "Listado de materiales y sus cantidades:"
         '
         'Panel1
         '
@@ -119,16 +109,25 @@ Partial Class FormConsultarStock
         Me.Label2.TabIndex = 36
         Me.Label2.Text = "Proveedores del material seleccionado:"
         '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Location = New System.Drawing.Point(27, 95)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(192, 13)
+        Me.Label3.TabIndex = 37
+        Me.Label3.Text = "Listado de Materiales y sus cantidades:"
+        '
         'FormConsultarStock
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(636, 551)
+        Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.dgvProveedores)
         Me.Controls.Add(Me.btnAceptar)
         Me.Controls.Add(Me.dgvStockMateriales)
-        Me.Controls.Add(Me.Label19)
         Me.Controls.Add(Me.Panel1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "FormConsultarStock"
@@ -148,8 +147,8 @@ Partial Class FormConsultarStock
     Friend WithEvents Panel1 As System.Windows.Forms.Panel
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents dgvStockMateriales As System.Windows.Forms.DataGridView
-    Friend WithEvents Label19 As System.Windows.Forms.Label
     Friend WithEvents btnAceptar As System.Windows.Forms.Button
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents dgvProveedores As System.Windows.Forms.DataGridView
+    Friend WithEvents Label3 As Label
 End Class

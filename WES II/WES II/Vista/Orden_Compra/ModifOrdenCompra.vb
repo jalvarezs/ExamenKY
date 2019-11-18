@@ -116,13 +116,18 @@
                 Throw New System.Exception(rpta)
             End If
 
+            'Se agrega parametros para el SP_MantenedorDetalleOrdenCompra y que eliminará el registro del detalle 
             Dim idMaterial As Integer
-            OrdenCompra.eliminarDetalles(idOrden)
-
+            OrdenCompra.eliminarDetalles(idOrden, idMaterial, "0", "0", "0", "")
+            '-------------------------------------------------
             For Each row As DataGridViewRow In dgvMateriales.Rows
                 idMaterial = CInt(row.Cells(0).Value) - 10000
+
                 If idMaterial > 0 Then
-                    rpta = OrdenCompra.registrarDetalle(idOrden, CStr(idMaterial), row.Cells(2).Value)
+                    'Se cambia los parametros para la opción de modificar cantidad y precio de compra
+                    'cambio realizado el 01/10/2019 --JAS
+                    rpta = OrdenCompra.registrarDetalle(idOrden, CStr(idMaterial), txtcantidad.Text, txtpref.Text)
+                    'rpta = OrdenCompra.registrarDetalle(idOrden, CStr(idMaterial), row.Cells(2).Value, precom)
                     If rpta <> "" Then
                         Throw New System.Exception(rpta)
                     End If

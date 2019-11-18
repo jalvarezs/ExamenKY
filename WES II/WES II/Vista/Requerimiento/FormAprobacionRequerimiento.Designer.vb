@@ -33,10 +33,11 @@ Partial Class FormAprobacionRequerimiento
         Me.dtpFechaFin = New System.Windows.Forms.DateTimePicker()
         Me.dtpFechaInicio = New System.Windows.Forms.DateTimePicker()
         Me.Label14 = New System.Windows.Forms.Label()
-        Me.Label15 = New System.Windows.Forms.Label()
         Me.btnDenegar = New System.Windows.Forms.Button()
         Me.btnAprobar = New System.Windows.Forms.Button()
         Me.dgvRequerimiento = New System.Windows.Forms.DataGridView()
+        Me.rdb_ordcomp = New System.Windows.Forms.RadioButton()
+        Me.rdb_req = New System.Windows.Forms.RadioButton()
         CType(Me.errorProvider, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
         CType(Me.dgvRequerimiento, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -63,9 +64,9 @@ Partial Class FormAprobacionRequerimiento
         Me.Label7.Font = New System.Drawing.Font("Century Gothic", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label7.Location = New System.Drawing.Point(22, 24)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(321, 24)
+        Me.Label7.Size = New System.Drawing.Size(562, 24)
         Me.Label7.TabIndex = 0
-        Me.Label7.Text = "Aprobación de requerimientos"
+        Me.Label7.Text = "Aprobación de Ordenes de Compra / Requerimientos"
         '
         'btnListarReq
         '
@@ -110,16 +111,6 @@ Partial Class FormAprobacionRequerimiento
         Me.Label14.TabIndex = 139
         Me.Label14.Text = "Desde:"
         '
-        'Label15
-        '
-        Me.Label15.AutoSize = True
-        Me.Label15.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label15.Location = New System.Drawing.Point(23, 115)
-        Me.Label15.Name = "Label15"
-        Me.Label15.Size = New System.Drawing.Size(158, 15)
-        Me.Label15.TabIndex = 138
-        Me.Label15.Text = "Listado de Requerimientos:"
-        '
         'btnDenegar
         '
         Me.btnDenegar.BackgroundImage = Global.WES_II.My.Resources.Resources.Cancel_32x32
@@ -154,17 +145,40 @@ Partial Class FormAprobacionRequerimiento
         Me.dgvRequerimiento.Size = New System.Drawing.Size(527, 333)
         Me.dgvRequerimiento.TabIndex = 135
         '
+        'rdb_ordcomp
+        '
+        Me.rdb_ordcomp.AutoSize = True
+        Me.rdb_ordcomp.Location = New System.Drawing.Point(33, 110)
+        Me.rdb_ordcomp.Name = "rdb_ordcomp"
+        Me.rdb_ordcomp.Size = New System.Drawing.Size(124, 17)
+        Me.rdb_ordcomp.TabIndex = 144
+        Me.rdb_ordcomp.TabStop = True
+        Me.rdb_ordcomp.Text = "Lista Ord. de Compra"
+        Me.rdb_ordcomp.UseVisualStyleBackColor = True
+        '
+        'rdb_req
+        '
+        Me.rdb_req.AutoSize = True
+        Me.rdb_req.Location = New System.Drawing.Point(221, 110)
+        Me.rdb_req.Name = "rdb_req"
+        Me.rdb_req.Size = New System.Drawing.Size(123, 17)
+        Me.rdb_req.TabIndex = 145
+        Me.rdb_req.TabStop = True
+        Me.rdb_req.Text = "Lista Requerimientos"
+        Me.rdb_req.UseVisualStyleBackColor = True
+        '
         'FormAprobacionRequerimiento
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(708, 555)
+        Me.Controls.Add(Me.rdb_req)
+        Me.Controls.Add(Me.rdb_ordcomp)
         Me.Controls.Add(Me.btnListarReq)
         Me.Controls.Add(Me.Label13)
         Me.Controls.Add(Me.dtpFechaFin)
         Me.Controls.Add(Me.dtpFechaInicio)
         Me.Controls.Add(Me.Label14)
-        Me.Controls.Add(Me.Label15)
         Me.Controls.Add(Me.btnDenegar)
         Me.Controls.Add(Me.btnAprobar)
         Me.Controls.Add(Me.dgvRequerimiento)
@@ -190,8 +204,9 @@ Partial Class FormAprobacionRequerimiento
     Friend WithEvents dtpFechaFin As System.Windows.Forms.DateTimePicker
     Friend WithEvents dtpFechaInicio As System.Windows.Forms.DateTimePicker
     Friend WithEvents Label14 As System.Windows.Forms.Label
-    Friend WithEvents Label15 As System.Windows.Forms.Label
     Friend WithEvents btnDenegar As System.Windows.Forms.Button
     Friend WithEvents btnAprobar As System.Windows.Forms.Button
     Friend WithEvents dgvRequerimiento As System.Windows.Forms.DataGridView
+    Friend WithEvents rdb_req As RadioButton
+    Friend WithEvents rdb_ordcomp As RadioButton
 End Class

@@ -27,8 +27,15 @@
 
     Private Sub btnExaminarR_Click(sender As Object, e As EventArgs) Handles btnExaminarR.Click
         Try
-            Dim frmExamRequerimiento As New FormExamRequerimiento(txtRequerimiento, txtProyecto, txtCodOrdenCompra, txtAlmacenDestino)
-            frmExamRequerimiento.ShowDialog()
+            If rb_Requerimiento.Checked = True Then
+                Dim frmExamRequerimiento As New FormExamRequerimiento(txtRequerimiento, txtProyecto, txtCodOrdenCompra, txtAlmacenDestino)
+                frmExamRequerimiento.ShowDialog()
+            Else
+                If Rb_OrdenTra.Checked = True Then
+                    Dim ExamCotizacion As New ExamCotizacion(txtRequerimiento)
+                    ExamCotizacion.ShowDialog()
+                End If
+            End If
             ActualizarDetalles(txtRequerimiento.Text)
         Catch ex As Exception
             MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
@@ -461,4 +468,15 @@
 
     End Sub
 
+    Private Sub rb_Requerimiento_CheckedChanged(sender As Object, e As EventArgs) Handles rb_Requerimiento.CheckedChanged
+        If rb_Requerimiento.Checked = True Then
+            Label9.Text = "(*) Requerimiento"
+        End If
+    End Sub
+
+    Private Sub Rb_OrdenTra_CheckedChanged(sender As Object, e As EventArgs) Handles Rb_OrdenTra.CheckedChanged
+        If Rb_OrdenTra.Checked = True Then
+            Label9.Text = "(*) Orden de Trabajo"
+        End If
+    End Sub
 End Class

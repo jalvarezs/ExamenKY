@@ -17,6 +17,7 @@ Public Class FormMateriales
         cboRG2.SelectedIndex = 0
         rbSoles.Select()
         ActualizarTabla()
+
         LimpiarTextos()
     End Sub
 

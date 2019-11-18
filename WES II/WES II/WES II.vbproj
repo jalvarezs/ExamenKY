@@ -94,7 +94,7 @@
     <GenerateManifests>true</GenerateManifests>
   </PropertyGroup>
   <PropertyGroup>
-    <SignManifests>true</SignManifests>
+    <SignManifests>false</SignManifests>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'GDA|x86'">
     <OutputPath>bin\x86\GDA\</OutputPath>
@@ -229,6 +229,7 @@
     <Compile Include="Modelo\Marca.vb" />
     <Compile Include="Modelo\Material.vb" />
     <Compile Include="Modelo\OrdenCompra.vb" />
+    <Compile Include="Modelo\Sugerencias.vb" />
     <Compile Include="Modelo\TipoDocumento.vb" />
     <Compile Include="Modelo\Parametro.vb" />
     <Compile Include="Modelo\Perfil.vb" />
@@ -321,16 +322,16 @@
     <Compile Include="Vista\Cfactura\frmModficarCargaFact.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vista\Cliente\FormClientes.Designer.vb">
-      <DependentUpon>FormClientes.vb</DependentUpon>
+    <Compile Include="Vista\Cliente\FormPedido.Designer.vb">
+      <DependentUpon>FormPedido.vb</DependentUpon>
     </Compile>
-    <Compile Include="Vista\Cliente\FormClientes.vb">
+    <Compile Include="Vista\Cliente\FormPedido.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vista\Cliente\ModifCliente.Designer.vb">
-      <DependentUpon>ModifCliente.vb</DependentUpon>
+    <Compile Include="Vista\Cliente\ModifPedido.Designer.vb">
+      <DependentUpon>ModifPedido.vb</DependentUpon>
     </Compile>
-    <Compile Include="Vista\Cliente\ModifCliente.vb">
+    <Compile Include="Vista\Cliente\ModifPedido.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Vista\Contenedor\AgregarDetalleCont.designer.vb">
@@ -529,6 +530,12 @@
       <DependentUpon>FormMateriales.vb</DependentUpon>
     </Compile>
     <Compile Include="Vista\Material\FormMateriales.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\Material\FormSugCompra.Designer.vb">
+      <DependentUpon>FormSugCompra.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\Material\FormSugCompra.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Vista\Material\ModifMaterial.designer.vb">
@@ -821,11 +828,11 @@
     <EmbeddedResource Include="Vista\Cfactura\frmModficarCargaFact.resx">
       <DependentUpon>frmModficarCargaFact.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Vista\Cliente\FormClientes.resx">
-      <DependentUpon>FormClientes.vb</DependentUpon>
+    <EmbeddedResource Include="Vista\Cliente\FormPedido.resx">
+      <DependentUpon>FormPedido.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Vista\Cliente\ModifCliente.resx">
-      <DependentUpon>ModifCliente.vb</DependentUpon>
+    <EmbeddedResource Include="Vista\Cliente\ModifPedido.resx">
+      <DependentUpon>ModifPedido.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vista\Contenedor\AgregarDetalleCont.resx">
       <DependentUpon>AgregarDetalleCont.vb</DependentUpon>
@@ -925,6 +932,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Vista\Material\FormMateriales.resx">
       <DependentUpon>FormMateriales.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\Material\FormSugCompra.resx">
+      <DependentUpon>FormSugCompra.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vista\Material\ModifMaterial.resx">
       <DependentUpon>ModifMaterial.vb</DependentUpon>

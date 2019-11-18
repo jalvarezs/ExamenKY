@@ -61,24 +61,32 @@
 
     Private Sub btnGuardar_Click(sender As Object, e As EventArgs) Handles btnGuardar.Click
         'Try
-
-        validarCampos(2)
-            If (hayErrores()) Then
-                MessageBox.Show("Hay campos obligatorios sin llenar.", "Respuesta", MessageBoxButtons.OK, MessageBoxIcon.Error)
-                Return
+        Dim dt As DataTable = Almacen.buscar(txtNombre.Text)
+        If dt IsNot Nothing Then
+            If dt.Rows.Count > 0 Then
+                MessageBox.Show("El Almacen " + txtNombre.Text + " ya ha sido ingresado, por favor ingrese uno distinto", "Validación",
+                                MessageBoxButtons.OK, MessageBoxIcon.Warning)
+                Exit Sub
             End If
+        End If
+        validarCampos(2)
+        If (hayErrores()) Then
+            MessageBox.Show("Hay campos obligatorios sin llenar.", "Respuesta", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            Return
+        End If
 
-            Dim Nombre As String = txtNombre.Text.Trim
-            Dim Tipo As String = cboTipo.SelectedIndex.ToString
-            Dim Observaciones As String = txtObservaciones.Text.Trim
-            Dim Estado As String = cboEstado.SelectedIndex.ToString
-            Dim Ciudad As String = cboCiudad.SelectedValue.ToString
-            Dim Proyecto As String = cboProyecto.SelectedValue.ToString
+        Dim Nombre As String = txtNombre.Text.Trim
+        Dim Tipo As String = cboTipo.SelectedIndex.ToString
+        Dim Observaciones As String = txtObservaciones.Text.Trim
+        Dim Estado As String = cboEstado.SelectedIndex.ToString
+        Dim Ciudad As String = cboCiudad.SelectedValue.ToString
+        Dim Proyecto As String = cboProyecto.SelectedValue.ToString
 
-            Dim rpta As String = Almacen.registrar(Nombre, Tipo, Observaciones, Estado, Ciudad, Proyecto)
-            MessageBox.Show(rpta, "Respuesta", MessageBoxButtons.OK, MessageBoxIcon.Information)
-
-            actualizarTabla()
+        Dim rpta As String = Almacen.registrar(Nombre, Tipo, Observaciones, Estado, Ciudad, Proyecto)
+        MessageBox.Show(rpta, "Respuesta", MessageBoxButtons.OK, MessageBoxIcon.Information)
+        txtNombre.Text = ""
+        txtObservaciones.Text = ""
+        actualizarTabla()
 
         'Catch ex As Exception
         '    MsgBox("Detalle: " & ex.Message.ToString, MsgBoxStyle.Critical, "Error")

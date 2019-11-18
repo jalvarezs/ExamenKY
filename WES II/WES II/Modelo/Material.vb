@@ -22,7 +22,13 @@
         _conexion.agregarCadena("@proveedor", prov)
         Return _conexion.ejecutarSP_DataTable()
     End Function
-
+    Public Shared Function buscarMatQuiebre(ByVal prov As String) As DataTable
+        _conexion.prepararSP("SP_BuscarQuiebrexProveedor")
+        '_conexion.agregarCadena("@nombre", nombre)
+        _conexion.agregarCadena("@proveedor", prov)
+        '_conexion.agregarCadena("@opcion", opc)
+        Return _conexion.ejecutarSP_DataTable()
+    End Function
     Public Shared Function obtenerSgteID() As Integer
         Return _conexion.consultarSP("SP_SgteID_Material").Rows(0)(0)
     End Function

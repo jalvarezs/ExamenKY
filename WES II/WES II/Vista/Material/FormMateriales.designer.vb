@@ -122,10 +122,11 @@ Partial Class FormMateriales
         Me.TabControl1.Controls.Add(Me.TabPage2)
         Me.TabControl1.Controls.Add(Me.TabPage3)
         Me.TabControl1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.TabControl1.Location = New System.Drawing.Point(0, 75)
+        Me.TabControl1.Location = New System.Drawing.Point(0, 92)
+        Me.TabControl1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.TabControl1.Name = "TabControl1"
         Me.TabControl1.SelectedIndex = 0
-        Me.TabControl1.Size = New System.Drawing.Size(967, 389)
+        Me.TabControl1.Size = New System.Drawing.Size(1289, 479)
         Me.TabControl1.TabIndex = 1
         '
         'TabPage1
@@ -180,10 +181,11 @@ Partial Class FormMateriales
         Me.TabPage1.Controls.Add(Me.Label4)
         Me.TabPage1.Controls.Add(Me.Label3)
         Me.TabPage1.Controls.Add(Me.Label2)
-        Me.TabPage1.Location = New System.Drawing.Point(4, 22)
+        Me.TabPage1.Location = New System.Drawing.Point(4, 25)
+        Me.TabPage1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.TabPage1.Name = "TabPage1"
-        Me.TabPage1.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage1.Size = New System.Drawing.Size(959, 363)
+        Me.TabPage1.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TabPage1.Size = New System.Drawing.Size(1281, 450)
         Me.TabPage1.TabIndex = 0
         Me.TabPage1.Text = "Registrar material"
         Me.TabPage1.UseVisualStyleBackColor = True
@@ -191,9 +193,10 @@ Partial Class FormMateriales
         'chkNumSerie
         '
         Me.chkNumSerie.AutoSize = True
-        Me.chkNumSerie.Location = New System.Drawing.Point(410, 125)
+        Me.chkNumSerie.Location = New System.Drawing.Point(547, 154)
+        Me.chkNumSerie.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.chkNumSerie.Name = "chkNumSerie"
-        Me.chkNumSerie.Size = New System.Drawing.Size(15, 14)
+        Me.chkNumSerie.Size = New System.Drawing.Size(18, 17)
         Me.chkNumSerie.TabIndex = 52
         Me.chkNumSerie.UseVisualStyleBackColor = True
         '
@@ -201,9 +204,10 @@ Partial Class FormMateriales
         '
         Me.Label16.AutoSize = True
         Me.Label16.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label16.Location = New System.Drawing.Point(605, 319)
+        Me.Label16.Location = New System.Drawing.Point(807, 393)
+        Me.Label16.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label16.Name = "Label16"
-        Me.Label16.Size = New System.Drawing.Size(101, 15)
+        Me.Label16.Size = New System.Drawing.Size(124, 18)
         Me.Label16.TabIndex = 51
         Me.Label16.Text = "(*) Stock Mínimo:"
         '
@@ -211,18 +215,20 @@ Partial Class FormMateriales
         '
         Me.Label15.AutoSize = True
         Me.Label15.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label15.Location = New System.Drawing.Point(605, 281)
+        Me.Label15.Location = New System.Drawing.Point(807, 346)
+        Me.Label15.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label15.Name = "Label15"
-        Me.Label15.Size = New System.Drawing.Size(116, 15)
+        Me.Label15.Size = New System.Drawing.Size(141, 18)
         Me.Label15.TabIndex = 50
         Me.Label15.Text = "(*) Stock Seguridad:"
         '
         'btnExamFamilia
         '
         Me.btnExamFamilia.ForeColor = System.Drawing.Color.Black
-        Me.btnExamFamilia.Location = New System.Drawing.Point(860, 125)
+        Me.btnExamFamilia.Location = New System.Drawing.Point(1147, 154)
+        Me.btnExamFamilia.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btnExamFamilia.Name = "btnExamFamilia"
-        Me.btnExamFamilia.Size = New System.Drawing.Size(62, 21)
+        Me.btnExamFamilia.Size = New System.Drawing.Size(83, 26)
         Me.btnExamFamilia.TabIndex = 49
         Me.btnExamFamilia.Text = "Examinar"
         Me.btnExamFamilia.UseVisualStyleBackColor = True
@@ -230,71 +236,79 @@ Partial Class FormMateriales
         'txtDescripcionFamilia
         '
         Me.txtDescripcionFamilia.Enabled = False
-        Me.txtDescripcionFamilia.Location = New System.Drawing.Point(608, 157)
+        Me.txtDescripcionFamilia.Location = New System.Drawing.Point(811, 193)
+        Me.txtDescripcionFamilia.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtDescripcionFamilia.Name = "txtDescripcionFamilia"
         Me.txtDescripcionFamilia.ReadOnly = True
-        Me.txtDescripcionFamilia.Size = New System.Drawing.Size(246, 20)
+        Me.txtDescripcionFamilia.Size = New System.Drawing.Size(327, 22)
         Me.txtDescripcionFamilia.TabIndex = 48
         '
         'txtCodigoFamilia
         '
         Me.txtCodigoFamilia.Enabled = False
-        Me.txtCodigoFamilia.Location = New System.Drawing.Point(754, 126)
+        Me.txtCodigoFamilia.Location = New System.Drawing.Point(1005, 155)
+        Me.txtCodigoFamilia.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtCodigoFamilia.Name = "txtCodigoFamilia"
         Me.txtCodigoFamilia.ReadOnly = True
-        Me.txtCodigoFamilia.Size = New System.Drawing.Size(100, 20)
+        Me.txtCodigoFamilia.Size = New System.Drawing.Size(132, 22)
         Me.txtCodigoFamilia.TabIndex = 47
         '
         'Label23
         '
         Me.Label23.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label23.Location = New System.Drawing.Point(264, 308)
+        Me.Label23.Location = New System.Drawing.Point(352, 379)
+        Me.Label23.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label23.Name = "Label23"
-        Me.Label23.Size = New System.Drawing.Size(139, 34)
+        Me.Label23.Size = New System.Drawing.Size(185, 42)
         Me.Label23.TabIndex = 46
         Me.Label23.Text = "(*) Cajas por Paquete:"
         Me.Label23.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
         'txtCajasPaquete
         '
-        Me.txtCajasPaquete.Location = New System.Drawing.Point(409, 317)
+        Me.txtCajasPaquete.Location = New System.Drawing.Point(545, 390)
+        Me.txtCajasPaquete.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtCajasPaquete.Name = "txtCajasPaquete"
-        Me.txtCajasPaquete.Size = New System.Drawing.Size(154, 20)
+        Me.txtCajasPaquete.Size = New System.Drawing.Size(204, 22)
         Me.txtCajasPaquete.TabIndex = 20
         '
         'Label17
         '
         Me.Label17.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label17.Location = New System.Drawing.Point(3, 309)
+        Me.Label17.Location = New System.Drawing.Point(4, 380)
+        Me.Label17.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label17.Name = "Label17"
-        Me.Label17.Size = New System.Drawing.Size(114, 25)
+        Me.Label17.Size = New System.Drawing.Size(152, 31)
         Me.Label17.TabIndex = 44
         Me.Label17.Text = "(*) Unid. por Caja:"
         Me.Label17.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
         'txtUnidadesCaja
         '
-        Me.txtUnidadesCaja.Location = New System.Drawing.Point(123, 313)
+        Me.txtUnidadesCaja.Location = New System.Drawing.Point(164, 385)
+        Me.txtUnidadesCaja.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtUnidadesCaja.Name = "txtUnidadesCaja"
-        Me.txtUnidadesCaja.Size = New System.Drawing.Size(100, 20)
+        Me.txtUnidadesCaja.Size = New System.Drawing.Size(132, 22)
         Me.txtUnidadesCaja.TabIndex = 19
         '
         'cboRG2
         '
         Me.cboRG2.FormattingEnabled = True
         Me.cboRG2.Items.AddRange(New Object() {"A", "B"})
-        Me.cboRG2.Location = New System.Drawing.Point(410, 279)
+        Me.cboRG2.Location = New System.Drawing.Point(547, 343)
+        Me.cboRG2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.cboRG2.Name = "cboRG2"
-        Me.cboRG2.Size = New System.Drawing.Size(153, 21)
+        Me.cboRG2.Size = New System.Drawing.Size(203, 24)
         Me.cboRG2.TabIndex = 18
         '
         'Label22
         '
         Me.Label22.AutoSize = True
         Me.Label22.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label22.Location = New System.Drawing.Point(368, 279)
+        Me.Label22.Location = New System.Drawing.Point(491, 343)
+        Me.Label22.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label22.Name = "Label22"
-        Me.Label22.Size = New System.Drawing.Size(35, 15)
+        Me.Label22.Size = New System.Drawing.Size(43, 18)
         Me.Label22.TabIndex = 42
         Me.Label22.Text = "RG2:"
         '
@@ -302,36 +316,40 @@ Partial Class FormMateriales
         '
         Me.cboRG1.FormattingEnabled = True
         Me.cboRG1.Items.AddRange(New Object() {"1", "2"})
-        Me.cboRG1.Location = New System.Drawing.Point(123, 278)
+        Me.cboRG1.Location = New System.Drawing.Point(164, 342)
+        Me.cboRG1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.cboRG1.Name = "cboRG1"
-        Me.cboRG1.Size = New System.Drawing.Size(100, 21)
+        Me.cboRG1.Size = New System.Drawing.Size(132, 24)
         Me.cboRG1.TabIndex = 17
         '
         'Label21
         '
         Me.Label21.AutoSize = True
         Me.Label21.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label21.Location = New System.Drawing.Point(72, 279)
+        Me.Label21.Location = New System.Drawing.Point(96, 343)
+        Me.Label21.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label21.Name = "Label21"
-        Me.Label21.Size = New System.Drawing.Size(35, 15)
+        Me.Label21.Size = New System.Drawing.Size(43, 18)
         Me.Label21.TabIndex = 40
         Me.Label21.Text = "RG1:"
         '
         'cboTipoRecepcion
         '
         Me.cboTipoRecepcion.FormattingEnabled = True
-        Me.cboTipoRecepcion.Location = New System.Drawing.Point(410, 158)
+        Me.cboTipoRecepcion.Location = New System.Drawing.Point(547, 194)
+        Me.cboTipoRecepcion.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.cboTipoRecepcion.Name = "cboTipoRecepcion"
-        Me.cboTipoRecepcion.Size = New System.Drawing.Size(153, 21)
+        Me.cboTipoRecepcion.Size = New System.Drawing.Size(203, 24)
         Me.cboTipoRecepcion.TabIndex = 12
         '
         'Label20
         '
         Me.Label20.AutoSize = True
         Me.Label20.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label20.Location = New System.Drawing.Point(295, 159)
+        Me.Label20.Location = New System.Drawing.Point(393, 196)
+        Me.Label20.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label20.Name = "Label20"
-        Me.Label20.Size = New System.Drawing.Size(112, 15)
+        Me.Label20.Size = New System.Drawing.Size(136, 18)
         Me.Label20.TabIndex = 38
         Me.Label20.Text = "(*) Tipo Recepción:"
         '
@@ -339,9 +357,10 @@ Partial Class FormMateriales
         '
         Me.btnAceptar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.btnAceptar.Image = Global.WES_II.My.Resources.Resources.Tick_32x32
-        Me.btnAceptar.Location = New System.Drawing.Point(812, 19)
+        Me.btnAceptar.Location = New System.Drawing.Point(1083, 23)
+        Me.btnAceptar.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btnAceptar.Name = "btnAceptar"
-        Me.btnAceptar.Size = New System.Drawing.Size(110, 47)
+        Me.btnAceptar.Size = New System.Drawing.Size(147, 58)
         Me.btnAceptar.TabIndex = 31
         Me.btnAceptar.Text = "Aceptar"
         Me.btnAceptar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
@@ -351,9 +370,10 @@ Partial Class FormMateriales
         'rbDolares
         '
         Me.rbDolares.AutoSize = True
-        Me.rbDolares.Location = New System.Drawing.Point(479, 84)
+        Me.rbDolares.Location = New System.Drawing.Point(639, 103)
+        Me.rbDolares.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.rbDolares.Name = "rbDolares"
-        Me.rbDolares.Size = New System.Drawing.Size(31, 17)
+        Me.rbDolares.Size = New System.Drawing.Size(37, 21)
         Me.rbDolares.TabIndex = 10
         Me.rbDolares.TabStop = True
         Me.rbDolares.Text = "$"
@@ -363,9 +383,10 @@ Partial Class FormMateriales
         '
         Me.btnGuardar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.btnGuardar.Image = Global.WES_II.My.Resources.Resources.Save_32x32
-        Me.btnGuardar.Location = New System.Drawing.Point(676, 18)
+        Me.btnGuardar.Location = New System.Drawing.Point(901, 22)
+        Me.btnGuardar.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btnGuardar.Name = "btnGuardar"
-        Me.btnGuardar.Size = New System.Drawing.Size(110, 47)
+        Me.btnGuardar.Size = New System.Drawing.Size(147, 58)
         Me.btnGuardar.TabIndex = 30
         Me.btnGuardar.Text = "Guardar"
         Me.btnGuardar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
@@ -375,9 +396,10 @@ Partial Class FormMateriales
         'rbSoles
         '
         Me.rbSoles.AutoSize = True
-        Me.rbSoles.Location = New System.Drawing.Point(409, 84)
+        Me.rbSoles.Location = New System.Drawing.Point(545, 103)
+        Me.rbSoles.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.rbSoles.Name = "rbSoles"
-        Me.rbSoles.Size = New System.Drawing.Size(47, 17)
+        Me.rbSoles.Size = New System.Drawing.Size(57, 21)
         Me.rbSoles.TabIndex = 10
         Me.rbSoles.TabStop = True
         Me.rbSoles.Text = "U$D"
@@ -387,32 +409,36 @@ Partial Class FormMateriales
         '
         Me.Label18.AutoSize = True
         Me.Label18.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label18.Location = New System.Drawing.Point(295, 84)
+        Me.Label18.Location = New System.Drawing.Point(393, 103)
+        Me.Label18.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label18.Name = "Label18"
-        Me.Label18.Size = New System.Drawing.Size(72, 15)
+        Me.Label18.Size = New System.Drawing.Size(86, 18)
         Me.Label18.TabIndex = 34
         Me.Label18.Text = "(*) Moneda:"
         '
         'txtStockMin
         '
-        Me.txtStockMin.Location = New System.Drawing.Point(722, 317)
+        Me.txtStockMin.Location = New System.Drawing.Point(963, 390)
+        Me.txtStockMin.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtStockMin.Name = "txtStockMin"
-        Me.txtStockMin.Size = New System.Drawing.Size(132, 20)
+        Me.txtStockMin.Size = New System.Drawing.Size(175, 22)
         Me.txtStockMin.TabIndex = 15
         '
         'txtStockSeg
         '
-        Me.txtStockSeg.Location = New System.Drawing.Point(722, 278)
+        Me.txtStockSeg.Location = New System.Drawing.Point(963, 342)
+        Me.txtStockSeg.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtStockSeg.Name = "txtStockSeg"
-        Me.txtStockSeg.Size = New System.Drawing.Size(132, 20)
+        Me.txtStockSeg.Size = New System.Drawing.Size(175, 22)
         Me.txtStockSeg.TabIndex = 7
         '
         'btnNewMar
         '
         Me.btnNewMar.ForeColor = System.Drawing.Color.Black
-        Me.btnNewMar.Location = New System.Drawing.Point(792, 213)
+        Me.btnNewMar.Location = New System.Drawing.Point(1056, 262)
+        Me.btnNewMar.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btnNewMar.Name = "btnNewMar"
-        Me.btnNewMar.Size = New System.Drawing.Size(62, 21)
+        Me.btnNewMar.Size = New System.Drawing.Size(83, 26)
         Me.btnNewMar.TabIndex = 27
         Me.btnNewMar.Text = "[Nueva]"
         Me.btnNewMar.UseVisualStyleBackColor = True
@@ -420,36 +446,40 @@ Partial Class FormMateriales
         'cboMarcas
         '
         Me.cboMarcas.FormattingEnabled = True
-        Me.cboMarcas.Location = New System.Drawing.Point(674, 213)
+        Me.cboMarcas.Location = New System.Drawing.Point(899, 262)
+        Me.cboMarcas.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.cboMarcas.Name = "cboMarcas"
-        Me.cboMarcas.Size = New System.Drawing.Size(112, 21)
+        Me.cboMarcas.Size = New System.Drawing.Size(148, 24)
         Me.cboMarcas.TabIndex = 6
         '
         'Label14
         '
         Me.Label14.AutoSize = True
         Me.Label14.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label14.Location = New System.Drawing.Point(605, 215)
+        Me.Label14.Location = New System.Drawing.Point(807, 265)
+        Me.Label14.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label14.Name = "Label14"
-        Me.Label14.Size = New System.Drawing.Size(61, 15)
+        Me.Label14.Size = New System.Drawing.Size(74, 18)
         Me.Label14.TabIndex = 25
         Me.Label14.Text = "(*) Marca:"
         '
         'btnNewFam
         '
         Me.btnNewFam.ForeColor = System.Drawing.Color.Black
-        Me.btnNewFam.Location = New System.Drawing.Point(860, 156)
+        Me.btnNewFam.Location = New System.Drawing.Point(1147, 192)
+        Me.btnNewFam.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btnNewFam.Name = "btnNewFam"
-        Me.btnNewFam.Size = New System.Drawing.Size(62, 21)
+        Me.btnNewFam.Size = New System.Drawing.Size(83, 26)
         Me.btnNewFam.TabIndex = 24
         Me.btnNewFam.Text = "[Nueva]"
         Me.btnNewFam.UseVisualStyleBackColor = True
         '
         'txtNumSerie
         '
-        Me.txtNumSerie.Location = New System.Drawing.Point(479, 120)
+        Me.txtNumSerie.Location = New System.Drawing.Point(639, 148)
+        Me.txtNumSerie.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtNumSerie.Name = "txtNumSerie"
-        Me.txtNumSerie.Size = New System.Drawing.Size(84, 20)
+        Me.txtNumSerie.Size = New System.Drawing.Size(111, 22)
         Me.txtNumSerie.TabIndex = 11
         Me.txtNumSerie.Visible = False
         '
@@ -457,27 +487,30 @@ Partial Class FormMateriales
         '
         Me.Label13.AutoSize = True
         Me.Label13.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label13.Location = New System.Drawing.Point(295, 120)
+        Me.Label13.Location = New System.Drawing.Point(393, 148)
+        Me.Label13.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(75, 15)
+        Me.Label13.Size = New System.Drawing.Size(91, 18)
         Me.Label13.TabIndex = 22
         Me.Label13.Text = "(*) N°  Serie:"
         '
         'cboPerfiles
         '
         Me.cboPerfiles.FormattingEnabled = True
-        Me.cboPerfiles.Location = New System.Drawing.Point(722, 244)
+        Me.cboPerfiles.Location = New System.Drawing.Point(963, 300)
+        Me.cboPerfiles.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.cboPerfiles.Name = "cboPerfiles"
-        Me.cboPerfiles.Size = New System.Drawing.Size(132, 21)
+        Me.cboPerfiles.Size = New System.Drawing.Size(175, 24)
         Me.cboPerfiles.TabIndex = 14
         '
         'Label12
         '
         Me.Label12.AutoSize = True
         Me.Label12.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label12.Location = New System.Drawing.Point(605, 247)
+        Me.Label12.Location = New System.Drawing.Point(807, 304)
+        Me.Label12.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(110, 15)
+        Me.Label12.Size = New System.Drawing.Size(135, 18)
         Me.Label12.TabIndex = 20
         Me.Label12.Text = "(*) N° Autorización:"
         '
@@ -485,69 +518,77 @@ Partial Class FormMateriales
         '
         Me.Label11.AutoSize = True
         Me.Label11.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label11.Location = New System.Drawing.Point(605, 122)
+        Me.Label11.Location = New System.Drawing.Point(807, 150)
+        Me.Label11.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(143, 15)
+        Me.Label11.Size = New System.Drawing.Size(170, 18)
         Me.Label11.TabIndex = 18
         Me.Label11.Text = "(*) Familia | Sub-Familia:"
         '
         'cboUnidades
         '
         Me.cboUnidades.FormattingEnabled = True
-        Me.cboUnidades.Location = New System.Drawing.Point(741, 184)
+        Me.cboUnidades.Location = New System.Drawing.Point(988, 226)
+        Me.cboUnidades.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.cboUnidades.Name = "cboUnidades"
-        Me.cboUnidades.Size = New System.Drawing.Size(113, 21)
+        Me.cboUnidades.Size = New System.Drawing.Size(149, 24)
         Me.cboUnidades.TabIndex = 13
         '
         'Label10
         '
         Me.Label10.AutoSize = True
         Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label10.Location = New System.Drawing.Point(605, 187)
+        Me.Label10.Location = New System.Drawing.Point(807, 230)
+        Me.Label10.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(129, 15)
+        Me.Label10.Size = New System.Drawing.Size(153, 18)
         Me.Label10.TabIndex = 16
         Me.Label10.Text = "(*) Unidad de Entrega:"
         '
         'cboTipos
         '
         Me.cboTipos.FormattingEnabled = True
-        Me.cboTipos.Location = New System.Drawing.Point(122, 159)
+        Me.cboTipos.Location = New System.Drawing.Point(163, 196)
+        Me.cboTipos.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.cboTipos.Name = "cboTipos"
-        Me.cboTipos.Size = New System.Drawing.Size(154, 21)
+        Me.cboTipos.Size = New System.Drawing.Size(204, 24)
         Me.cboTipos.TabIndex = 4
         '
         'Label9
         '
         Me.Label9.AutoSize = True
         Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label9.Location = New System.Drawing.Point(25, 158)
+        Me.Label9.Location = New System.Drawing.Point(33, 194)
+        Me.Label9.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(50, 15)
+        Me.Label9.Size = New System.Drawing.Size(61, 18)
         Me.Label9.TabIndex = 14
         Me.Label9.Text = "(*) Tipo:"
         '
         'txtDUN14
         '
-        Me.txtDUN14.Location = New System.Drawing.Point(123, 123)
+        Me.txtDUN14.Location = New System.Drawing.Point(164, 151)
+        Me.txtDUN14.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtDUN14.Name = "txtDUN14"
-        Me.txtDUN14.Size = New System.Drawing.Size(153, 20)
+        Me.txtDUN14.Size = New System.Drawing.Size(203, 22)
         Me.txtDUN14.TabIndex = 3
         '
         'txtEAN13
         '
-        Me.txtEAN13.Location = New System.Drawing.Point(122, 85)
+        Me.txtEAN13.Location = New System.Drawing.Point(163, 105)
+        Me.txtEAN13.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtEAN13.Name = "txtEAN13"
-        Me.txtEAN13.Size = New System.Drawing.Size(154, 20)
+        Me.txtEAN13.Size = New System.Drawing.Size(204, 22)
         Me.txtEAN13.TabIndex = 2
         '
         'Label8
         '
         Me.Label8.AutoSize = True
         Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.Location = New System.Drawing.Point(25, 125)
+        Me.Label8.Location = New System.Drawing.Point(33, 154)
+        Me.Label8.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(51, 15)
+        Me.Label8.Size = New System.Drawing.Size(61, 18)
         Me.Label8.TabIndex = 11
         Me.Label8.Text = "DUN14:"
         '
@@ -555,56 +596,63 @@ Partial Class FormMateriales
         '
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(25, 90)
+        Me.Label7.Location = New System.Drawing.Point(33, 111)
+        Me.Label7.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(48, 15)
+        Me.Label7.Size = New System.Drawing.Size(58, 18)
         Me.Label7.TabIndex = 10
         Me.Label7.Text = "EAN13:"
         '
         'txtPVenta
         '
-        Me.txtPVenta.Location = New System.Drawing.Point(409, 49)
+        Me.txtPVenta.Location = New System.Drawing.Point(545, 60)
+        Me.txtPVenta.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtPVenta.Name = "txtPVenta"
-        Me.txtPVenta.Size = New System.Drawing.Size(154, 20)
+        Me.txtPVenta.Size = New System.Drawing.Size(204, 22)
         Me.txtPVenta.TabIndex = 9
         '
         'txtPCompra
         '
-        Me.txtPCompra.Location = New System.Drawing.Point(409, 18)
+        Me.txtPCompra.Location = New System.Drawing.Point(545, 22)
+        Me.txtPCompra.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtPCompra.Name = "txtPCompra"
-        Me.txtPCompra.Size = New System.Drawing.Size(154, 20)
+        Me.txtPCompra.Size = New System.Drawing.Size(204, 22)
         Me.txtPCompra.TabIndex = 8
         '
         'txtDescripcion
         '
-        Me.txtDescripcion.Location = New System.Drawing.Point(122, 197)
+        Me.txtDescripcion.Location = New System.Drawing.Point(163, 242)
+        Me.txtDescripcion.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtDescripcion.Multiline = True
         Me.txtDescripcion.Name = "txtDescripcion"
-        Me.txtDescripcion.Size = New System.Drawing.Size(441, 71)
+        Me.txtDescripcion.Size = New System.Drawing.Size(587, 86)
         Me.txtDescripcion.TabIndex = 16
         '
         'txtNombre
         '
-        Me.txtNombre.Location = New System.Drawing.Point(122, 46)
+        Me.txtNombre.Location = New System.Drawing.Point(163, 57)
+        Me.txtNombre.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtNombre.Name = "txtNombre"
-        Me.txtNombre.Size = New System.Drawing.Size(154, 20)
+        Me.txtNombre.Size = New System.Drawing.Size(204, 22)
         Me.txtNombre.TabIndex = 1
         '
         'txtCodigo
         '
-        Me.txtCodigo.Location = New System.Drawing.Point(122, 15)
+        Me.txtCodigo.Location = New System.Drawing.Point(163, 18)
+        Me.txtCodigo.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtCodigo.Name = "txtCodigo"
         Me.txtCodigo.ReadOnly = True
-        Me.txtCodigo.Size = New System.Drawing.Size(100, 20)
+        Me.txtCodigo.Size = New System.Drawing.Size(132, 22)
         Me.txtCodigo.TabIndex = 0
         '
         'Label6
         '
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(25, 200)
+        Me.Label6.Location = New System.Drawing.Point(33, 246)
+        Me.Label6.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(91, 15)
+        Me.Label6.Size = New System.Drawing.Size(111, 18)
         Me.Label6.TabIndex = 4
         Me.Label6.Text = "(*) Descripción:"
         '
@@ -612,9 +660,10 @@ Partial Class FormMateriales
         '
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(25, 48)
+        Me.Label5.Location = New System.Drawing.Point(33, 59)
+        Me.Label5.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(71, 15)
+        Me.Label5.Size = New System.Drawing.Size(86, 18)
         Me.Label5.TabIndex = 3
         Me.Label5.Text = "(*) Nombre:"
         '
@@ -622,9 +671,10 @@ Partial Class FormMateriales
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(295, 48)
+        Me.Label4.Location = New System.Drawing.Point(393, 59)
+        Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(95, 15)
+        Me.Label4.Size = New System.Drawing.Size(116, 18)
         Me.Label4.TabIndex = 2
         Me.Label4.Text = "(*) Precio Venta:"
         '
@@ -632,9 +682,10 @@ Partial Class FormMateriales
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(295, 15)
+        Me.Label3.Location = New System.Drawing.Point(393, 18)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(108, 15)
+        Me.Label3.Size = New System.Drawing.Size(133, 18)
         Me.Label3.TabIndex = 1
         Me.Label3.Text = "(*) Precio Compra:"
         '
@@ -642,9 +693,10 @@ Partial Class FormMateriales
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(24, 16)
+        Me.Label2.Location = New System.Drawing.Point(32, 20)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(49, 15)
+        Me.Label2.Size = New System.Drawing.Size(60, 18)
         Me.Label2.TabIndex = 0
         Me.Label2.Text = "Código:"
         '
@@ -655,10 +707,11 @@ Partial Class FormMateriales
         Me.TabPage2.Controls.Add(Me.dgvMateriales)
         Me.TabPage2.Controls.Add(Me.btnEliminar)
         Me.TabPage2.Controls.Add(Me.btnModificar)
-        Me.TabPage2.Location = New System.Drawing.Point(4, 22)
+        Me.TabPage2.Location = New System.Drawing.Point(4, 25)
+        Me.TabPage2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.TabPage2.Name = "TabPage2"
-        Me.TabPage2.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage2.Size = New System.Drawing.Size(959, 363)
+        Me.TabPage2.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TabPage2.Size = New System.Drawing.Size(1281, 450)
         Me.TabPage2.TabIndex = 1
         Me.TabPage2.Text = "Consultar materiales"
         Me.TabPage2.UseVisualStyleBackColor = True
@@ -672,9 +725,11 @@ Partial Class FormMateriales
         Me.GroupBox1.Controls.Add(Me.cbotipofamilia)
         Me.GroupBox1.Controls.Add(Me.txtDescripcionBuscar)
         Me.GroupBox1.Controls.Add(Me.txtxnombrebuscar)
-        Me.GroupBox1.Location = New System.Drawing.Point(23, 6)
+        Me.GroupBox1.Location = New System.Drawing.Point(31, 7)
+        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(914, 76)
+        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox1.Size = New System.Drawing.Size(1219, 94)
         Me.GroupBox1.TabIndex = 13
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Búsqueda"
@@ -683,9 +738,10 @@ Partial Class FormMateriales
         '
         Me.btnBuscar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.btnBuscar.Image = Global.WES_II.My.Resources.Resources.Buscar_32x32
-        Me.btnBuscar.Location = New System.Drawing.Point(776, 19)
+        Me.btnBuscar.Location = New System.Drawing.Point(1035, 23)
+        Me.btnBuscar.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btnBuscar.Name = "btnBuscar"
-        Me.btnBuscar.Size = New System.Drawing.Size(110, 47)
+        Me.btnBuscar.Size = New System.Drawing.Size(147, 58)
         Me.btnBuscar.TabIndex = 31
         Me.btnBuscar.Text = "Buscar"
         Me.btnBuscar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
@@ -695,59 +751,66 @@ Partial Class FormMateriales
         'Label26
         '
         Me.Label26.AutoSize = True
-        Me.Label26.Location = New System.Drawing.Point(536, 37)
+        Me.Label26.Location = New System.Drawing.Point(715, 46)
+        Me.Label26.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label26.Name = "Label26"
-        Me.Label26.Size = New System.Drawing.Size(31, 13)
+        Me.Label26.Size = New System.Drawing.Size(40, 17)
         Me.Label26.TabIndex = 6
         Me.Label26.Text = "Tipo:"
         '
         'Label25
         '
         Me.Label25.AutoSize = True
-        Me.Label25.Location = New System.Drawing.Point(283, 37)
+        Me.Label25.Location = New System.Drawing.Point(377, 46)
+        Me.Label25.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label25.Name = "Label25"
-        Me.Label25.Size = New System.Drawing.Size(66, 13)
+        Me.Label25.Size = New System.Drawing.Size(86, 17)
         Me.Label25.TabIndex = 5
         Me.Label25.Text = "Descripcion:"
         '
         'txtNombreBuscar
         '
         Me.txtNombreBuscar.AutoSize = True
-        Me.txtNombreBuscar.Location = New System.Drawing.Point(12, 37)
+        Me.txtNombreBuscar.Location = New System.Drawing.Point(16, 46)
+        Me.txtNombreBuscar.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.txtNombreBuscar.Name = "txtNombreBuscar"
-        Me.txtNombreBuscar.Size = New System.Drawing.Size(47, 13)
+        Me.txtNombreBuscar.Size = New System.Drawing.Size(62, 17)
         Me.txtNombreBuscar.TabIndex = 4
         Me.txtNombreBuscar.Text = "Nombre:"
         '
         'cbotipofamilia
         '
         Me.cbotipofamilia.FormattingEnabled = True
-        Me.cbotipofamilia.Location = New System.Drawing.Point(573, 34)
+        Me.cbotipofamilia.Location = New System.Drawing.Point(764, 42)
+        Me.cbotipofamilia.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.cbotipofamilia.Name = "cbotipofamilia"
-        Me.cbotipofamilia.Size = New System.Drawing.Size(176, 21)
+        Me.cbotipofamilia.Size = New System.Drawing.Size(233, 24)
         Me.cbotipofamilia.TabIndex = 2
         '
         'txtDescripcionBuscar
         '
-        Me.txtDescripcionBuscar.Location = New System.Drawing.Point(356, 34)
+        Me.txtDescripcionBuscar.Location = New System.Drawing.Point(475, 42)
+        Me.txtDescripcionBuscar.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtDescripcionBuscar.Name = "txtDescripcionBuscar"
-        Me.txtDescripcionBuscar.Size = New System.Drawing.Size(172, 20)
+        Me.txtDescripcionBuscar.Size = New System.Drawing.Size(228, 22)
         Me.txtDescripcionBuscar.TabIndex = 1
         '
         'txtxnombrebuscar
         '
-        Me.txtxnombrebuscar.Location = New System.Drawing.Point(63, 34)
+        Me.txtxnombrebuscar.Location = New System.Drawing.Point(84, 42)
+        Me.txtxnombrebuscar.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtxnombrebuscar.Name = "txtxnombrebuscar"
-        Me.txtxnombrebuscar.Size = New System.Drawing.Size(211, 20)
+        Me.txtxnombrebuscar.Size = New System.Drawing.Size(280, 22)
         Me.txtxnombrebuscar.TabIndex = 0
         '
         'Label19
         '
         Me.Label19.AutoSize = True
         Me.Label19.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label19.Location = New System.Drawing.Point(29, 85)
+        Me.Label19.Location = New System.Drawing.Point(39, 105)
+        Me.Label19.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label19.Name = "Label19"
-        Me.Label19.Size = New System.Drawing.Size(128, 15)
+        Me.Label19.Size = New System.Drawing.Size(152, 18)
         Me.Label19.TabIndex = 1
         Me.Label19.Text = "Listado de Materiales:"
         '
@@ -758,19 +821,21 @@ Partial Class FormMateriales
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.dgvMateriales.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgvMateriales.Location = New System.Drawing.Point(22, 103)
+        Me.dgvMateriales.Location = New System.Drawing.Point(29, 127)
+        Me.dgvMateriales.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.dgvMateriales.Name = "dgvMateriales"
         Me.dgvMateriales.ReadOnly = True
-        Me.dgvMateriales.Size = New System.Drawing.Size(761, 239)
+        Me.dgvMateriales.Size = New System.Drawing.Size(1015, 294)
         Me.dgvMateriales.TabIndex = 0
         '
         'btnEliminar
         '
         Me.btnEliminar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.btnEliminar.Image = Global.WES_II.My.Resources.Resources.Delete_32x32
-        Me.btnEliminar.Location = New System.Drawing.Point(799, 295)
+        Me.btnEliminar.Location = New System.Drawing.Point(1065, 363)
+        Me.btnEliminar.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btnEliminar.Name = "btnEliminar"
-        Me.btnEliminar.Size = New System.Drawing.Size(110, 47)
+        Me.btnEliminar.Size = New System.Drawing.Size(147, 58)
         Me.btnEliminar.TabIndex = 12
         Me.btnEliminar.Text = "Eliminar"
         Me.btnEliminar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
@@ -781,9 +846,10 @@ Partial Class FormMateriales
         '
         Me.btnModificar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.btnModificar.Image = Global.WES_II.My.Resources.Resources.Edit_32x32
-        Me.btnModificar.Location = New System.Drawing.Point(799, 103)
+        Me.btnModificar.Location = New System.Drawing.Point(1065, 127)
+        Me.btnModificar.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btnModificar.Name = "btnModificar"
-        Me.btnModificar.Size = New System.Drawing.Size(110, 47)
+        Me.btnModificar.Size = New System.Drawing.Size(147, 58)
         Me.btnModificar.TabIndex = 11
         Me.btnModificar.Text = "Modificar"
         Me.btnModificar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
@@ -795,9 +861,10 @@ Partial Class FormMateriales
         Me.TabPage3.Controls.Add(Me.Label24)
         Me.TabPage3.Controls.Add(Me.dgvMaterialesDesdeExcel)
         Me.TabPage3.Controls.Add(Me.GroupBox2)
-        Me.TabPage3.Location = New System.Drawing.Point(4, 22)
+        Me.TabPage3.Location = New System.Drawing.Point(4, 25)
+        Me.TabPage3.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.TabPage3.Name = "TabPage3"
-        Me.TabPage3.Size = New System.Drawing.Size(959, 363)
+        Me.TabPage3.Size = New System.Drawing.Size(1281, 450)
         Me.TabPage3.TabIndex = 2
         Me.TabPage3.Text = "Importar desde Excel"
         Me.TabPage3.UseVisualStyleBackColor = True
@@ -806,9 +873,10 @@ Partial Class FormMateriales
         '
         Me.Label24.AutoSize = True
         Me.Label24.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label24.Location = New System.Drawing.Point(29, 85)
+        Me.Label24.Location = New System.Drawing.Point(39, 105)
+        Me.Label24.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label24.Name = "Label24"
-        Me.Label24.Size = New System.Drawing.Size(128, 15)
+        Me.Label24.Size = New System.Drawing.Size(152, 18)
         Me.Label24.TabIndex = 16
         Me.Label24.Text = "Listado de Materiales:"
         '
@@ -819,10 +887,11 @@ Partial Class FormMateriales
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.dgvMaterialesDesdeExcel.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgvMaterialesDesdeExcel.Location = New System.Drawing.Point(22, 103)
+        Me.dgvMaterialesDesdeExcel.Location = New System.Drawing.Point(29, 127)
+        Me.dgvMaterialesDesdeExcel.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.dgvMaterialesDesdeExcel.Name = "dgvMaterialesDesdeExcel"
         Me.dgvMaterialesDesdeExcel.ReadOnly = True
-        Me.dgvMaterialesDesdeExcel.Size = New System.Drawing.Size(915, 239)
+        Me.dgvMaterialesDesdeExcel.Size = New System.Drawing.Size(1220, 294)
         Me.dgvMaterialesDesdeExcel.TabIndex = 15
         '
         'GroupBox2
@@ -831,9 +900,11 @@ Partial Class FormMateriales
         Me.GroupBox2.Controls.Add(Me.btnGrabarDesdeExcel)
         Me.GroupBox2.Controls.Add(Me.btnSubirPlantilla)
         Me.GroupBox2.Controls.Add(Me.btnDescargarPlantilla)
-        Me.GroupBox2.Location = New System.Drawing.Point(23, 6)
+        Me.GroupBox2.Location = New System.Drawing.Point(31, 7)
+        Me.GroupBox2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(914, 76)
+        Me.GroupBox2.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox2.Size = New System.Drawing.Size(1219, 94)
         Me.GroupBox2.TabIndex = 14
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Acciones"
@@ -842,9 +913,10 @@ Partial Class FormMateriales
         '
         Me.btnLimpiar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.btnLimpiar.Image = Global.WES_II.My.Resources.Resources.eraser
-        Me.btnLimpiar.Location = New System.Drawing.Point(640, 19)
+        Me.btnLimpiar.Location = New System.Drawing.Point(853, 23)
+        Me.btnLimpiar.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btnLimpiar.Name = "btnLimpiar"
-        Me.btnLimpiar.Size = New System.Drawing.Size(110, 47)
+        Me.btnLimpiar.Size = New System.Drawing.Size(147, 58)
         Me.btnLimpiar.TabIndex = 34
         Me.btnLimpiar.Text = "Limpiar"
         Me.btnLimpiar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
@@ -855,9 +927,10 @@ Partial Class FormMateriales
         '
         Me.btnGrabarDesdeExcel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.btnGrabarDesdeExcel.Image = Global.WES_II.My.Resources.Resources.Save_32x32
-        Me.btnGrabarDesdeExcel.Location = New System.Drawing.Point(490, 19)
+        Me.btnGrabarDesdeExcel.Location = New System.Drawing.Point(653, 23)
+        Me.btnGrabarDesdeExcel.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btnGrabarDesdeExcel.Name = "btnGrabarDesdeExcel"
-        Me.btnGrabarDesdeExcel.Size = New System.Drawing.Size(110, 47)
+        Me.btnGrabarDesdeExcel.Size = New System.Drawing.Size(147, 58)
         Me.btnGrabarDesdeExcel.TabIndex = 33
         Me.btnGrabarDesdeExcel.Text = "Guardar"
         Me.btnGrabarDesdeExcel.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
@@ -868,9 +941,10 @@ Partial Class FormMateriales
         '
         Me.btnSubirPlantilla.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.btnSubirPlantilla.Image = Global.WES_II.My.Resources.Resources.IngresosMat
-        Me.btnSubirPlantilla.Location = New System.Drawing.Point(340, 19)
+        Me.btnSubirPlantilla.Location = New System.Drawing.Point(453, 23)
+        Me.btnSubirPlantilla.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btnSubirPlantilla.Name = "btnSubirPlantilla"
-        Me.btnSubirPlantilla.Size = New System.Drawing.Size(110, 47)
+        Me.btnSubirPlantilla.Size = New System.Drawing.Size(147, 58)
         Me.btnSubirPlantilla.TabIndex = 32
         Me.btnSubirPlantilla.Text = "Subir Plantilla"
         Me.btnSubirPlantilla.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
@@ -881,9 +955,10 @@ Partial Class FormMateriales
         '
         Me.btnDescargarPlantilla.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.btnDescargarPlantilla.Image = Global.WES_II.My.Resources.Resources.SalidasMat
-        Me.btnDescargarPlantilla.Location = New System.Drawing.Point(190, 19)
+        Me.btnDescargarPlantilla.Location = New System.Drawing.Point(253, 23)
+        Me.btnDescargarPlantilla.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btnDescargarPlantilla.Name = "btnDescargarPlantilla"
-        Me.btnDescargarPlantilla.Size = New System.Drawing.Size(110, 47)
+        Me.btnDescargarPlantilla.Size = New System.Drawing.Size(147, 58)
         Me.btnDescargarPlantilla.TabIndex = 31
         Me.btnDescargarPlantilla.Text = "Descargar Plantilla"
         Me.btnDescargarPlantilla.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
@@ -892,6 +967,7 @@ Partial Class FormMateriales
         '
         'ContextMenuStrip1
         '
+        Me.ContextMenuStrip1.ImageScalingSize = New System.Drawing.Size(20, 20)
         Me.ContextMenuStrip1.Name = "ContextMenuStrip1"
         Me.ContextMenuStrip1.Size = New System.Drawing.Size(61, 4)
         '
@@ -905,8 +981,9 @@ Partial Class FormMateriales
         Me.Panel1.Controls.Add(Me.Label1)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
+        Me.Panel1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(967, 75)
+        Me.Panel1.Size = New System.Drawing.Size(1289, 92)
         Me.Panel1.TabIndex = 0
         '
         'Label1
@@ -914,9 +991,10 @@ Partial Class FormMateriales
         Me.Label1.AutoSize = True
         Me.Label1.BackColor = System.Drawing.Color.Transparent
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(22, 24)
+        Me.Label1.Location = New System.Drawing.Point(29, 30)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(193, 25)
+        Me.Label1.Size = New System.Drawing.Size(241, 31)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "ABM de materiales"
         '
@@ -926,13 +1004,14 @@ Partial Class FormMateriales
         '
         'FormMateriales
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(967, 464)
+        Me.ClientSize = New System.Drawing.Size(1289, 571)
         Me.Controls.Add(Me.TabControl1)
         Me.Controls.Add(Me.Panel1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Name = "FormMateriales"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "GDA - Materiales"

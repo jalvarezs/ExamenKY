@@ -90,6 +90,8 @@
         Me.Dispose()
     End Sub
 
+
+
     Private Sub txtNombre_Validated(sender As Object, e As EventArgs) Handles txtNombre.Validated
         If DirectCast(sender, TextBox).Text.Length > 0 Then
             ErrorFamilia.SetError(sender, "")

@@ -126,4 +126,6 @@
     Private Sub cboSectores_SelectedIndexChanged_1(sender As Object, e As EventArgs) Handles cboSectores.SelectedIndexChanged
 
     End Sub
+
+
 End Class

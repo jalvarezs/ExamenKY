@@ -2,10 +2,16 @@
 
 
 Public Class OrdenCompra
+
     Public Shared Function listar() As DataTable
         Return _conexion.consultar("SELECT * FROM Orden_Compra")
     End Function
 
+    Public Shared Function ObtenerPreComProm(ByVal id As Integer) As DataTable
+        _conexion.prepararSP("SP_ObtenerPrecioPromed_Material")
+        _conexion.agregarCadena("@idMaterial", id)
+        Return _conexion.ejecutarSP_DataTable()
+    End Function
     Public Shared Function buscar(ByVal codigo As String) As DataTable
         _conexion.prepararSP("SP_BuscarOrdenCompra")
         _conexion.agregarCadena("@codOrdenCompra", codigo)
@@ -31,9 +37,10 @@ Public Class OrdenCompra
         End If
         Return 0
     End Function
-
+    'Se agrega parametro EstOc para colocar el estado Aprobado o Pendiente segun la
+    'consulta que se realiza en la tabla parametro al campo Aprobar_OC
     Public Shared Function registrarOrden(ByVal Fecha As String, ByVal ID_Proyecto As String, ByVal ID_Usuario As String,
-                                          ByVal ID_Proveedor As String, ByVal ID_Oferta As String, ByVal TipoCompra As String,
+                                          ByVal ID_Proveedor As String, ByVal EstOc As String, ByVal ID_Oferta As String, ByVal TipoCompra As String,
                                           ByVal TipoCredito As String, ByVal FormaPago As String, ByVal Moneda As String) As String
         Dim respuesta As String
 
@@ -44,6 +51,7 @@ Public Class OrdenCompra
             .agregarEntero("@idUsuario", CInt(ID_Usuario))
             If ID_Oferta <> "-1" Then .agregarEntero("@idOferta ", CInt(ID_Oferta))
             .agregarEntero("@idProveedor ", CInt(ID_Proveedor))
+            .agregarCadena("@estado", EstOc)
             .agregarCadena("@TipoCompra", TipoCompra)
             .agregarCadena("@TipoCredito", TipoCredito)
             .agregarCadena("@FormaPago", FormaPago)
@@ -57,14 +65,15 @@ Public Class OrdenCompra
     End Function
 
     Public Shared Function registrarDetalle(ByVal ID_Orden As String, ByVal ID_Material As String,
-                                            ByVal Cantidad_Solicitada As String) As String
+                                            ByVal Cantidad_Solicitada As String, ByVal Precio_compra As String) As String
         Dim respuesta As String
-
+        'Se agrega campo parametro Precio_compra y la  @PrecioComp  (01/10/2019)
         With _conexion
             .prepararSP("SP_MantenedorDetalleOrdenCompra")
             .agregarEntero("@idOrdenCompra", CInt(ID_Orden))
             .agregarEntero("@idMaterial", CInt(ID_Material))
             .agregarEntero("@CantidadSol ", CInt(Cantidad_Solicitada))
+            .agregarDecimal("@PrecioComp", Precio_compra)
             .agregarEntero("@accion", 1) ' Registrar
         End With
 
@@ -91,17 +100,45 @@ Public Class OrdenCompra
 
         Return respuesta
     End Function
-
-    Public Shared Function eliminarDetalles(ByVal ID_Orden As Integer) As String
+    'Se agrega campo PrecioCompra a tabla Detalle_Orden_Compra
+    Public Shared Function eliminarDetalles(ByVal ID_Orden As Integer, id_material As String, cantsol As String, cantrec As String, PreComp As String, acci As String) As String
         Dim respuesta As String
 
         With _conexion
             .prepararSP("SP_MantenedorDetalleOrdenCompra")
             .agregarEntero("@idOrdenCompra", ID_Orden)
+            .agregarEntero("@idMaterial", id_material)
+            .agregarEntero("@CantidadSol", cantsol)
+            .agregarEntero("@CantidadRec", cantrec)
+            .agregarEntero("@PrecioComp", PreComp)
             .agregarEntero("@accion", 3) ' Eliminar
         End With
 
         respuesta = _conexion.ejecutarSP_String()
+        Return respuesta
+    End Function
+    'Function agregada para aprobar OC 
+    'autor : JAS 
+    'fecha: 02/10/19
+    Public Shared Function aprobar(ByVal id As Integer, ByVal estado As String) As String
+        Dim respuesta As String
+        Dim cestado As String
+        With _conexion
+            .prepararSP("SP_Actualizar_Estado_OC")
+            .agregarEntero("@idOC", id)
+            .agregarCadena("@estado", estado)
+        End With
+
+        respuesta = _conexion.ejecutarSP_String()
+        If estado = "Aprobado" Then
+            cestado = "Aprobado"
+        Else
+            cestado = "Denegado"
+        End If
+        If respuesta Is "" Then
+            respuesta = "Se ha " + cestado + " correctamente la Orden indicada."
+        End If
+
         Return respuesta
     End Function
 

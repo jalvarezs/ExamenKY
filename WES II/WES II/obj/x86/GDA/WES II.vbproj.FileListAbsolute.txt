@@ -1,0 +1,2 @@
+D:\SISTEMA_GDS\WES II\WES II\bin\x86\GDA\WES II.exe.config
+D:\SISTEMA_GDS\WES II\WES II\obj\x86\GDA\WES II.vbproj.ResolveComReference.cache

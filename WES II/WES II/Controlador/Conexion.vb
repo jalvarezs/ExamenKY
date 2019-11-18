@@ -2,6 +2,7 @@
 Imports System.Data
 Imports System.Data.SqlClient
 
+
 Public Class Conexion
 
     ' Objecto de conexión a la BD5
@@ -26,23 +27,13 @@ Public Class Conexion
     Sub New(ByVal nombreBD As String)
 
         ' Cadena para conectarnos a la BD
-        'Dim cadenaConexion As String = ""
-        'cadenaConexion &= "Server =cnx2.cyhocrwk02ku.us-east-1.rds.amazonaws.com;"
-        'cadenaConexion &= "Database = " & nombreBD & ";"
-        'cadenaConexion &= "User Id = adminrh;"
-        'cadenaConexion &= "Password = isidrocasanova2000;"
-
         Dim cadenaConexion As String = ""
-        cadenaConexion &= "Server =MANPOWER14\SQLEXPRESS2008;"
-        cadenaConexion &= "Database = WMS;"
+        cadenaConexion &= "Server =LAPTOP_HP;"
+        cadenaConexion &= "Database = Northwind;"
         cadenaConexion &= "User Id = sa;"
-        cadenaConexion &= "Password = LimaPeru2018;"
+        cadenaConexion &= "Password = 123456;"
 
-        'Dim cadenaConexion As String = ""
-        'cadenaConexion &= "Server =MANPOWER14\SQLEXPRESS2014;"
-        'cadenaConexion &= "Database = WMS;"
-        'cadenaConexion &= "User Id = sa;"
-        'cadenaConexion &= "Password = LimaPeru2018;"
+
 
         connection = New SqlConnection(cadenaConexion)
 

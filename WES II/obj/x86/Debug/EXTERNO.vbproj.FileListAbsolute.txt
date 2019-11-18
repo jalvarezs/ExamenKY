@@ -145,3 +145,11 @@ D:\Proyectos\WORKANA\Sistema GDA v2\Source\FUSION\WES II\bin\Debug\WES II.exe.co
 D:\Proyectos\WORKANA\Sistema GDA v2\Source\FUSION\WES II\obj\x86\Debug\WES II.exe
 D:\Proyectos\WORKANA\Sistema GDA v2\Source\FUSION\WES II\obj\x86\Debug\WES II.xml
 D:\Proyectos\WORKANA\Sistema GDA v2\Source\FUSION\WES II\obj\x86\Debug\WES II.pdb
+D:\SISTEMA_GDS\WES II\bin\Debug\WES II.exe.config
+D:\SISTEMA_GDS\WES II\obj\x86\Debug\WES II.exe
+D:\SISTEMA_GDS\WES II\obj\x86\Debug\WES II.xml
+D:\SISTEMA_GDS\WES II\obj\x86\Debug\WES II.pdb
+D:\SISTEMA_GDS\WES II\obj\x86\Debug\EXTERNO.vbprojResolveAssemblyReference.cache
+D:\SISTEMA_GDS\WES II\obj\x86\Debug\WES_II.Resources.resources
+D:\SISTEMA_GDS\WES II\obj\x86\Debug\EXTERNO.vbproj.GenerateResource.Cache
+D:\SISTEMA_GDS\WES II\obj\x86\Debug\WES II.exe.licenses

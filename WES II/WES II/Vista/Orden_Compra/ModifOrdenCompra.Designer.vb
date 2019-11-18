@@ -56,6 +56,8 @@ Partial Class ModifOrdenCompra
         Me.Label7 = New System.Windows.Forms.Label()
         Me.txtDirproveedor = New System.Windows.Forms.TextBox()
         Me.txtRUC = New System.Windows.Forms.TextBox()
+        Me.txtpref = New System.Windows.Forms.TextBox()
+        Me.Label13 = New System.Windows.Forms.Label()
         CType(Me.errorProvider, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
         CType(Me.dgvMateriales, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -127,7 +129,7 @@ Partial Class ModifOrdenCompra
         '
         'btnAgregar
         '
-        Me.btnAgregar.Location = New System.Drawing.Point(249, 278)
+        Me.btnAgregar.Location = New System.Drawing.Point(249, 311)
         Me.btnAgregar.Name = "btnAgregar"
         Me.btnAgregar.Size = New System.Drawing.Size(83, 23)
         Me.btnAgregar.TabIndex = 46
@@ -341,11 +343,30 @@ Partial Class ModifOrdenCompra
         Me.txtRUC.Size = New System.Drawing.Size(100, 20)
         Me.txtRUC.TabIndex = 48
         '
+        'txtpref
+        '
+        Me.txtpref.Location = New System.Drawing.Point(140, 313)
+        Me.txtpref.Name = "txtpref"
+        Me.txtpref.Size = New System.Drawing.Size(103, 20)
+        Me.txtpref.TabIndex = 53
+        '
+        'Label13
+        '
+        Me.Label13.AutoSize = True
+        Me.Label13.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label13.Location = New System.Drawing.Point(24, 314)
+        Me.Label13.Name = "Label13"
+        Me.Label13.Size = New System.Drawing.Size(111, 15)
+        Me.Label13.TabIndex = 52
+        Me.Label13.Text = "Precio Referencial:"
+        '
         'ModifOrdenCompra
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(692, 528)
+        Me.Controls.Add(Me.txtpref)
+        Me.Controls.Add(Me.Label13)
         Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.txtDirproveedor)
         Me.Controls.Add(Me.txtRUC)
@@ -415,4 +436,6 @@ Partial Class ModifOrdenCompra
     Friend WithEvents Label7 As Label
     Friend WithEvents txtDirproveedor As TextBox
     Friend WithEvents txtRUC As TextBox
+    Friend WithEvents txtpref As TextBox
+    Friend WithEvents Label13 As Label
 End Class

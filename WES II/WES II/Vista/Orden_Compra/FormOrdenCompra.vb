@@ -8,22 +8,69 @@
         cargarSugerencias = _cargarSugerencias
     End Sub
 
+    Public Sub New()
+    End Sub
 
     Private Sub FormOrdenCompra_Load(sender As Object, e As EventArgs) Handles MyBase.Shown
         mostrarCodigoSgte()
-        btnExaminarMat.Enabled = False
+        'Dim dataTable As DataTable
+        'Dim codmat As String
+        ''Dim consulta As String
+        'dataTable = _conexion.consultar("SELECT TOP 1 * FROM Sugerencias")
+        'If dataTable.Rows.Count > 0 Then
+        '    codmat = dataTable.Rows(0)("codigo")
+        '    If codmat > "" Then
+        '        cargarSugerencias = True
+        '    Else
+        '        cargarSugerencias = False
+        '    End If
 
-        If cargarSugerencias Then
-            Dim sugerencias As DataTable
-            sugerencias = _conexion.consultar("select * from V_ListarSugerencias")
-            For Each sugerencia As DataRow In sugerencias.Rows
-                dgvMateriales.Rows.Add(sugerencia.Item(0), sugerencia.Item(1), sugerencia.Item(2), sugerencia.Item(3))
-            Next
-        End If
+        '    btnExaminarMat.Enabled = False
+        '    txtpref.Enabled = False
+        '    If cargarSugerencias Then
+        '        Dim sugerencias As DataTable
+        '        sugerencias = _conexion.consultar("select Codigo,Nombre_Material,Cant_solicitada,Precio_referencial from Sugerencias")
+        '        For Each sugerencia As DataRow In sugerencias.Rows
+        '            dgvMateriales.Rows.Add(sugerencia.Item(0), sugerencia.Item(1), sugerencia.Item(2), sugerencia.Item(3))
+        '        Next
+
+        '        sugerencias = _conexion.consultar("select Nombre,ruc,direccion from Sugerencias")
+        '        For Each sugerencia As DataRow In sugerencias.Rows
+        '            txtProveedor.Text = sugerencia.Item(0)
+        '            txtRUC.Text = sugerencia.Item(1)
+        '            txtDirproveedor.Text = sugerencia.Item(2)
+        '        Next
+
+        'Dim dt As DataTable = Proveedor.buscar(txtProveedor.Text)
+        '        Dim rows As DataRow = dt.AsEnumerable.FirstOrDefault
+
+
+        '        ID_Proveedor = rows("Código")
+        '        txt_idprov.Text = ID_Proveedor
+        '        SumaPiedePagina()
+        '    End If
+        'End If
     End Sub
 
+    Private Sub SumaPiedePagina()
+        Dim cantidad As Integer = 0
+        Dim precio As Double = 0
+
+        For i As Integer = 0 To (dgvMateriales.Rows.Count - 2)
+            cantidad = cantidad + Integer.Parse(dgvMateriales.Rows(i).Cells(2).Value)
+            'cantidad = cantidad + Integer.Parse(dgvMateriales.Rows(i).Cells(2).Value)
+            precio = precio + (Integer.Parse(dgvMateriales.Rows(i).Cells(2).Value) * Double.Parse(dgvMateriales.Rows(i).Cells(3).Value))
+
+        Next
+
+        tstotalCantidad.Text = "Cantidad Solicitada: " + cantidad.ToString()
+        tstotalpreciounitario.Text = "Precio Referencial: " + precio.ToString()
+        tstotalIGV.Text = "IGV (18%): " + (precio * 0.18).ToString()
+        tsTotalgeneral.Text = "Total Referencial: " + (precio * 1.18).ToString()
+    End Sub
     Private Sub mostrarCodigoSgte()
         txtCodigo.Text = 10000 + OrdenCompra.obtenerUltimoID() + 1
+
     End Sub
 
     Dim ordenCompradt As DataTable
@@ -100,12 +147,29 @@
             Moneda = "PESOS"
         End If
 
+        '------------------Se agrega consulta si OC necesita aprobación 
+        '----------------Agregado el 03/10/19  Autor: JAS
+
+        Dim dt As DataTable = Parametro.ObtenerParametrosPorGrupo("APROBAR_OC")
+        Dim rows As DataRow = dt.AsEnumerable.FirstOrDefault
+        Dim estaoc As String
+        valprec = rows("VALOR")
+        If valprec = "NO" Then
+            estaoc = "Aprobado"
+        Else
+            estaoc = "Pendiente"
+        End If
+
+        '------------------fin-------------------------------------------------------
+
+
         _conexion.iniciarTransaccion()
         Try
             Dim rpta As String = OrdenCompra.registrarOrden(dtpFechaOrden.Text,
                                                             project,
                                                             _usuario,
                                                             ID_Proveedor,
+                                                            estaoc,
                                                             oferta,
                                                             cbotipocompra.Text.Substring(0, 3),
                                                             cbotipocredito.Text.Substring(0, 3),
@@ -118,10 +182,11 @@
             Dim idOrden, idMaterial As Integer
             idOrden = OrdenCompra.obtenerUltimoID()
 
+            'se agrega row.cells(3)  01/10/2019  JAS
             For Each row As DataGridViewRow In dgvMateriales.Rows
                 idMaterial = CInt(row.Cells(0).Value) - 10000
                 If idMaterial > 0 Then
-                    rpta = OrdenCompra.registrarDetalle(CStr(idOrden), CStr(idMaterial), row.Cells(2).Value)
+                    rpta = OrdenCompra.registrarDetalle(CStr(idOrden), CStr(idMaterial), row.Cells(2).Value, row.Cells(3).Value)
                     If rpta <> "" Then
                         Throw New System.Exception(rpta)
                     End If
@@ -129,7 +194,16 @@
             Next
 
             _conexion.hacerCommit()
+
             MessageBox.Show("La orden de compra se ha registrado correctamente.", "Respuesta", MessageBoxButtons.OK, MessageBoxIcon.Information)
+
+            '*------
+            'Eliminamos la sugerenia del material x proveedor
+            rpta = Sugerencias.eliminarSugerencia(txtRUC.Text)
+            If rpta <> "" Then
+                Throw New System.Exception(rpta)
+            End If
+            '*--------fin---------------------------------------------
 
             mostrarCodigoSgte()
             limpiarCampos()
@@ -248,7 +322,11 @@
         Else
             errorProvider.SetError(cboformapago, Nothing)
         End If
-
+        If txtpref.Enabled = True Then
+            If txtpref.Text = "" Then
+                errorProvider.SetError(txtpref, Nothing)
+            End If
+        End If
         Try
             Dim temporal = CInt(txtcantidad.Text.Trim)
             errorProvider.SetError(txtcantidad, Nothing)
@@ -303,6 +381,20 @@
         frmExProd.ShowDialog()
         codigoMaterial = frmExProd.getCode()
         precioReferencial = frmExProd.getPrecio()
+
+        ' Se agrega codigo para bloquear/activar el campo de precio referencial
+        '***************inicio****************************************************
+        Try
+            Dim dt As DataTable = Parametro.ObtenerParametrosPorGrupo("ESTADO_PRECO")
+            Dim rows As DataRow = dt.AsEnumerable.FirstOrDefault
+            valprec = rows("VALOR")
+            If valprec = "NO" Then
+                txtpref.Text = precioReferencial
+                txtpref.Enabled = True
+            End If
+        Catch ex As Exception
+        End Try
+        '*****************Fin ***************************************
     End Sub
 
     Private Sub btnAgregar_Click(sender As Object, e As EventArgs) Handles btnAgregar.Click
@@ -315,9 +407,10 @@
     End Sub
 
     Private Sub agregarFila()
-        Dim flag As Boolean
+        Dim flag, vflag As Boolean
+        Dim k As Integer
         flag = False
-
+        vflag = True
         For j As Integer = 0 To (dgvMateriales.Rows.Count - 2)
             Dim dato As String
             dato = txtMateriales.Text
@@ -340,9 +433,28 @@
                 End If
 
                 flag = True
-            End If
+            Else
 
+                ProvyMat = Proveedor.listarMateriales(ID_Proveedor)
+                DataGridView1.DataSource = ProvyMat
+                For k = 0 To (DataGridView1.Rows.Count - 2)
+                    'If dgvMateriales.Rows(k).Cells(0).Value.ToString = Nothing Then
+                    '    Exit For
+                    'End If
+                    If DataGridView1.Rows(k).Cells(0).Value.ToString <> txt_idprov.Text Then
+                        vflag = False
+                    Else
+                        vflag = True
+                    End If
+                Next
+                If vflag = False Then
+                    MessageBox.Show("No es posible agregar un material que no corresponde al proveedor " + txtProveedor.Text + " para la O/C sugerida ",
+                  "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                    Exit Sub
+                End If
+            End If
         Next
+
 
         If Not flag Then
             Dim Fila As DataGridViewRow
@@ -350,7 +462,13 @@
             Fila.Cells(0).Value = codigoMaterial
             Fila.Cells(1).Value = txtMateriales.Text
             Fila.Cells(2).Value = txtcantidad.Text
-            Fila.Cells(3).Value = precioReferencial
+            '***** se activa el dato del precio referencial cuando el parametro de preciocompraenMa esta NO
+            If txtpref.Enabled = True Then
+                Fila.Cells(3).Value = txtpref.Text
+            Else
+                Fila.Cells(3).Value = precioReferencial
+            End If
+            '***********************************fin*******************************
             dgvMateriales.Rows.Add(Fila)
         End If
 
@@ -360,11 +478,12 @@
 
         For i As Integer = 0 To (dgvMateriales.Rows.Count - 2)
             cantidad = cantidad + Integer.Parse(dgvMateriales.Rows(i).Cells(2).Value)
+            'cantidad = cantidad + Integer.Parse(dgvMateriales.Rows(i).Cells(2).Value)
             precio = precio + (Integer.Parse(dgvMateriales.Rows(i).Cells(2).Value) * Double.Parse(dgvMateriales.Rows(i).Cells(3).Value))
 
         Next
 
-        tstotalCantidad.Text = "Cantidad Solicitada: " + cantidad.ToString()
+        tstotalCantidad.Text = "Cantidad Solicitada:  " + cantidad.ToString()
         tstotalpreciounitario.Text = "Precio Referencial: " + precio.ToString()
         tstotalIGV.Text = "IGV (18%): " + (precio * 0.18).ToString()
         tsTotalgeneral.Text = "Total Referencial: " + (precio * 1.18).ToString()
@@ -436,6 +555,47 @@
 
     Private Sub TabPage1_Click(sender As Object, e As EventArgs) Handles TabPage1.Click
 
+    End Sub
+
+    Private Sub btn_Listasug_Click(sender As Object, e As EventArgs) Handles btn_Listasug.Click
+        SugeCompradt = Sugerencias.listarPorFechas(dtp_inicsu.Text.ToString, dtp_finsu.Text.ToString)
+        dgv_sugerencias.DataSource = SugeCompradt
+
+    End Sub
+
+    Private Sub btn_aceptarsg_Click(sender As Object, e As EventArgs)
+
+    End Sub
+
+    Private Sub btn_aceptarsg_Click_1(sender As Object, e As EventArgs) Handles btn_aceptarsg.Click
+        Dim vselec As Boolean
+        For i = 0 To dgv_sugerencias.Rows.Count - 1
+            If dgv_sugerencias.Rows(i).Cells(0).Value = False Then
+                vselec = False
+            Else
+                vselec = True
+                If i = dgv_sugerencias.Rows.Count - 2 Then
+                    Exit For
+                End If
+            End If
+        Next
+        'For Each row As DataGridViewRow In dgv_sugerencias.SelectedRows
+        If vselec = False Then
+            MessageBox.Show("Debe seleccionar un item", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            Exit Sub
+        End If
+        For i = 0 To dgv_sugerencias.Rows.Count - 2
+            dgvMateriales.Rows.Add(dgv_sugerencias.Rows(i).Cells(1).Value, dgv_sugerencias.Rows(i).Cells(2).Value, dgv_sugerencias.Rows(i).Cells(3).Value, dgv_sugerencias.Rows(i).Cells(4).Value)
+            txtProveedor.Text = dgv_sugerencias.Rows(i).Cells(5).Value
+            txtRUC.Text = dgv_sugerencias.Rows(i).Cells(6).Value
+            txtDirproveedor.Text = dgv_sugerencias.Rows(i).Cells(7).Value
+        Next
+        Dim dt As DataTable = Proveedor.buscar(txtProveedor.Text)
+        Dim rows As DataRow = dt.AsEnumerable.FirstOrDefault
+        ID_Proveedor = rows("Código")
+        txt_idprov.Text = ID_Proveedor
+        TabControl1.SelectedTab = TabControl1.TabPages.Item(0)
+        SumaPiedePagina()
     End Sub
 
     Private Sub txtcantidad_TextChanged(sender As Object, e As EventArgs) Handles txtcantidad.TextChanged
