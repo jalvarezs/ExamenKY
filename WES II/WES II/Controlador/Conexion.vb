@@ -35,6 +35,9 @@ Public Class Conexion
 
 
 
+
+
+
         connection = New SqlConnection(cadenaConexion)
 
         ' Instanciamos nuestro dataAdapter
