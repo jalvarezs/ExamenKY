@@ -33,11 +33,6 @@ Public Class Conexion
         cadenaConexion &= "User Id = sa;"
         cadenaConexion &= "Password = 123456;"
 
-
-
-
-
-
         connection = New SqlConnection(cadenaConexion)
 
         ' Instanciamos nuestro dataAdapter

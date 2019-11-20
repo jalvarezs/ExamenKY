@@ -1963,7 +1963,6 @@ E:\SISTEMA_KY\WES II\WES II\bin\Debug\SqlServerTypes\x64\msvcr120.dll
 E:\SISTEMA_KY\WES II\WES II\bin\Debug\SqlServerTypes\x64\SqlServerSpatial140.dll
 E:\SISTEMA_KY\WES II\WES II\bin\Debug\SqlServerTypes\x86\msvcr120.dll
 E:\SISTEMA_KY\WES II\WES II\bin\Debug\SqlServerTypes\x86\SqlServerSpatial140.dll
-E:\SISTEMA_KY\WES II\WES II\bin\Debug\Plantilla\Carga_Master_Sku.xlsx
 E:\SISTEMA_KY\WES II\WES II\bin\Debug\WES II.exe.manifest
 E:\SISTEMA_KY\WES II\WES II\bin\Debug\WES II.application
 E:\SISTEMA_KY\WES II\WES II\bin\Debug\WES II.exe
@@ -2071,94 +2070,10 @@ E:\SISTEMA_KY\WES II\WES II\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.res
 E:\SISTEMA_KY\WES II\WES II\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
 E:\SISTEMA_KY\WES II\WES II\bin\Debug\es\Microsoft.VisualStudio.GraphModel.resources.dll
 E:\SISTEMA_KY\WES II\WES II\obj\x86\Debug\WES II.vbprojResolveAssemblyReference.cache
-E:\SISTEMA_KY\WES II\WES II\obj\x86\Debug\WES_II.FormAlmacenes.resources
-E:\SISTEMA_KY\WES II\WES II\obj\x86\Debug\WES_II.FormSectoresAlmacen.resources
-E:\SISTEMA_KY\WES II\WES II\obj\x86\Debug\WES_II.FormNuevoSector.resources
-E:\SISTEMA_KY\WES II\WES II\obj\x86\Debug\WES_II.ModifAlmacen.resources
-E:\SISTEMA_KY\WES II\WES II\obj\x86\Debug\WES_II.ModifSectoresAlmacen.resources
-E:\SISTEMA_KY\WES II\WES II\obj\x86\Debug\WES_II.frmCargaCompra.resources
-E:\SISTEMA_KY\WES II\WES II\obj\x86\Debug\WES_II.frmListaCompraLista.resources
-E:\SISTEMA_KY\WES II\WES II\obj\x86\Debug\WES_II.frmModificaCompra.resources
-E:\SISTEMA_KY\WES II\WES II\obj\x86\Debug\WES_II.frmCargaFactura.resources
-E:\SISTEMA_KY\WES II\WES II\obj\x86\Debug\WES_II.frmListarFactura.resources
-E:\SISTEMA_KY\WES II\WES II\obj\x86\Debug\WES_II.frmModficarCargaFact.resources
-E:\SISTEMA_KY\WES II\WES II\obj\x86\Debug\WES_II.FormClientes.resources
-E:\SISTEMA_KY\WES II\WES II\obj\x86\Debug\WES_II.ModifCliente.resources
-E:\SISTEMA_KY\WES II\WES II\obj\x86\Debug\WES_II.AgregarDetalleCont.resources
-E:\SISTEMA_KY\WES II\WES II\obj\x86\Debug\WES_II.FormContenedor.resources
-E:\SISTEMA_KY\WES II\WES II\obj\x86\Debug\WES_II.FormDocumentosContenedor.resources
-E:\SISTEMA_KY\WES II\WES II\obj\x86\Debug\WES_II.FormExamUbicacion.resources
-E:\SISTEMA_KY\WES II\WES II\obj\x86\Debug\WES_II.ModifContenedor.resources
-E:\SISTEMA_KY\WES II\WES II\obj\x86\Debug\WES_II.ModifStock.resources
-E:\SISTEMA_KY\WES II\WES II\obj\x86\Debug\WES_II.DetallePersonal.resources
-E:\SISTEMA_KY\WES II\WES II\obj\x86\Debug\WES_II.ExaminarCotizaciones.resources
-E:\SISTEMA_KY\WES II\WES II\obj\x86\Debug\WES_II.FormControlServicios.resources
-E:\SISTEMA_KY\WES II\WES II\obj\x86\Debug\WES_II.ExamOrdenServicio.resources
-E:\SISTEMA_KY\WES II\WES II\obj\x86\Debug\WES_II.ExamCliente.resources
-E:\SISTEMA_KY\WES II\WES II\obj\x86\Debug\WES_II.FormCotizaciones.resources
-E:\SISTEMA_KY\WES II\WES II\obj\x86\Debug\WES_II.ModifServicioExterno.resources
-E:\SISTEMA_KY\WES II\WES II\obj\x86\Debug\WES_II.ModifCotizaciones.resources
-E:\SISTEMA_KY\WES II\WES II\obj\x86\Debug\WES_II.ExamFamilia.resources
-E:\SISTEMA_KY\WES II\WES II\obj\x86\Debug\WES_II.FormFamilias.resources
-E:\SISTEMA_KY\WES II\WES II\obj\x86\Debug\WES_II.ModifSubFamilia.resources
-E:\SISTEMA_KY\WES II\WES II\obj\x86\Debug\WES_II.ModifFamilia.resources
-E:\SISTEMA_KY\WES II\WES II\obj\x86\Debug\WES_II.FormLogin.resources
-E:\SISTEMA_KY\WES II\WES II\obj\x86\Debug\WES_II.ExmOrdenCompra.resources
-E:\SISTEMA_KY\WES II\WES II\obj\x86\Debug\WES_II.FormAgregarContenedor.resources
-E:\SISTEMA_KY\WES II\WES II\obj\x86\Debug\WES_II.FormDistribuirContenedores.resources
-E:\SISTEMA_KY\WES II\WES II\obj\x86\Debug\WES_II.FormIngresoMaterial.resources
-E:\SISTEMA_KY\WES II\WES II\obj\x86\Debug\WES_II.ExamCotizacion.resources
-E:\SISTEMA_KY\WES II\WES II\obj\x86\Debug\WES_II.FormIniciosTrabajo.resources
-E:\SISTEMA_KY\WES II\WES II\obj\x86\Debug\WES_II.ModifInicioTrabajo.resources
-E:\SISTEMA_KY\WES II\WES II\obj\x86\Debug\WES_II.FormInventarios.resources
-E:\SISTEMA_KY\WES II\WES II\obj\x86\Debug\WES_II.FormMarcas.resources
-E:\SISTEMA_KY\WES II\WES II\obj\x86\Debug\WES_II.ExamInicioTrabajo.resources
-E:\SISTEMA_KY\WES II\WES II\obj\x86\Debug\WES_II.FormQuiebreStockPorOT.resources
-E:\SISTEMA_KY\WES II\WES II\obj\x86\Debug\WES_II.FormQuiebreStock.resources
-E:\SISTEMA_KY\WES II\WES II\obj\x86\Debug\WES_II.FormConsultarStock.resources
-E:\SISTEMA_KY\WES II\WES II\obj\x86\Debug\WES_II.FormMateriales.resources
-E:\SISTEMA_KY\WES II\WES II\obj\x86\Debug\WES_II.FormSugCompra.resources
-E:\SISTEMA_KY\WES II\WES II\obj\x86\Debug\WES_II.ModifMaterial.resources
-E:\SISTEMA_KY\WES II\WES II\obj\x86\Debug\WES_II.ExamMaterial.resources
-E:\SISTEMA_KY\WES II\WES II\obj\x86\Debug\WES_II.ExamProveedor.resources
-E:\SISTEMA_KY\WES II\WES II\obj\x86\Debug\WES_II.FormOrdenCompra.resources
-E:\SISTEMA_KY\WES II\WES II\obj\x86\Debug\WES_II.ModifOrdenCompra.resources
-E:\SISTEMA_KY\WES II\WES II\obj\x86\Debug\WES_II.FormPerfiles.resources
-E:\SISTEMA_KY\WES II\WES II\obj\x86\Debug\WES_II.ModifPerfil.resources
-E:\SISTEMA_KY\WES II\WES II\obj\x86\Debug\WES_II.FormPrincipal.resources
-E:\SISTEMA_KY\WES II\WES II\obj\x86\Debug\WES_II.FormSelectMaterial.resources
-E:\SISTEMA_KY\WES II\WES II\obj\x86\Debug\WES_II.FormMaterialesAsociados.resources
-E:\SISTEMA_KY\WES II\WES II\obj\x86\Debug\WES_II.FormProveedores.resources
-E:\SISTEMA_KY\WES II\WES II\obj\x86\Debug\WES_II.ModifProveedor.resources
-E:\SISTEMA_KY\WES II\WES II\obj\x86\Debug\WES_II.FormProyectos.resources
-E:\SISTEMA_KY\WES II\WES II\obj\x86\Debug\WES_II.ModifProyecto.resources
-E:\SISTEMA_KY\WES II\WES II\obj\x86\Debug\WES_II.Reporte_Cotizacion.resources
-E:\SISTEMA_KY\WES II\WES II\obj\x86\Debug\WES_II.Reporte_Ingresos.resources
-E:\SISTEMA_KY\WES II\WES II\obj\x86\Debug\WES_II.Reporte_Salidas.resources
-E:\SISTEMA_KY\WES II\WES II\obj\x86\Debug\WES_II.Reporte_Stock_Articulo.resources
-E:\SISTEMA_KY\WES II\WES II\obj\x86\Debug\WES_II.Reporte_Stock_Articulo_Sumarizado.resources
-E:\SISTEMA_KY\WES II\WES II\obj\x86\Debug\WES_II.Reporte_Movimientos_Stock.resources
-E:\SISTEMA_KY\WES II\WES II\obj\x86\Debug\WES_II.ExamAlmacen.resources
-E:\SISTEMA_KY\WES II\WES II\obj\x86\Debug\WES_II.ExamOrdenCompra.resources
-E:\SISTEMA_KY\WES II\WES II\obj\x86\Debug\WES_II.ExamProyecto.resources
-E:\SISTEMA_KY\WES II\WES II\obj\x86\Debug\WES_II.FormAprobacionRequerimiento.resources
-E:\SISTEMA_KY\WES II\WES II\obj\x86\Debug\WES_II.FormRequerimientos.resources
-E:\SISTEMA_KY\WES II\WES II\obj\x86\Debug\WES_II.ModifRequerimiento.resources
-E:\SISTEMA_KY\WES II\WES II\obj\x86\Debug\WES_II.FormExamRequerimiento.resources
-E:\SISTEMA_KY\WES II\WES II\obj\x86\Debug\WES_II.FormSalidaMaterial.resources
-E:\SISTEMA_KY\WES II\WES II\obj\x86\Debug\WES_II.SplashScreen.resources
-E:\SISTEMA_KY\WES II\WES II\obj\x86\Debug\WES_II.FormExamContenedor.resources
-E:\SISTEMA_KY\WES II\WES II\obj\x86\Debug\WES_II.FormTrasladarStock.resources
-E:\SISTEMA_KY\WES II\WES II\obj\x86\Debug\WES_II.FormColumnaUbicacion.resources
-E:\SISTEMA_KY\WES II\WES II\obj\x86\Debug\WES_II.FormEliminarColumna.resources
-E:\SISTEMA_KY\WES II\WES II\obj\x86\Debug\WES_II.FormUbicaciones.resources
-E:\SISTEMA_KY\WES II\WES II\obj\x86\Debug\WES_II.ModifUbicacion.resources
-E:\SISTEMA_KY\WES II\WES II\obj\x86\Debug\WES_II.CargarUsuario.resources
-E:\SISTEMA_KY\WES II\WES II\obj\x86\Debug\WES_II.ListarUs.resources
-E:\SISTEMA_KY\WES II\WES II\obj\x86\Debug\WES_II.FormUsuario.resources
-E:\SISTEMA_KY\WES II\WES II\obj\x86\Debug\WES_II.ModifUsuario.resources
 E:\SISTEMA_KY\WES II\WES II\obj\x86\Debug\WES_II.Resources.resources
 E:\SISTEMA_KY\WES II\WES II\obj\x86\Debug\WES II.vbproj.GenerateResource.Cache
 E:\SISTEMA_KY\WES II\WES II\obj\x86\Debug\WES II.exe.licenses
 E:\SISTEMA_KY\WES II\WES II\obj\x86\Debug\WES II.exe.manifest
 E:\SISTEMA_KY\WES II\WES II\obj\x86\Debug\WES II.application
+E:\SISTEMA_KY\WES II\WES II\obj\x86\Debug\WES_II.FormPedido.resources
+E:\SISTEMA_KY\WES II\WES II\obj\x86\Debug\WES_II.ModifPedido.resources

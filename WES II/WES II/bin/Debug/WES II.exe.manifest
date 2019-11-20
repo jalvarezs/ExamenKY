@@ -1554,14 +1554,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="WES II.exe" size="6016512">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="WES II.exe" size="2504192">
       <assemblyIdentity name="WES II" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>MIQLPViLw8FoWzuXwd/s+NBG2OVltUgeoVP1Gc3WIS4=</dsig:DigestValue>
+        <dsig:DigestValue>L8FpEmBfQotKd7YbsuLPnbQ8XVhMCK1I84rkcOqrKyQ=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -1655,13 +1655,13 @@
       <dsig:DigestValue>i0r/stJz+WcHDmcdpAXxPSGCfGBOk+XzkeA/JF9j1mI=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="WES II.exe.config" size="1015">
+  <file name="WES II.exe.config" size="772">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>3okvZeSU48cmgS7MVbJJ2Ssb1f1AptRFzlXvlpEXz8c=</dsig:DigestValue>
+      <dsig:DigestValue>QUvWMTBYIjjUr/FlP0zC738uEDTjv5Juau6hiHTyknI=</dsig:DigestValue>
     </hash>
   </file>
   <compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">

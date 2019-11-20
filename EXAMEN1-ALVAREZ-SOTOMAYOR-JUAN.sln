@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "EXAMEN1-ALVAREZ-SOTOMAYOR-JUAN", "WES II\WES II\EXAMEN1-ALVAREZ-SOTOMAYOR-JUAN.vbproj", "{C88E4DDA-BDE3-4633-B866-460A31CF4526}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x86 = Debug|x86
+		GDA|Any CPU = GDA|Any CPU
+		GDA|x86 = GDA|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C88E4DDA-BDE3-4633-B866-460A31CF4526}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{C88E4DDA-BDE3-4633-B866-460A31CF4526}.Debug|Any CPU.Build.0 = Debug|x86
+		{C88E4DDA-BDE3-4633-B866-460A31CF4526}.Debug|x86.ActiveCfg = Debug|x86
+		{C88E4DDA-BDE3-4633-B866-460A31CF4526}.Debug|x86.Build.0 = Debug|x86
+		{C88E4DDA-BDE3-4633-B866-460A31CF4526}.GDA|Any CPU.ActiveCfg = GDA|x86
+		{C88E4DDA-BDE3-4633-B866-460A31CF4526}.GDA|x86.ActiveCfg = GDA|x86
+		{C88E4DDA-BDE3-4633-B866-460A31CF4526}.GDA|x86.Build.0 = GDA|x86
+		{C88E4DDA-BDE3-4633-B866-460A31CF4526}.Release|Any CPU.ActiveCfg = Release|x86
+		{C88E4DDA-BDE3-4633-B866-460A31CF4526}.Release|x86.ActiveCfg = Release|x86
+		{C88E4DDA-BDE3-4633-B866-460A31CF4526}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E2E5839C-879B-494C-8B4A-180F0F6AA233}
+	EndGlobalSection
+EndGlobal
